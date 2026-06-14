@@ -1364,3 +1364,22 @@ body { zoom: 0.8; }
 
 /* Header: full-width bar — logo at the far left, lang + book at the far right */
 .site-header .container { max-width: none; padding-inline: clamp(1.5rem, 4vw, 3rem); }
+
+/* Testimonials carousel: simple side arrows (cream) + full cards (no partial) */
+.testi-wrap { position: relative; padding-inline: 56px; }
+.testi-viewport { margin-inline: 0; padding-inline: 0; }
+.testi-arrow {
+  position: absolute; top: 50%; transform: translateY(-50%);
+  z-index: 3; width: 44px; height: 44px;
+  background: transparent; border: 0; border-radius: 0;
+  color: var(--color-beige); cursor: pointer;
+  display: grid; place-items: center; box-shadow: none;
+  transition: opacity .3s var(--ease), color .3s var(--ease);
+}
+.testi-arrow svg { width: 36px; height: 36px; }
+.testi-arrow--prev { left: 0; }
+.testi-arrow--next { right: 0; }
+.testi-arrow:hover { color: #fff; background: transparent; border-color: transparent; }
+.testi-arrow:disabled { opacity: .3; cursor: default; }
+.testi-arrow:disabled:hover { background: transparent; color: var(--color-beige); }
+@media (max-width: 620px) { .testi-wrap { padding-inline: 36px; } .testi-arrow { width: 32px; height: 32px; } .testi-arrow svg { width: 26px; height: 26px; } }

@@ -180,8 +180,7 @@
       if (!viewport || !card) return;
 
       function step() {
-        var gap = parseFloat(getComputedStyle(root.querySelector(".testi-track")).gap) || 0;
-        return card.getBoundingClientRect().width + gap;
+        return viewport.clientWidth + 2;
       }
       function update() {
         if (!prev || !next) return;
