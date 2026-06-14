@@ -1342,3 +1342,6 @@ h1, h2, h3, h4,
 
 /* Intro image: anchor to the top so the top edge stays visible */
 .fullsplit--compact .fullsplit__media img { object-position: center top; }
+
+/* Intro image: 20% darker */
+.fullsplit--compact .fullsplit__media img { filter: brightness(0.8); }
