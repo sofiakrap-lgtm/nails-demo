@@ -1164,18 +1164,20 @@ body.home .site-header { top: var(--demo-h, 34px); }
    Logo / header / control refinements + Instrument Serif weight fix
    ========================================================================== */
 
-/* Header brand is now the wordmark image */
+/* Header brand is now the wordmark image (dark normally, beige over the hero) */
 .brand__wordmark { height: 28px; width: auto; }
-body.home .site-header:not(.is-scrolled) .brand__wordmark { filter: brightness(0) invert(1); }
+.brand__wordmark--light { display: none; }
+body.home .site-header:not(.is-scrolled) .brand__wordmark--dark { display: none; }
+body.home .site-header:not(.is-scrolled) .brand__wordmark--light { display: block; }
 
 /* Hero: large logo (iso lockup), no tagline/sub */
 .hero__wordmark { margin: 0 0 var(--space-4); }
 .hero__wordmark img { width: min(560px, 86vw); }
 
 /* Language switcher: sharp corners + equal height with the Book button */
-.lang { border-radius: var(--radius); height: 42px; align-items: stretch; }
+.lang { border-radius: var(--radius); height: 32px; align-items: stretch; }
 .lang__btn { display: inline-flex; align-items: center; }
-.header-actions > .btn { height: 42px; padding-top: 0; padding-bottom: 0; }
+.header-actions > .btn { height: 32px; padding-top: 0; padding-bottom: 0; }
 
 /* Intro split image ~40% smaller */
 .split--intro { grid-template-columns: 0.45fr 1fr; align-items: center; }
