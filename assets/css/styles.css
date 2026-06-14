@@ -1361,3 +1361,6 @@ body { zoom: 0.8; }
 
 /* Footer: spread the columns across a wider area */
 .site-footer .container { max-width: 1600px; }
+
+/* Header: full-width bar — logo at the far left, lang + book at the far right */
+.site-header .container { max-width: none; padding-inline: clamp(1.5rem, 4vw, 3rem); }
