@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pricing — Nails Lindes</title>
+  <meta name="description" content="Transparent nail-care pricing at Nails Lindes. Clear prices for manicures, gel, extensions, nail art and pedicures — pay online or in studio.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" href="assets/logos/mark.svg" type="image/svg+xml">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__bar">
+      <a class="brand" href="index.html" aria-label="Nails Lindes — home">
+        <img class="brand__mark" src="assets/logos/mark.svg" alt="" width="34" height="34">
+        <span class="brand__name">Nails Lindes</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Primary">
+        <a class="nav__link" href="index.html" data-i18n="nav.home">Home</a>
+        <a class="nav__link" href="services.html" data-i18n="nav.services">Services</a>
+        <a class="nav__link" href="pricing.html" aria-current="page" data-i18n="nav.pricing">Pricing</a>
+        <a class="nav__link" href="gallery.html" data-i18n="nav.gallery">Gallery</a>
+        <a class="nav__link" href="booking.html" data-i18n="nav.booking">Booking</a>
+        <a class="nav__link" href="about.html" data-i18n="nav.about">About</a>
+        <a class="nav__link" href="contact.html" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang" role="group" aria-label="Language">
+          <button class="lang__btn" data-lang="en" type="button">EN</button>
+          <button class="lang__btn" data-lang="es" type="button">ES</button>
+          <button class="lang__btn" data-lang="ru" type="button">RU</button>
+        </div>
+        <a class="btn" data-book href="#" data-i18n="cta.book">Book now</a>
+        <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="crumbs"><a href="index.html" data-i18n="nav.home">Home</a> · <span data-i18n="nav.pricing">Pricing</span></p>
+        <h1 data-i18n="pricing.heroTitle">Pricing</h1>
+        <p data-i18n="pricing.heroSub">Clear prices, no surprises.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container container--narrow">
+        <!-- Tabs -->
+        <div class="price-tabs" role="tablist">
+          <button class="price-tab" role="tab" data-tab="hands" data-i18n="pricing.tabHands">Hands</button>
+          <button class="price-tab" role="tab" data-tab="ext" data-i18n="pricing.tabExt">Gel & extensions</button>
+          <button class="price-tab" role="tab" data-tab="art" data-i18n="pricing.tabArt">Nail art</button>
+          <button class="price-tab" role="tab" data-tab="feet" data-i18n="pricing.tabFeet">Feet</button>
+        </div>
+
+        <!-- Hands -->
+        <div data-price-panel="hands">
+          <div class="price-group">
+            <div class="price-group__title"><img src="assets/graphics/floral.svg" alt="" width="26" height="26" style="color:var(--color-stone)"><h3 data-i18n="pricing.groupHands">Manicures</h3></div>
+            <div class="price-list">
+              <div class="price-item"><span class="price-item__name" data-i18n="services.s1">Classic manicure</span><span class="price-item__price">€25</span><p class="price-item__desc" data-i18n="services.s1d">Shaping, cuticle care, buff and polish.</p></div>
+              <div class="price-item"><span class="price-item__name" data-i18n="services.s2">Gel manicure</span><span class="price-item__price">€35</span><p class="price-item__desc" data-i18n="services.s2d">Long-wear gel colour with a high-shine finish.</p></div>
+              <div class="price-item"><span class="price-item__name" data-i18n="services.s3">Spa manicure</span><span class="price-item__price">€45</span><p class="price-item__desc" data-i18n="services.s3d">Exfoliation, mask and massage with full nail care.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Extensions -->
+        <div data-price-panel="ext" class="hidden">
+          <div class="price-group">
+            <div class="price-group__title"><img src="assets/graphics/floral.svg" alt="" width="26" height="26"><h3 data-i18n="pricing.groupExt">Gel & extensions</h3></div>
+            <div class="price-list">
+              <div class="price-item"><span class="price-item__name" data-i18n="services.s4">Builder gel overlay</span><span class="price-item__price">€40</span><p class="price-item__desc" data-i18n="services.s4d">Reinforces natural nails without added length.</p></div>
+              <div class="price-item"><span class="price-item__name" data-i18n="services.s5">Gel extensions</span><span class="price-item__price">€55</span><p class="price-item__desc" data-i18n="services.s5d">Sculpted length and shape, lightweight and durable.</p></div>
+              <div class="price-item"><span class="price-item__name" data-i18n="services.s6">Infill / maintenance</span><span class="price-item__price">€40</span><p class="price-item__desc" data-i18n="services.s6d">Keep your set fresh every 3–4 weeks.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nail art -->
+        <div data-price-panel="art" class="hidden">
+          <div class="price-group">
+            <div class="price-group__title"><img src="assets/graphics/floral.svg" alt="" width="26" height="26"><h3 data-i18n="pricing.groupArt">Nail art & finishing</h3></div>
+            <div class="price-list">
+              <div class="price-item"><span class="price-item__name" data-i18n="services.s7">Minimal accents</span><span class="price-item__price"><span data-i18n="pricing.from">from</span> €5</span><p class="price-item__desc" data-i18n="services.s7d">French, line work, a touch of foil or chrome.</p></div>
+              <div class="price-item"><span class="price-item__name" data-i18n="services.s8">Full design set</span><span class="price-item__price"><span data-i18n="pricing.from">from</span> €20</span><p class="price-item__desc" data-i18n="services.s8d">Bespoke art across all ten nails.</p></div>
+              <div class="price-item"><span class="price-item__name" data-i18n="services.s9">Bridal & events</span><span class="price-item__price"><span data-i18n="pricing.from">from</span> €60</span><p class="price-item__desc" data-i18n="services.s9d">A considered look for your special day.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feet -->
+        <div data-price-panel="feet" class="hidden">
+          <div class="price-group">
+            <div class="price-group__title"><img src="assets/graphics/floral.svg" alt="" width="26" height="26"><h3 data-i18n="pricing.groupFeet">Pedicures</h3></div>
+            <div class="price-list">
+              <div class="price-item"><span class="price-item__name" data-i18n="services.s10">Classic pedicure</span><span class="price-item__price">€35</span><p class="price-item__desc" data-i18n="services.s10d">Soak, shaping, cuticle care and polish.</p></div>
+              <div class="price-item"><span class="price-item__name" data-i18n="services.s11">Gel pedicure</span><span class="price-item__price">€45</span><p class="price-item__desc" data-i18n="services.s11d">Long-lasting gel colour for your toes.</p></div>
+              <div class="price-item"><span class="price-item__name" data-i18n="services.s12">Spa pedicure</span><span class="price-item__price">€55</span><p class="price-item__desc" data-i18n="services.s12d">Exfoliation, mask and massage for full renewal.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Notes -->
+        <div class="form-note" style="margin-top:1rem">
+          <strong data-i18n="pricing.noteTitle">Good to know</strong>
+          <ul style="margin-top:.6rem;display:grid;gap:.4rem;list-style:disc;padding-left:1.1rem">
+            <li data-i18n="pricing.note1">Prices are in euros and include a consultation.</li>
+            <li data-i18n="pricing.note2">Soak-off / removal of a previous set: from €10.</li>
+            <li data-i18n="pricing.note3">Designs and length above the standard are quoted before we start.</li>
+            <li data-i18n="pricing.note4">Pay online at the time of booking, or in the studio — card or cash.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider--stripe" aria-hidden="true"></div>
+
+    <!-- First visit highlight -->
+    <section class="section section--surface">
+      <div class="container container--narrow">
+        <div class="price-highlight reveal">
+          <span class="eyebrow eyebrow--center" style="color:var(--color-tan)" data-i18n="pricing.highlightTitle">First visit</span>
+          <p class="price-figure">★</p>
+          <p style="max-width:46ch;margin-inline:auto;color:color-mix(in srgb,#F1EBDD 85%,transparent)" data-i18n="pricing.highlightBody">New clients receive a relaxed consultation included with any treatment.</p>
+          <a class="btn btn--light" data-book href="#" style="margin-top:1rem" data-i18n="cta.bookAppt">Book an appointment</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a class="brand" href="index.html" aria-label="Nails Lindes — home">
+            <img class="brand__mark" src="assets/logos/mark.svg" alt="" width="34" height="34">
+            <span class="brand__name">Nails Lindes</span>
+          </a>
+          <p class="muted" style="margin-top:1rem;max-width:34ch" data-i18n="footer.tagline">A boutique nail studio in Spain.</p>
+          <div class="footer-social">
+            <a data-config="instagram" href="#" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col" style="text-align:center">
+          <img class="footer-illus mx-auto" src="assets/graphics/footer-illus.svg" alt="" width="120" height="90">
+          <p style="font-family:var(--font-serif);font-style:italic;color:var(--color-tan);margin-top:.6rem">since <span data-year-est>2026</span></p>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.explore">Explore</h4>
+          <ul>
+            <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+            <li><a href="pricing.html" data-i18n="nav.pricing">Pricing</a></li>
+            <li><a href="gallery.html" data-i18n="nav.gallery">Gallery</a></li>
+            <li><a href="booking.html" data-i18n="nav.booking">Booking</a></li>
+            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Nails Lindes. <span data-i18n="footer.rights">All rights reserved.</span></span>
+        <span data-i18n="footer.built">Vintage-elegant nail care.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Detail">
+  <defs>
+    <pattern id="st" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="#CFC9B3"/>
+      <rect width="2" height="20" fill="#00000008"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="1000" fill="url(#st)"/>
+  <g transform="translate(400 470)" fill="#645A4E" opacity="0.55">
+    <path d="M0 60 V0" stroke="#645A4E" stroke-width="2.4" fill="none"/>
+    <path d="M0 40 q-26 -6 -38 -28 q26 0 38 16z"/>
+    <path d="M0 26 q26 -6 38 -28 q-26 0 -38 16z"/>
+    <g transform="translate(0 -14)">
+      <ellipse cx="0" cy="-18" rx="7" ry="15"/>
+      <ellipse cx="0" cy="-18" rx="7" ry="15" transform="rotate(72)"/>
+      <ellipse cx="0" cy="-18" rx="7" ry="15" transform="rotate(144)"/>
+      <ellipse cx="0" cy="-18" rx="7" ry="15" transform="rotate(216)"/>
+      <ellipse cx="0" cy="-18" rx="7" ry="15" transform="rotate(288)"/>
+    </g>
+    <circle cx="0" cy="-32" r="8" fill="#D8C094"/>
+  </g>
+  <text x="400" y="966" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="22" letter-spacing="3" fill="#645A4E" opacity="0.75">Detail</text>
+</svg>

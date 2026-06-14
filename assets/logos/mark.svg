@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 48" role="img" aria-label="Nails Lindes mark">
+  <!-- Floral arch frame -->
+  <path d="M6 46 V20 a16 16 0 0 1 32 0 V46" fill="none" stroke="#645A4E" stroke-width="1.6" stroke-linecap="round"/>
+  <!-- Stem -->
+  <path d="M22 40 V24" fill="none" stroke="#645A4E" stroke-width="1.4" stroke-linecap="round"/>
+  <!-- Leaves -->
+  <path d="M22 33 q-6 -2 -8 -7 q6 0 8 4" fill="#645A4E"/>
+  <path d="M22 30 q6 -2 8 -7 q-6 0 -8 4" fill="#645A4E"/>
+  <!-- Flower: five petals -->
+  <g fill="#645A4E">
+    <g transform="translate(22 17)">
+      <ellipse cx="0" cy="-6" rx="2.4" ry="4.4"/>
+      <ellipse cx="0" cy="-6" rx="2.4" ry="4.4" transform="rotate(72)"/>
+      <ellipse cx="0" cy="-6" rx="2.4" ry="4.4" transform="rotate(144)"/>
+      <ellipse cx="0" cy="-6" rx="2.4" ry="4.4" transform="rotate(216)"/>
+      <ellipse cx="0" cy="-6" rx="2.4" ry="4.4" transform="rotate(288)"/>
+    </g>
+  </g>
+  <!-- Tan centre accent -->
+  <circle cx="22" cy="17" r="2.6" fill="#D8C094"/>
+</svg>

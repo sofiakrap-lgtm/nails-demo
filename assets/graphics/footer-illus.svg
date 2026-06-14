@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 120" role="img" aria-label="Floral arch illustration">
+  <g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+    <path d="M30 118 V54 a50 50 0 0 1 100 0 V118"/>
+    <path d="M80 110 V46"/>
+  </g>
+  <g fill="currentColor">
+    <path d="M80 92 q-22 -5 -32 -25 q22 0 32 14z"/>
+    <path d="M80 78 q22 -5 32 -25 q-22 0 -32 14z"/>
+    <g transform="translate(80 40)">
+      <ellipse cx="0" cy="-13" rx="5" ry="11"/>
+      <ellipse cx="0" cy="-13" rx="5" ry="11" transform="rotate(72)"/>
+      <ellipse cx="0" cy="-13" rx="5" ry="11" transform="rotate(144)"/>
+      <ellipse cx="0" cy="-13" rx="5" ry="11" transform="rotate(216)"/>
+      <ellipse cx="0" cy="-13" rx="5" ry="11" transform="rotate(288)"/>
+    </g>
+  </g>
+  <circle cx="80" cy="40" r="5.5" fill="#D8C094"/>
+</svg>

@@ -1,0 +1,503 @@
+/* ==========================================================================
+   Nails Lindes — internationalisation (EN / ES / RU)
+   Mark text with data-i18n="dot.key". Translate attributes with
+   data-i18n-attr="placeholder:dot.key". English is the fallback.
+   ========================================================================== */
+window.NL_I18N = {
+  /* ----------------------------------------------------------------- EN -- */
+  en: {
+    meta: { langName: "English" },
+    nav: {
+      home: "Home", services: "Services", pricing: "Pricing",
+      gallery: "Gallery", booking: "Booking", about: "About", contact: "Contact"
+    },
+    cta: {
+      book: "Book now", bookAppt: "Book an appointment",
+      viewAll: "View all", seeServices: "See services", seePricing: "See pricing",
+      contact: "Contact", explore: "Explore", send: "Send message",
+      viewPricing: "View full pricing", getDirections: "Get directions", more: "Learn more"
+    },
+    brand: { tagline: "Since 2026", words: "Nail studio · Spain" },
+    home: {
+      heroTitle: "Timeless nails, crafted with care",
+      heroSub: "A boutique nail studio where calm, hygiene and quiet craftsmanship come first.",
+      introEyebrow: "The studio",
+      introTitle: "Considered nail care, never rushed",
+      introBody1: "Nails Lindes is a small, by-appointment studio in Spain. Every visit is unhurried — a clean, warm space, premium products and a result made to last.",
+      introBody2: "From a polished classic manicure to sculpted extensions and fine nail art, the work is precise, the finish is durable, and the experience feels like time well spent.",
+      f1Title: "Spotless hygiene", f1Body: "Sterilised tools and single-use files for every client, every time.",
+      f2Title: "Lasting craft", f2Body: "Premium gels and builders applied with a steady, detail-led hand.",
+      f3Title: "Calm by design", f3Body: "An unhurried, private setting — your appointment, your pace.",
+      galleryEyebrow: "Recent work",
+      galleryTitle: "A look at the details",
+      doEyebrow: "What we do",
+      doTitle: "Treatments, simply explained",
+      do1Title: "Manicure", do1Body: "Classic, gel and combination care.",
+      do2Title: "Gel & builder", do2Body: "Strength, length and a flawless finish.",
+      do3Title: "Nail art", do3Body: "From subtle accents to full sets.",
+      do4Title: "Pedicure", do4Body: "Renewing care from heel to toe.",
+      scriptOverlay: "made to last",
+      quote: "Beautiful nails are not loud. They are well kept, well finished, and quietly confident.",
+      quoteCite: "The Nails Lindes approach",
+      ctaTitle: "Ready when you are",
+      ctaBody: "Choose your treatment and a time that suits you. Pay online when you book, or settle at the studio — it's up to you.",
+      marquee1: "Manicure", marquee2: "Gel extensions", marquee3: "Nail art", marquee4: "Pedicure", marquee5: "Bridal"
+    },
+    services: {
+      heroTitle: "Services",
+      heroSub: "A full menu of nail care — classic to creative. Pricing for every treatment is on the pricing page, in full view.",
+      g1Title: "Manicures",
+      g1Body: "Nail shaping, cuticle care and a flawless colour or natural finish.",
+      s1: "Classic manicure", s1d: "Shaping, cuticle care, buff and polish.",
+      s2: "Gel manicure", s2d: "Long-wear gel colour with a high-shine finish.",
+      s3: "Spa manicure", s3d: "Exfoliation, mask and massage with full nail care.",
+      g2Title: "Gel & extensions",
+      g2Body: "Added strength and length, sculpted to suit your hands.",
+      s4: "Builder gel overlay", s4d: "Reinforces natural nails without added length.",
+      s5: "Gel extensions", s5d: "Sculpted length and shape, lightweight and durable.",
+      s6: "Infill / maintenance", s6d: "Keep your set fresh every 3–4 weeks.",
+      g3Title: "Nail art & finishing",
+      g3Body: "From a single accent to a fully designed set.",
+      s7: "Minimal accents", s7d: "French, line work, a touch of foil or chrome.",
+      s8: "Full design set", s8d: "Bespoke art across all ten nails.",
+      s9: "Bridal & events", s9d: "A considered look for your special day.",
+      g4Title: "Pedicures",
+      g4Body: "Care that renews tired feet and finishes beautifully.",
+      s10: "Classic pedicure", s10d: "Soak, shaping, cuticle care and polish.",
+      s11: "Gel pedicure", s11d: "Long-lasting gel colour for your toes.",
+      s12: "Spa pedicure", s12d: "Exfoliation, mask and massage for full renewal.",
+      note: "Every service includes a short consultation so the result fits you. Not sure what to choose? Ask when you book and we'll guide you."
+    },
+    pricing: {
+      heroTitle: "Pricing",
+      heroSub: "Clear prices, no surprises. Final pricing may vary slightly with length, design complexity and condition — always confirmed before we begin.",
+      tabHands: "Hands", tabExt: "Gel & extensions", tabArt: "Nail art", tabFeet: "Feet",
+      from: "from",
+      groupHands: "Manicures",
+      groupExt: "Gel & extensions",
+      groupArt: "Nail art & finishing",
+      groupFeet: "Pedicures",
+      highlightTitle: "First visit",
+      highlightBody: "New clients receive a relaxed consultation included with any treatment — so your first set is exactly right.",
+      noteTitle: "Good to know",
+      note1: "Prices are in euros and include a consultation.",
+      note2: "Soak-off / removal of a previous set: from €10.",
+      note3: "Designs and length above the standard are quoted before we start.",
+      note4: "Pay online at the time of booking, or in the studio — card or cash."
+    },
+    gallery: {
+      heroTitle: "Gallery",
+      heroSub: "A selection of recent sets — manicures, extensions and nail art. New work is added regularly.",
+      filterAll: "All", filterMani: "Manicure", filterExt: "Extensions", filterArt: "Nail art", filterFeet: "Pedicure",
+      ctaTitle: "Like what you see?",
+      ctaBody: "Bring a reference or let us design something just for you."
+    },
+    booking: {
+      heroTitle: "Booking",
+      heroSub: "Reserve your appointment online in a few taps. Choose your treatment, pick a time, and pay how you prefer.",
+      howTitle: "How booking works",
+      step1Title: "Choose your treatment", step1Body: "Browse services and pick what suits you — or message us if you're unsure.",
+      step2Title: "Pick a time", step2Body: "Live availability through our booking partner, Booksy. See open slots in real time.",
+      step3Title: "Pay your way", step3Body: "Pay securely online when you book, or choose to pay at the studio — card or cash.",
+      panelTitle: "Book through Booksy",
+      panelBody: "Our calendar lives on Booksy, where you can see real-time availability, manage your appointment, and reschedule if plans change.",
+      payTitle: "Payment options",
+      pay1: "Pay online — secure card payment as you book.",
+      pay2: "Pay on site — card or cash at your appointment.",
+      pay3: "Reschedule or cancel easily from your Booksy confirmation.",
+      policyTitle: "Cancellation",
+      policyBody: "Plans change — we just ask for 24 hours' notice so the time can go to someone else. You can manage everything from your confirmation email.",
+      questionTitle: "Have a question first?",
+      questionBody: "Not sure which treatment to book? Send a message and we'll point you in the right direction."
+    },
+    contact: {
+      heroTitle: "Contact",
+      heroSub: "Questions, custom designs or collaborations — we'd love to hear from you.",
+      reachTitle: "Find us",
+      addressTitle: "Studio", phoneTitle: "Phone", emailTitle: "Email", socialTitle: "Instagram",
+      hoursTitle: "Opening hours",
+      day1: "Monday", day2: "Tuesday", day3: "Wednesday", day4: "Thursday", day5: "Friday", day6: "Saturday", day7: "Sunday",
+      byAppt: "By appointment", closed: "Closed",
+      formTitle: "Send a message",
+      fName: "Name", fEmail: "Email", fPhone: "Phone (optional)", fService: "Interested in", fMessage: "Message",
+      fServicePlaceholder: "Select a treatment",
+      formNote: "This form is a demo and does not send email yet. For appointments, please use online booking — it's the fastest way to secure a time.",
+      thanks: "Thank you! This is a demo form, so nothing was sent. To book, please use the booking page."
+    },
+    about: {
+      heroTitle: "About",
+      heroSub: "A small studio built on care, hygiene and a love of detail.",
+      storyEyebrow: "The story",
+      storyTitle: "Quiet craft, made personal",
+      storyBody1: "Nails Lindes began with a simple belief: nail care should feel calm, clean and genuinely personal — never rushed, never one-size-fits-all.",
+      storyBody2: "Working by appointment keeps every visit unhurried and the studio spotless. You get full attention, premium products and a finish designed to last for weeks.",
+      storyBody3: "Whether it's a quiet classic manicure or a fully designed set, the goal is always the same: nails you'll be glad to look at, again and again.",
+      valuesTitle: "What guides the work",
+      v1Title: "Hygiene first", v1Body: "Sterilised tools and single-use files, always.",
+      v2Title: "Honest pricing", v2Body: "Clear, published prices and no surprises.",
+      v3Title: "Lasting results", v3Body: "Premium products applied with patience and care.",
+      statClients: "Happy clients", statRating: "Average rating", statYears: "Crafted since",
+      ctaTitle: "Come and see the difference"
+    },
+    footer: {
+      tagline: "A boutique nail studio in Spain. Timeless nails, crafted with care.",
+      explore: "Explore", visit: "Visit", followTitle: "Follow",
+      rights: "All rights reserved.",
+      built: "Vintage-elegant nail care.",
+      privacy: "Privacy", booking: "Book now"
+    }
+  },
+
+  /* ----------------------------------------------------------------- ES -- */
+  es: {
+    meta: { langName: "Español" },
+    nav: {
+      home: "Inicio", services: "Servicios", pricing: "Precios",
+      gallery: "Galería", booking: "Reservas", about: "Sobre mí", contact: "Contacto"
+    },
+    cta: {
+      book: "Reservar", bookAppt: "Reservar cita",
+      viewAll: "Ver todo", seeServices: "Ver servicios", seePricing: "Ver precios",
+      contact: "Contacto", explore: "Explorar", send: "Enviar mensaje",
+      viewPricing: "Ver todos los precios", getDirections: "Cómo llegar", more: "Saber más"
+    },
+    brand: { tagline: "Desde 2026", words: "Estudio de uñas · España" },
+    home: {
+      heroTitle: "Uñas atemporales, hechas con cuidado",
+      heroSub: "Un estudio de uñas boutique donde la calma, la higiene y el buen oficio van primero.",
+      introEyebrow: "El estudio",
+      introTitle: "Cuidado de uñas pensado, sin prisas",
+      introBody1: "Nails Lindes es un pequeño estudio con cita previa en España. Cada visita es tranquila: un espacio limpio y cálido, productos premium y un resultado que dura.",
+      introBody2: "Desde una manicura clásica impecable hasta extensiones esculpidas y nail art delicado, el trabajo es preciso, el acabado duradero y la experiencia, tiempo bien invertido.",
+      f1Title: "Higiene impecable", f1Body: "Herramientas esterilizadas y limas de un solo uso para cada cliente.",
+      f2Title: "Oficio duradero", f2Body: "Geles premium aplicados con mano firme y atención al detalle.",
+      f3Title: "Calma por diseño", f3Body: "Un espacio privado y sin prisas: tu cita, tu ritmo.",
+      galleryEyebrow: "Trabajos recientes",
+      galleryTitle: "Mira los detalles",
+      doEyebrow: "Qué hacemos",
+      doTitle: "Tratamientos, explicados con claridad",
+      do1Title: "Manicura", do1Body: "Cuidado clásico, en gel y combinado.",
+      do2Title: "Gel y refuerzo", do2Body: "Fuerza, longitud y un acabado impecable.",
+      do3Title: "Nail art", do3Body: "Desde detalles sutiles hasta sets completos.",
+      do4Title: "Pedicura", do4Body: "Cuidado que renueva del talón a los dedos.",
+      scriptOverlay: "hecho para durar",
+      quote: "Las uñas bonitas no gritan. Están bien cuidadas, bien acabadas y seguras en silencio.",
+      quoteCite: "La filosofía de Nails Lindes",
+      ctaTitle: "Cuando tú quieras",
+      ctaBody: "Elige tu tratamiento y la hora que te venga bien. Paga online al reservar o en el estudio: tú decides.",
+      marquee1: "Manicura", marquee2: "Extensiones de gel", marquee3: "Nail art", marquee4: "Pedicura", marquee5: "Novias"
+    },
+    services: {
+      heroTitle: "Servicios",
+      heroSub: "Un menú completo de cuidado de uñas, de lo clásico a lo creativo. Los precios de cada tratamiento están a la vista en la página de precios.",
+      g1Title: "Manicuras",
+      g1Body: "Forma de la uña, cuidado de cutículas y un acabado en color o natural impecable.",
+      s1: "Manicura clásica", s1d: "Forma, cutículas, pulido y esmalte.",
+      s2: "Manicura en gel", s2d: "Color en gel de larga duración con brillo intenso.",
+      s3: "Manicura spa", s3d: "Exfoliación, mascarilla y masaje con cuidado completo.",
+      g2Title: "Gel y extensiones",
+      g2Body: "Más fuerza y longitud, esculpidas a la medida de tus manos.",
+      s4: "Refuerzo con builder gel", s4d: "Refuerza la uña natural sin añadir longitud.",
+      s5: "Extensiones de gel", s5d: "Longitud y forma esculpidas, ligeras y resistentes.",
+      s6: "Relleno / mantenimiento", s6d: "Mantén tu set perfecto cada 3–4 semanas.",
+      g3Title: "Nail art y acabados",
+      g3Body: "Desde un detalle único hasta un set totalmente diseñado.",
+      s7: "Detalles minimalistas", s7d: "Francesa, líneas, un toque de foil o cromo.",
+      s8: "Set de diseño completo", s8d: "Arte a medida en las diez uñas.",
+      s9: "Novias y eventos", s9d: "Un look cuidado para tu día especial.",
+      g4Title: "Pedicuras",
+      g4Body: "Cuidado que renueva los pies cansados y acaba precioso.",
+      s10: "Pedicura clásica", s10d: "Baño, forma, cutículas y esmalte.",
+      s11: "Pedicura en gel", s11d: "Color en gel de larga duración para los pies.",
+      s12: "Pedicura spa", s12d: "Exfoliación, mascarilla y masaje renovador.",
+      note: "Cada servicio incluye una breve consulta para que el resultado sea para ti. ¿No sabes qué elegir? Pregúntanos al reservar y te guiamos."
+    },
+    pricing: {
+      heroTitle: "Precios",
+      heroSub: "Precios claros, sin sorpresas. El precio final puede variar ligeramente según longitud, complejidad del diseño y estado de la uña, siempre confirmado antes de empezar.",
+      tabHands: "Manos", tabExt: "Gel y extensiones", tabArt: "Nail art", tabFeet: "Pies",
+      from: "desde",
+      groupHands: "Manicuras",
+      groupExt: "Gel y extensiones",
+      groupArt: "Nail art y acabados",
+      groupFeet: "Pedicuras",
+      highlightTitle: "Primera visita",
+      highlightBody: "Las clientas nuevas reciben una consulta tranquila incluida con cualquier tratamiento, para que tu primer set sea perfecto.",
+      noteTitle: "Bueno saber",
+      note1: "Los precios están en euros e incluyen consulta.",
+      note2: "Retirada de un set anterior: desde 10 €.",
+      note3: "Diseños y longitud por encima de lo estándar se presupuestan antes de empezar.",
+      note4: "Paga online al reservar o en el estudio: tarjeta o efectivo."
+    },
+    gallery: {
+      heroTitle: "Galería",
+      heroSub: "Una selección de trabajos recientes: manicuras, extensiones y nail art. Se añaden novedades a menudo.",
+      filterAll: "Todo", filterMani: "Manicura", filterExt: "Extensiones", filterArt: "Nail art", filterFeet: "Pedicura",
+      ctaTitle: "¿Te gusta lo que ves?",
+      ctaBody: "Trae una referencia o deja que diseñemos algo solo para ti."
+    },
+    booking: {
+      heroTitle: "Reservas",
+      heroSub: "Reserva tu cita online en unos toques. Elige tratamiento, escoge la hora y paga como prefieras.",
+      howTitle: "Cómo funciona la reserva",
+      step1Title: "Elige tu tratamiento", step1Body: "Mira los servicios y elige el que encaje, o escríbenos si tienes dudas.",
+      step2Title: "Escoge la hora", step2Body: "Disponibilidad en directo a través de nuestro socio Booksy. Mira los huecos en tiempo real.",
+      step3Title: "Paga a tu manera", step3Body: "Paga de forma segura online al reservar, o en el estudio: tarjeta o efectivo.",
+      panelTitle: "Reserva por Booksy",
+      panelBody: "Nuestra agenda está en Booksy, donde ves la disponibilidad en tiempo real, gestionas tu cita y la cambias si surge algo.",
+      payTitle: "Opciones de pago",
+      pay1: "Pago online: con tarjeta de forma segura al reservar.",
+      pay2: "Pago en el estudio: tarjeta o efectivo en tu cita.",
+      pay3: "Cambia o cancela fácilmente desde tu confirmación de Booksy.",
+      policyTitle: "Cancelación",
+      policyBody: "Los planes cambian; solo pedimos 24 horas de aviso para poder ofrecer la hora a otra persona. Lo gestionas todo desde tu email de confirmación.",
+      questionTitle: "¿Tienes una duda antes?",
+      questionBody: "¿No sabes qué reservar? Escríbenos y te orientamos."
+    },
+    contact: {
+      heroTitle: "Contacto",
+      heroSub: "Dudas, diseños a medida o colaboraciones: nos encantará saber de ti.",
+      reachTitle: "Encuéntranos",
+      addressTitle: "Estudio", phoneTitle: "Teléfono", emailTitle: "Email", socialTitle: "Instagram",
+      hoursTitle: "Horario",
+      day1: "Lunes", day2: "Martes", day3: "Miércoles", day4: "Jueves", day5: "Viernes", day6: "Sábado", day7: "Domingo",
+      byAppt: "Con cita previa", closed: "Cerrado",
+      formTitle: "Envía un mensaje",
+      fName: "Nombre", fEmail: "Email", fPhone: "Teléfono (opcional)", fService: "Me interesa", fMessage: "Mensaje",
+      fServicePlaceholder: "Elige un tratamiento",
+      formNote: "Este formulario es una demo y aún no envía emails. Para citas, usa la reserva online: es la forma más rápida de asegurar tu hora.",
+      thanks: "¡Gracias! Es un formulario de demostración, así que no se ha enviado nada. Para reservar, usa la página de reservas."
+    },
+    about: {
+      heroTitle: "Sobre mí",
+      heroSub: "Un estudio pequeño construido sobre el cuidado, la higiene y el amor por el detalle.",
+      storyEyebrow: "La historia",
+      storyTitle: "Buen oficio, hecho personal",
+      storyBody1: "Nails Lindes nació de una idea simple: el cuidado de uñas debe sentirse tranquilo, limpio y de verdad personal, nunca con prisas ni igual para todas.",
+      storyBody2: "Trabajar con cita previa mantiene cada visita pausada y el estudio impecable. Recibes toda la atención, productos premium y un acabado pensado para durar semanas.",
+      storyBody3: "Ya sea una manicura clásica y discreta o un set totalmente diseñado, el objetivo es el mismo: unas uñas que disfrutarás mirar, una y otra vez.",
+      valuesTitle: "Lo que guía el trabajo",
+      v1Title: "Higiene primero", v1Body: "Herramientas esterilizadas y limas de un solo uso, siempre.",
+      v2Title: "Precios honestos", v2Body: "Precios claros y publicados, sin sorpresas.",
+      v3Title: "Resultados duraderos", v3Body: "Productos premium aplicados con paciencia y cuidado.",
+      statClients: "Clientas felices", statRating: "Valoración media", statYears: "Creando desde",
+      ctaTitle: "Ven y nota la diferencia"
+    },
+    footer: {
+      tagline: "Un estudio de uñas boutique en España. Uñas atemporales, hechas con cuidado.",
+      explore: "Explorar", visit: "Visítanos", followTitle: "Sígueme",
+      rights: "Todos los derechos reservados.",
+      built: "Cuidado de uñas vintage-elegante.",
+      privacy: "Privacidad", booking: "Reservar"
+    }
+  },
+
+  /* ----------------------------------------------------------------- RU -- */
+  ru: {
+    meta: { langName: "Русский" },
+    nav: {
+      home: "Главная", services: "Услуги", pricing: "Цены",
+      gallery: "Галерея", booking: "Запись", about: "Обо мне", contact: "Контакты"
+    },
+    cta: {
+      book: "Записаться", bookAppt: "Записаться на приём",
+      viewAll: "Смотреть всё", seeServices: "Услуги", seePricing: "Цены",
+      contact: "Контакты", explore: "Подробнее", send: "Отправить",
+      viewPricing: "Все цены", getDirections: "Как добраться", more: "Подробнее"
+    },
+    brand: { tagline: "С 2026 года", words: "Студия ногтей · Испания" },
+    home: {
+      heroTitle: "Вне времени — ногти, созданные с заботой",
+      heroSub: "Бутик-студия ногтевого сервиса, где спокойствие, гигиена и тихое мастерство на первом месте.",
+      introEyebrow: "Студия",
+      introTitle: "Вдумчивый уход за ногтями, без спешки",
+      introBody1: "Nails Lindes — небольшая студия по записи в Испании. Каждый визит проходит неспешно: чистое и тёплое пространство, премиальные материалы и результат, который держится.",
+      introBody2: "От безупречного классического маникюра до скульптурного наращивания и тонкого нейл-арта — работа точна, покрытие стойкое, а время проведено с пользой.",
+      f1Title: "Безупречная гигиена", f1Body: "Стерильные инструменты и одноразовые пилки для каждого клиента.",
+      f2Title: "Стойкое мастерство", f2Body: "Премиальные гели, нанесённые уверенной рукой и с вниманием к деталям.",
+      f3Title: "Спокойствие как замысел", f3Body: "Неспешная, приватная обстановка — ваш приём, ваш темп.",
+      galleryEyebrow: "Недавние работы",
+      galleryTitle: "Взгляд на детали",
+      doEyebrow: "Что мы делаем",
+      doTitle: "Процедуры — просто и понятно",
+      do1Title: "Маникюр", do1Body: "Классический, гелевый и комбинированный уход.",
+      do2Title: "Гель и укрепление", do2Body: "Прочность, длина и безупречное покрытие.",
+      do3Title: "Нейл-арт", do3Body: "От тонких акцентов до полного дизайна.",
+      do4Title: "Педикюр", do4Body: "Обновляющий уход от пятки до пальцев.",
+      scriptOverlay: "создано, чтобы держаться",
+      quote: "Красивые ногти не кричат. Они ухожены, аккуратно завершены и спокойно уверены в себе.",
+      quoteCite: "Подход Nails Lindes",
+      ctaTitle: "Когда вам удобно",
+      ctaBody: "Выберите процедуру и удобное время. Оплатите онлайн при записи или в студии — как вам удобнее.",
+      marquee1: "Маникюр", marquee2: "Наращивание гелем", marquee3: "Нейл-арт", marquee4: "Педикюр", marquee5: "Свадебный"
+    },
+    services: {
+      heroTitle: "Услуги",
+      heroSub: "Полное меню ухода за ногтями — от классики до творчества. Цены на каждую процедуру открыто указаны на странице цен.",
+      g1Title: "Маникюр",
+      g1Body: "Форма ногтя, уход за кутикулой и безупречное покрытие — цветное или натуральное.",
+      s1: "Классический маникюр", s1d: "Форма, кутикула, полировка и лак.",
+      s2: "Гелевый маникюр", s2d: "Стойкое гель-покрытие с ярким блеском.",
+      s3: "Спа-маникюр", s3d: "Пилинг, маска и массаж с полным уходом.",
+      g2Title: "Гель и наращивание",
+      g2Body: "Дополнительная прочность и длина, смоделированные под ваши руки.",
+      s4: "Укрепление билдер-гелем", s4d: "Укрепляет натуральный ноготь без добавления длины.",
+      s5: "Наращивание гелем", s5d: "Смоделированная длина и форма — лёгкие и прочные.",
+      s6: "Коррекция / уход", s6d: "Поддерживайте идеальный вид каждые 3–4 недели.",
+      g3Title: "Нейл-арт и финиш",
+      g3Body: "От одного акцента до полностью продуманного дизайна.",
+      s7: "Минимальные акценты", s7d: "Френч, линии, немного фольги или хрома.",
+      s8: "Полный дизайн", s8d: "Индивидуальный арт на всех десяти ногтях.",
+      s9: "Свадьба и события", s9d: "Продуманный образ для вашего особенного дня.",
+      g4Title: "Педикюр",
+      g4Body: "Уход, который обновляет уставшие стопы и красиво завершает образ.",
+      s10: "Классический педикюр", s10d: "Ванночка, форма, кутикула и лак.",
+      s11: "Гелевый педикюр", s11d: "Стойкое гель-покрытие для пальцев ног.",
+      s12: "Спа-педикюр", s12d: "Пилинг, маска и массаж для полного обновления.",
+      note: "Каждая услуга включает короткую консультацию, чтобы результат подошёл именно вам. Не знаете, что выбрать? Спросите при записи — мы подскажем."
+    },
+    pricing: {
+      heroTitle: "Цены",
+      heroSub: "Понятные цены без сюрпризов. Итог может слегка меняться в зависимости от длины, сложности дизайна и состояния ногтей — всегда согласуем до начала.",
+      tabHands: "Руки", tabExt: "Гель и наращивание", tabArt: "Нейл-арт", tabFeet: "Стопы",
+      from: "от",
+      groupHands: "Маникюр",
+      groupExt: "Гель и наращивание",
+      groupArt: "Нейл-арт и финиш",
+      groupFeet: "Педикюр",
+      highlightTitle: "Первый визит",
+      highlightBody: "Новые клиенты получают спокойную консультацию в подарок к любой процедуре — чтобы первый комплект был именно таким, как нужно.",
+      noteTitle: "Полезно знать",
+      note1: "Цены указаны в евро и включают консультацию.",
+      note2: "Снятие предыдущего покрытия: от 10 €.",
+      note3: "Дизайн и длина выше стандартной оговариваются до начала.",
+      note4: "Оплата онлайн при записи или в студии — картой или наличными."
+    },
+    gallery: {
+      heroTitle: "Галерея",
+      heroSub: "Подборка недавних работ — маникюр, наращивание и нейл-арт. Новые работы добавляются регулярно.",
+      filterAll: "Все", filterMani: "Маникюр", filterExt: "Наращивание", filterArt: "Нейл-арт", filterFeet: "Педикюр",
+      ctaTitle: "Нравится то, что видите?",
+      ctaBody: "Принесите референс или доверьте дизайн нам."
+    },
+    booking: {
+      heroTitle: "Запись",
+      heroSub: "Запишитесь онлайн за пару касаний. Выберите процедуру, время и удобный способ оплаты.",
+      howTitle: "Как работает запись",
+      step1Title: "Выберите процедуру", step1Body: "Посмотрите услуги и выберите подходящую — или напишите нам, если сомневаетесь.",
+      step2Title: "Выберите время", step2Body: "Актуальное расписание через нашего партнёра Booksy. Свободные окна в реальном времени.",
+      step3Title: "Оплатите удобно", step3Body: "Безопасно онлайн при записи или в студии — картой либо наличными.",
+      panelTitle: "Запись через Booksy",
+      panelBody: "Наше расписание ведётся в Booksy: вы видите актуальные окна, управляете записью и переносите её, если планы поменялись.",
+      payTitle: "Способы оплаты",
+      pay1: "Онлайн — безопасная оплата картой при записи.",
+      pay2: "В студии — картой или наличными на приёме.",
+      pay3: "Перенос или отмена легко из подтверждения Booksy.",
+      policyTitle: "Отмена",
+      policyBody: "Планы меняются — мы лишь просим предупредить за 24 часа, чтобы время досталось другому. Всё управляется из письма с подтверждением.",
+      questionTitle: "Сначала есть вопрос?",
+      questionBody: "Не знаете, что выбрать? Напишите — подскажем направление."
+    },
+    contact: {
+      heroTitle: "Контакты",
+      heroSub: "Вопросы, индивидуальный дизайн или сотрудничество — будем рады вашему сообщению.",
+      reachTitle: "Найти нас",
+      addressTitle: "Студия", phoneTitle: "Телефон", emailTitle: "Email", socialTitle: "Instagram",
+      hoursTitle: "Часы работы",
+      day1: "Понедельник", day2: "Вторник", day3: "Среда", day4: "Четверг", day5: "Пятница", day6: "Суббота", day7: "Воскресенье",
+      byAppt: "По записи", closed: "Закрыто",
+      formTitle: "Отправить сообщение",
+      fName: "Имя", fEmail: "Email", fPhone: "Телефон (необязательно)", fService: "Интересует", fMessage: "Сообщение",
+      fServicePlaceholder: "Выберите процедуру",
+      formNote: "Эта форма — демонстрационная и пока не отправляет письма. Для записи используйте онлайн-запись — это самый быстрый способ занять время.",
+      thanks: "Спасибо! Это демо-форма, поэтому ничего не отправлено. Чтобы записаться, перейдите на страницу записи."
+    },
+    about: {
+      heroTitle: "Обо мне",
+      heroSub: "Небольшая студия, построенная на заботе, гигиене и любви к деталям.",
+      storyEyebrow: "История",
+      storyTitle: "Тихое мастерство, сделанное лично",
+      storyBody1: "Nails Lindes начались с простой мысли: уход за ногтями должен быть спокойным, чистым и по-настоящему личным — без спешки и без шаблонов.",
+      storyBody2: "Работа по записи делает каждый визит неспешным, а студию — безупречно чистой. Вы получаете полное внимание, премиальные материалы и результат, рассчитанный на недели.",
+      storyBody3: "Будь то тихий классический маникюр или полностью продуманный дизайн — цель одна: ногти, на которые приятно смотреть снова и снова.",
+      valuesTitle: "Что направляет работу",
+      v1Title: "Гигиена прежде всего", v1Body: "Стерильные инструменты и одноразовые пилки — всегда.",
+      v2Title: "Честные цены", v2Body: "Открытые, опубликованные цены без сюрпризов.",
+      v3Title: "Стойкий результат", v3Body: "Премиальные материалы, нанесённые терпеливо и с заботой.",
+      statClients: "Довольных клиентов", statRating: "Средняя оценка", statYears: "Создаём с",
+      ctaTitle: "Приходите и почувствуйте разницу"
+    },
+    footer: {
+      tagline: "Бутик-студия ногтей в Испании. Вне времени — ногти, созданные с заботой.",
+      explore: "Разделы", visit: "Визит", followTitle: "Подписаться",
+      rights: "Все права защищены.",
+      built: "Винтажно-элегантный уход за ногтями.",
+      privacy: "Конфиденциальность", booking: "Записаться"
+    }
+  }
+};
+
+/* ---------- Engine -------------------------------------------------------- */
+(function () {
+  var DICT = window.NL_I18N;
+  var DEFAULT = "en";
+  var STORE_KEY = "nl-lang";
+
+  function resolve(obj, path) {
+    return path.split(".").reduce(function (acc, k) {
+      return (acc && acc[k] != null) ? acc[k] : null;
+    }, obj);
+  }
+
+  function t(lang, key) {
+    var v = resolve(DICT[lang], key);
+    if (v == null) v = resolve(DICT[DEFAULT], key);
+    return v == null ? key : v;
+  }
+
+  function apply(lang) {
+    if (!DICT[lang]) lang = DEFAULT;
+    document.documentElement.setAttribute("lang", lang);
+
+    document.querySelectorAll("[data-i18n]").forEach(function (el) {
+      el.textContent = t(lang, el.getAttribute("data-i18n"));
+    });
+
+    document.querySelectorAll("[data-i18n-attr]").forEach(function (el) {
+      el.getAttribute("data-i18n-attr").split(";").forEach(function (pair) {
+        var bits = pair.split(":");
+        if (bits.length === 2) el.setAttribute(bits[0].trim(), t(lang, bits[1].trim()));
+      });
+    });
+
+    document.querySelectorAll(".lang__btn").forEach(function (btn) {
+      btn.setAttribute("aria-pressed", String(btn.getAttribute("data-lang") === lang));
+    });
+
+    try { localStorage.setItem(STORE_KEY, lang); } catch (e) {}
+    document.dispatchEvent(new CustomEvent("nl:langchange", { detail: { lang: lang } }));
+  }
+
+  function init() {
+    var saved = null;
+    try { saved = localStorage.getItem(STORE_KEY); } catch (e) {}
+    var lang = saved && DICT[saved] ? saved : DEFAULT;
+
+    document.querySelectorAll(".lang__btn").forEach(function (btn) {
+      btn.addEventListener("click", function () { apply(btn.getAttribute("data-lang")); });
+    });
+
+    apply(lang);
+  }
+
+  window.NL = window.NL || {};
+  window.NL.t = function (key) {
+    var lang = document.documentElement.getAttribute("lang") || DEFAULT;
+    return t(lang, key);
+  };
+  window.NL.setLang = apply;
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else { init(); }
+})();
