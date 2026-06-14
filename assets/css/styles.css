@@ -1428,3 +1428,14 @@ body { zoom: 0.8; }
 
 /* Keep everything firmly in place — disable scroll-reveal entrance animation */
 .reveal, .reveal.is-visible { opacity: 1 !important; transform: none !important; }
+
+/* Category bar: identical golf layout (tight boxes) + a different serif font */
+.cat-bar { gap: 6px; }
+.cat-box {
+  font-family: "Cormorant", "Times New Roman", serif;
+  font-weight: 600;
+  font-size: 1.35rem;
+  letter-spacing: .18em;
+  color: var(--color-stone);
+  min-height: 56px;
+}
