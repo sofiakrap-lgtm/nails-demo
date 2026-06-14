@@ -197,6 +197,17 @@
     });
   }
 
+  /* ---- Header: transparent over hero, solid on scroll ------------------- */
+  function initHeaderScroll() {
+    var header = document.querySelector(".site-header");
+    if (!header) return;
+    function update() {
+      header.classList.toggle("is-scrolled", window.scrollY > 40);
+    }
+    update();
+    window.addEventListener("scroll", update, { passive: true });
+  }
+
   /* ---- Year is set in applyConfig --------------------------------------- */
   ready(function () {
     applyConfig();
@@ -207,5 +218,6 @@
     initGalleryFilter();
     initContactForm();
     initTestimonials();
+    initHeaderScroll();
   });
 })();

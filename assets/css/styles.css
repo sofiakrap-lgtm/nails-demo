@@ -972,3 +972,54 @@ ul { margin: 0; padding: 0; list-style: none; }
     color-mix(in srgb, var(--color-tan) 35%, var(--color-beige)) 18px,
     color-mix(in srgb, var(--color-tan) 35%, var(--color-beige)) 20px);
 }
+
+/* ==========================================================================
+   Transparent header over hero (homepage) → solid bar on scroll
+   ========================================================================== */
+body.home .site-header {
+  position: fixed;
+  inset: 0 0 auto 0;
+  background: transparent;
+  border-bottom-color: transparent;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  transition: background .4s var(--ease), border-color .4s var(--ease), backdrop-filter .4s var(--ease);
+}
+/* Soft scrim so light header content stays legible over the hero */
+body.home .site-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, rgba(42, 26, 19, .45), rgba(42, 26, 19, 0));
+  transition: opacity .4s var(--ease);
+}
+
+/* Transparent (top) state — light content on the photo */
+body.home .site-header:not(.is-scrolled) .brand__name,
+body.home .site-header:not(.is-scrolled) .nav__link { color: var(--color-beige); }
+body.home .site-header:not(.is-scrolled) .brand__mark { filter: brightness(0) invert(1); }
+body.home .site-header:not(.is-scrolled) .nav__link::after { background: var(--color-beige); }
+body.home .site-header:not(.is-scrolled) .lang { border-color: rgba(241, 235, 221, .5); }
+body.home .site-header:not(.is-scrolled) .lang__btn { color: var(--color-beige); }
+body.home .site-header:not(.is-scrolled) .lang__btn[aria-pressed="true"] { background: var(--color-beige); color: var(--color-coffee); }
+body.home .site-header:not(.is-scrolled) .header-actions > .btn {
+  background: var(--color-beige); color: var(--color-coffee); border-color: var(--color-beige);
+}
+body.home .site-header:not(.is-scrolled) .header-actions > .btn:hover { background: transparent; color: var(--color-beige); }
+body.home .site-header:not(.is-scrolled) .burger { border-color: rgba(241, 235, 221, .5); }
+body.home .site-header:not(.is-scrolled) .burger span { background: var(--color-beige); }
+
+/* Scrolled state — revert to the solid beige bar */
+body.home .site-header.is-scrolled {
+  background: color-mix(in srgb, var(--color-beige) 92%, transparent);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-bottom-color: var(--line);
+}
+body.home .site-header.is-scrolled::before { opacity: 0; }
+
+/* On mobile the slide-in menu is a solid panel — keep its links dark */
+@media (max-width: 940px) {
+  body.home .site-header:not(.is-scrolled) .nav.is-open .nav__link { color: var(--color-coffee); }
+}
