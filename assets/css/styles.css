@@ -1331,4 +1331,4 @@ h1, h2, h3, h4,
 
 /* Gallery: landscape (1600x1200, 4:3) thumbs + shorter area */
 .section--stripe { padding-block: var(--space-5); }
-.section--stripe .thumb { aspect-ratio: 4 / 3; }
+.section--stripe .thumb { aspect-ratio: 3 / 4; }
