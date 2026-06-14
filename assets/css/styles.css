@@ -1193,3 +1193,47 @@ h1, h2, h3, h4,
 .quote-band__mark, .testi-card blockquote,
 .stat__num, .step__num, .price-figure,
 .svc-intro, .card__title { font-weight: 400; }
+
+/* ==========================================================================
+   Boxed menu list (linklist) — per reference model + smaller paired image
+   ========================================================================== */
+.linklist { display: grid; gap: var(--space-2); border-top: 0; }
+.linklist__item {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg-surface);
+  padding: var(--space-2) var(--space-3);
+}
+.linklist__item:hover {
+  background: #fff;
+  border-color: var(--color-stone);
+  padding-left: var(--space-3);
+}
+.linklist__item h4 {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-coffee);
+  margin: 0;
+}
+.linklist__item p { margin: 0.3rem 0 0; }
+.linklist__chev {
+  width: 42px; height: 42px;
+  flex: none;
+  border: 1px solid var(--color-stone);
+  border-radius: 999px;
+  padding: 10px;
+  color: var(--color-stone);
+  transition: background .3s var(--ease), color .3s var(--ease), border-color .3s var(--ease);
+}
+.linklist__item:hover .linklist__chev {
+  background: var(--color-coffee);
+  color: var(--color-beige);
+  border-color: var(--color-coffee);
+  transform: none;
+}
+
+.split--media-sm { grid-template-columns: 1fr 0.45fr; align-items: center; }
+@media (max-width: 820px) { .split--media-sm { grid-template-columns: 1fr; } }
