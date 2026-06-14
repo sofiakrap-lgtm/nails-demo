@@ -1332,3 +1332,10 @@ h1, h2, h3, h4,
 /* Gallery: landscape (1600x1200, 4:3) thumbs + shorter area */
 .section--stripe { padding-block: var(--space-5); }
 .section--stripe .thumb { aspect-ratio: 3 / 4; }
+
+/* Header controls: never wrap or shrink (fixes BOOK NOW wrapping / lang clipping) */
+.btn { white-space: nowrap; }
+.header-actions { flex: none; }
+.header-actions > * { flex: none; }
+.lang { flex: none; }
+.lang__btn { white-space: nowrap; }
