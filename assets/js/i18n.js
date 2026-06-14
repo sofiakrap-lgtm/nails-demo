@@ -9,6 +9,8 @@ window.NL_I18N = {
     meta: { langName: "English" },
     demo: { tag: "Demo", notice: "Example site — images and text will be replaced with the client's own." },
     band: { title: "Ready for nails you'll love?", sub: "Yes, you are." },
+    band2: { title: "Transparent prices, always", sub: "No hidden extras." },
+    band3: { title: "Calm, clean, considered", sub: "That's the Nails Lindes way." },
     svc: {
       eyebrow: "This is where it gets really good",
       title: "Many techniques, one obsession — nails that last",
@@ -208,6 +210,8 @@ window.NL_I18N = {
     meta: { langName: "Español" },
     demo: { tag: "Demo", notice: "Sitio de ejemplo — las imágenes y los textos se sustituirán por los del cliente." },
     band: { title: "¿Lista para unas uñas que vas a adorar?", sub: "Sí, lo estás." },
+    band2: { title: "Precios transparentes, siempre", sub: "Sin extras ocultos." },
+    band3: { title: "Tranquilo, limpio, cuidado", sub: "Así es Nails Lindes." },
     svc: {
       eyebrow: "Aquí es donde se pone realmente bueno",
       title: "Muchas técnicas, una obsesión: uñas que duran",
@@ -407,6 +411,8 @@ window.NL_I18N = {
     meta: { langName: "Русский" },
     demo: { tag: "Демо", notice: "Демонстрационный сайт — изображения и тексты будут заменены на материалы клиента." },
     band: { title: "Готовы к ногтям, которые полюбите?", sub: "Да, готовы." },
+    band2: { title: "Всегда честные цены", sub: "Без скрытых доплат." },
+    band3: { title: "Спокойно, чисто, продуманно", sub: "Это стиль Nails Lindes." },
     svc: {
       eyebrow: "Вот тут начинается самое интересное",
       title: "Много техник, одна страсть — ногти, которые держатся",
