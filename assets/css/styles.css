@@ -1409,7 +1409,9 @@ body { zoom: 0.8; }
   min-height: 0; padding: .5rem .75rem;
   border: 1px solid color-mix(in srgb, var(--color-coffee) 55%, var(--color-stone));
   font-family: var(--font-serif);
-  text-transform: uppercase;
+  text-transform: capitalize;
+  font-variant: small-caps;
+  font-feature-settings: "smcp" 1;
   letter-spacing: .14em;
   font-size: 1.05rem;
   color: var(--color-stone);
@@ -1423,10 +1425,10 @@ body { zoom: 0.8; }
 
 /* Category bar: slim cells, each its own box with thin dark-brown borders */
 .cat-box {
-  font-family: "Cinzel", serif;
-  font-weight: 500;
-  font-size: .82rem;
-  letter-spacing: .12em;
+  font-family: "Cormorant SC", serif;
+  font-weight: 600;
+  font-size: 1.18rem;
+  letter-spacing: .1em;
   color: var(--color-stone);
 }
 
