@@ -1290,3 +1290,21 @@ h1, h2, h3, h4,
   .fullsplit__media { min-height: 52vh; order: -1; }
   .fullsplit--media-last .fullsplit__media { order: 0; }
 }
+
+/* ==========================================================================
+   Gallery preview — striped CLUB GALLERY model + footer refinements
+   ========================================================================== */
+.section--stripe {
+  background-image: repeating-linear-gradient(90deg,
+    #F7F3EA 0, #F7F3EA 15px,
+    color-mix(in srgb, var(--color-cadet) 30%, #F7F3EA) 15px,
+    color-mix(in srgb, var(--color-cadet) 30%, #F7F3EA) 30px);
+}
+.section--stripe .thumb { border: 7px solid #fff; box-shadow: var(--shadow-soft); }
+
+.footer-logo { height: 34px; width: auto; }
+.footer-illus { width: 180px; }
+.footer-grid .footer-col:last-child { text-align: right; }
+
+/* Language switcher: rounded corners to match the buttons */
+.lang { border-radius: 6px; }
