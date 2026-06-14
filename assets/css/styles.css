@@ -1402,42 +1402,32 @@ body { zoom: 0.8; }
    ========================================================================== */
 .catbar-section {
   padding-block: var(--space-3);
-  background-image: repeating-linear-gradient(90deg,
-    #F7F3EA 0, #F7F3EA 15px,
-    color-mix(in srgb, var(--color-cadet) 18%, #F7F3EA) 15px,
-    color-mix(in srgb, var(--color-cadet) 18%, #F7F3EA) 30px);
-  border-block: 1px solid var(--line);
 }
 .cat-bar { display: grid; grid-template-columns: repeat(5, 1fr); gap: var(--space-2); }
 .cat-box {
   display: flex; align-items: center; justify-content: center; text-align: center;
-  min-height: 60px; padding: var(--space-2) var(--space-1);
-  background: var(--color-beige);
-  border: 1px solid var(--color-stone);
-  border-radius: var(--radius);
-  box-shadow: inset 0 0 0 3px var(--color-beige), inset 0 0 0 4px var(--line);
+  min-height: 56px; padding: var(--space-2) var(--space-1);
   font-family: var(--font-serif);
   text-transform: uppercase;
   letter-spacing: .14em;
   font-size: 1.05rem;
   color: var(--color-stone);
-  transition: background .3s var(--ease), color .3s var(--ease);
+  transition: color .3s var(--ease);
 }
-.cat-box:hover { background: var(--color-coffee); color: var(--color-beige); }
+.cat-box:hover { color: var(--color-coffee); }
 @media (max-width: 760px) { .cat-bar { grid-template-columns: repeat(2, 1fr); } }
 
 /* Keep everything firmly in place — disable scroll-reveal entrance animation */
 .reveal, .reveal.is-visible { opacity: 1 !important; transform: none !important; }
 
-/* Category bar: identical golf layout (tight boxes) + a different serif font */
-.cat-bar { gap: 6px; }
+/* Category bar: simple, no stripes — plain row of category labels */
+.cat-bar { gap: var(--space-2); }
 .cat-box {
-  font-family: "Cormorant", "Times New Roman", serif;
-  font-weight: 600;
-  font-size: 1.35rem;
-  letter-spacing: .18em;
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  letter-spacing: .14em;
   color: var(--color-stone);
-  min-height: 56px;
+  min-height: 0;
 }
 
 /* ==========================================================================
