@@ -1433,38 +1433,47 @@ body { zoom: 0.8; }
 /* ==========================================================================
    Service cards (services page): product-grid row — image, small heading, text
    ========================================================================== */
-.svc-cards-section { padding-block: var(--space-4) var(--space-2); }
+.svc-cards-section { padding-block: var(--space-5) var(--space-3); }
 .svc-cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: clamp(1rem, 2.4vw, 2rem);
+  gap: clamp(1.5rem, 3vw, 2.5rem);
 }
-.svc-card { display: block; text-decoration: none; color: inherit; }
-.svc-card__media {
-  display: block;
+.svc-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+}
+.svc-card__icon {
+  display: flex; align-items: center; justify-content: center;
+  width: clamp(120px, 14vw, 168px);
   aspect-ratio: 1 / 1;
-  overflow: hidden;
+  border-radius: 50%;
   background: var(--color-silver);
+  overflow: hidden;
+  transition: transform .4s var(--ease);
 }
-.svc-card__media img {
-  width: 100%; height: 100%;
-  object-fit: cover;
+.svc-card__icon img,
+.svc-card__icon svg {
+  width: 46%; height: 46%;
+  object-fit: contain;
   display: block;
-  transition: transform .5s var(--ease);
 }
-.svc-card:hover .svc-card__media img { transform: scale(1.04); }
+.svc-card:hover .svc-card__icon { transform: translateY(-4px); }
 .svc-card__title {
-  display: block;
-  margin-top: 1rem;
-  font-size: .82rem;
-  letter-spacing: .12em;
-  text-transform: uppercase;
+  margin: 1.4rem 0 0;
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: 1.9rem;
+  line-height: 1.1;
   color: var(--color-coffee);
 }
 .svc-card__text {
-  display: block;
-  margin-top: .35rem;
-  font-size: .82rem;
+  margin: .5rem 0 0;
+  font-size: .9rem;
   color: var(--color-stone);
 }
 @media (max-width: 860px) { .svc-cards { grid-template-columns: repeat(2, 1fr); } }

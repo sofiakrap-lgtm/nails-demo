@@ -103,6 +103,8 @@ window.NL_I18N = {
     services: {
       heroTitle: "Services",
       heroSub: "A full menu of nail care — classic to creative. Pricing for every treatment is on the pricing page, in full view.",
+      gridTitle: "Our services",
+      gridSub: "Everything we offer, at a glance.",
       g1Title: "Manicures",
       g1Body: "Nail shaping, cuticle care and a flawless colour or natural finish.",
       s1: "Classic manicure", s1d: "Shaping, cuticle care, buff and polish.",
@@ -304,6 +306,8 @@ window.NL_I18N = {
     services: {
       heroTitle: "Servicios",
       heroSub: "Un menú completo de cuidado de uñas, de lo clásico a lo creativo. Los precios de cada tratamiento están a la vista en la página de precios.",
+      gridTitle: "Nuestros servicios",
+      gridSub: "Todo lo que ofrecemos, de un vistazo.",
       g1Title: "Manicuras",
       g1Body: "Forma de la uña, cuidado de cutículas y un acabado en color o natural impecable.",
       s1: "Manicura clásica", s1d: "Forma, cutículas, pulido y esmalte.",
@@ -505,6 +509,8 @@ window.NL_I18N = {
     services: {
       heroTitle: "Услуги",
       heroSub: "Полное меню ухода за ногтями — от классики до творчества. Цены на каждую процедуру открыто указаны на странице цен.",
+      gridTitle: "Наши услуги",
+      gridSub: "Всё, что мы предлагаем — с первого взгляда.",
       g1Title: "Маникюр",
       g1Body: "Форма ногтя, уход за кутикулой и безупречное покрытие — цветное или натуральное.",
       s1: "Классический маникюр", s1d: "Форма, кутикула, полировка и лак.",
