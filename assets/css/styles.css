@@ -1401,12 +1401,13 @@ body { zoom: 0.8; }
    Category bar (golf model): row of bordered boxes between hero and intro
    ========================================================================== */
 .catbar-section {
-  padding-block: var(--space-3);
+  padding-block: var(--space-2);
 }
-.cat-bar { display: grid; grid-template-columns: repeat(5, 1fr); gap: var(--space-2); }
+.cat-bar { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
 .cat-box {
   display: flex; align-items: center; justify-content: center; text-align: center;
-  min-height: 56px; padding: var(--space-2) var(--space-1);
+  min-height: 0; padding: .5rem .75rem;
+  border: 1px solid color-mix(in srgb, var(--color-coffee) 55%, var(--color-stone));
   font-family: var(--font-serif);
   text-transform: uppercase;
   letter-spacing: .14em;
@@ -1420,14 +1421,13 @@ body { zoom: 0.8; }
 /* Keep everything firmly in place — disable scroll-reveal entrance animation */
 .reveal, .reveal.is-visible { opacity: 1 !important; transform: none !important; }
 
-/* Category bar: simple, no stripes — plain row of category labels */
-.cat-bar { gap: var(--space-2); }
+/* Category bar: slim cells, each its own box with thin dark-brown borders */
 .cat-box {
-  font-family: var(--font-serif);
-  font-size: 1.15rem;
-  letter-spacing: .14em;
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+  font-size: .82rem;
+  letter-spacing: .12em;
   color: var(--color-stone);
-  min-height: 0;
 }
 
 /* ==========================================================================
