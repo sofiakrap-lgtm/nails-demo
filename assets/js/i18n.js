@@ -43,6 +43,16 @@ window.NL_I18N = {
       ctaBody: "Choose your treatment and a time that suits you. Pay online when you book, or settle at the studio — it's up to you.",
       marquee1: "Manicure", marquee2: "Gel extensions", marquee3: "Nail art", marquee4: "Pedicure", marquee5: "Bridal"
     },
+    testi: {
+      title: "Moments worth remembering",
+      q1: "The most beautiful set I've ever had — my friends keep asking who did them.", a1: "Laura · Gel extensions",
+      q2: "Calm, personal and spotless. The result was even better than I'd hoped.", a2: "Marta · Bridal nails",
+      q3: "Exactly the elegant, natural look I wanted — nothing generic.", a3: "Elena · Classic manicure",
+      q4: "Three weeks on and they still look freshly done. Worth every euro.", a4: "Sofía · Gel manicure",
+      q5: "I've finally found my nail artist. Such an eye for detail.", a5: "Carmen · Nail art",
+      q6: "Relaxing from start to finish — I left feeling completely pampered.", a6: "Natalia · Spa pedicure",
+      prev: "Previous", next: "Next"
+    },
     services: {
       heroTitle: "Services",
       heroSub: "A full menu of nail care — classic to creative. Pricing for every treatment is on the pricing page, in full view.",
@@ -187,6 +197,16 @@ window.NL_I18N = {
       ctaBody: "Elige tu tratamiento y la hora que te venga bien. Paga online al reservar o en el estudio: tú decides.",
       marquee1: "Manicura", marquee2: "Extensiones de gel", marquee3: "Nail art", marquee4: "Pedicura", marquee5: "Novias"
     },
+    testi: {
+      title: "Momentos que se recuerdan",
+      q1: "El trabajo más bonito que me han hecho; mis amigas no paran de preguntar quién fue.", a1: "Laura · Extensiones de gel",
+      q2: "Tranquilo, personal e impecable. El resultado superó lo que esperaba.", a2: "Marta · Uñas de novia",
+      q3: "Justo el look elegante y natural que quería, nada genérico.", a3: "Elena · Manicura clásica",
+      q4: "Tres semanas después y siguen como recién hechas. Vale cada euro.", a4: "Sofía · Manicura en gel",
+      q5: "Por fin he encontrado a mi manicurista. Qué ojo para el detalle.", a5: "Carmen · Nail art",
+      q6: "Relajante de principio a fin; salí sintiéndome cuidada.", a6: "Natalia · Pedicura spa",
+      prev: "Anterior", next: "Siguiente"
+    },
     services: {
       heroTitle: "Servicios",
       heroSub: "Un menú completo de cuidado de uñas, de lo clásico a lo creativo. Los precios de cada tratamiento están a la vista en la página de precios.",
@@ -330,6 +350,16 @@ window.NL_I18N = {
       ctaTitle: "Когда вам удобно",
       ctaBody: "Выберите процедуру и удобное время. Оплатите онлайн при записи или в студии — как вам удобнее.",
       marquee1: "Маникюр", marquee2: "Наращивание гелем", marquee3: "Нейл-арт", marquee4: "Педикюр", marquee5: "Свадебный"
+    },
+    testi: {
+      title: "Моменты, которые запомнились",
+      q1: "Самые красивые ногти в моей жизни — подруги всё спрашивают, кто их делал.", a1: "Лаура · Наращивание гелем",
+      q2: "Спокойно, лично и безупречно чисто. Результат превзошёл ожидания.", a2: "Марта · Свадебные ногти",
+      q3: "Именно тот элегантный, естественный образ, который я хотела, — без шаблонов.", a3: "Елена · Классический маникюр",
+      q4: "Три недели прошло, а выглядят как только что сделанные. Стоит каждого евро.", a4: "София · Гелевый маникюр",
+      q5: "Наконец-то нашла своего мастера. Какое внимание к деталям.", a5: "Кармен · Нейл-арт",
+      q6: "Расслабляет с первой минуты — ушла абсолютно довольной.", a6: "Наталья · Спа-педикюр",
+      prev: "Назад", next: "Вперёд"
     },
     services: {
       heroTitle: "Услуги",

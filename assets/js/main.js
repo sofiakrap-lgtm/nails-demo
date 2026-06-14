@@ -169,6 +169,33 @@
     });
   }
 
+  /* ---- Testimonials carousel -------------------------------------------- */
+  function initTestimonials() {
+    document.querySelectorAll(".testi").forEach(function (root) {
+      var viewport = root.querySelector(".testi-viewport");
+      var prev = root.querySelector("[data-testi-prev]");
+      var next = root.querySelector("[data-testi-next]");
+      var card = root.querySelector(".testi-card");
+      if (!viewport || !card) return;
+
+      function step() {
+        var gap = parseFloat(getComputedStyle(root.querySelector(".testi-track")).gap) || 0;
+        return card.getBoundingClientRect().width + gap;
+      }
+      function update() {
+        if (!prev || !next) return;
+        var maxScroll = viewport.scrollWidth - viewport.clientWidth - 2;
+        prev.disabled = viewport.scrollLeft <= 2;
+        next.disabled = viewport.scrollLeft >= maxScroll;
+      }
+      if (prev) prev.addEventListener("click", function () { viewport.scrollBy({ left: -step(), behavior: "smooth" }); });
+      if (next) next.addEventListener("click", function () { viewport.scrollBy({ left: step(), behavior: "smooth" }); });
+      viewport.addEventListener("scroll", function () { window.requestAnimationFrame(update); }, { passive: true });
+      window.addEventListener("resize", update);
+      update();
+    });
+  }
+
   /* ---- Year is set in applyConfig --------------------------------------- */
   ready(function () {
     applyConfig();
@@ -178,5 +205,6 @@
     initPriceTabs();
     initGalleryFilter();
     initContactForm();
+    initTestimonials();
   });
 })();

@@ -651,6 +651,80 @@ ul { margin: 0; padding: 0; list-style: none; }
 .quote-band cite { font-style: normal; font-size: 0.78rem; letter-spacing: var(--tracking-label); text-transform: uppercase; color: var(--text-soft); }
 
 /* ==========================================================================
+   Testimonials carousel
+   ========================================================================== */
+.testi { position: relative; }
+.testi-viewport {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;          /* Firefox */
+  -ms-overflow-style: none;       /* IE/Edge  */
+  margin-inline: calc(-1 * var(--space-2));
+  padding-inline: var(--space-2);
+}
+.testi-viewport::-webkit-scrollbar { display: none; }
+.testi-track {
+  display: flex;
+  gap: var(--space-3);
+  align-items: stretch;
+}
+.testi-card {
+  flex: 0 0 calc((100% - 2 * var(--space-3)) / 3);
+  scroll-snap-align: start;
+  background: var(--bg-surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+.testi-stars {
+  color: var(--color-tan);
+  letter-spacing: 0.3em;
+  font-size: 1rem;
+  line-height: 1;
+}
+.testi-card blockquote {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.35rem;
+  line-height: 1.4;
+  color: var(--text);
+}
+.testi-card cite {
+  margin-top: auto;
+  font-style: normal;
+  font-size: 0.9rem;
+  color: var(--text-soft);
+}
+.testi-nav {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+}
+.testi-arrow {
+  width: 56px; height: 56px;
+  display: grid; place-items: center;
+  background: var(--bg-surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  cursor: pointer;
+  color: var(--color-coffee);
+  transition: background .3s var(--ease), color .3s var(--ease), border-color .3s var(--ease);
+}
+.testi-arrow:hover { background: var(--color-coffee); color: var(--color-beige); border-color: var(--color-coffee); }
+.testi-arrow:disabled { opacity: .35; cursor: default; }
+.testi-arrow:disabled:hover { background: var(--bg-surface); color: var(--color-coffee); border-color: var(--line); }
+.testi-arrow svg { width: 22px; height: 22px; }
+@media (max-width: 900px) { .testi-card { flex-basis: calc((100% - var(--space-3)) / 2); } }
+@media (max-width: 620px) { .testi-card { flex-basis: 100%; } }
+
+
+/* ==========================================================================
    Steps / process
    ========================================================================== */
 .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); counter-reset: step; }
