@@ -24,8 +24,8 @@
   --accent-cool:   var(--color-cadet);
 
   /* Typography */
-  --font-serif: "Cormorant Garamond", "Times New Roman", serif;
-  --font-sans:  "Raleway", "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Instrument Serif", "Times New Roman", serif;
+  --font-sans:  "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
 
   --tracking-wide:  0.16em;
   --tracking-label: 0.22em;
@@ -70,7 +70,7 @@ body {
 
 h1, h2, h3, h4 {
   font-family: var(--font-serif);
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.12;
   margin: 0 0 var(--space-3);
   color: var(--text);
@@ -203,8 +203,8 @@ ul { margin: 0; padding: 0; list-style: none; }
 .brand__mark { width: 34px; height: 34px; }
 .brand__name {
   font-family: var(--font-serif);
-  font-weight: 500;
-  font-size: 1.15rem;
+  font-weight: 400;
+  font-size: 1.25rem;
   letter-spacing: var(--tracking-wide);
   text-transform: uppercase;
   color: var(--color-coffee);

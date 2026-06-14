@@ -78,9 +78,8 @@ recommended so relative paths and fonts behave like production.
 
 ### Typography
 
-- **Headings:** Cormorant Garamond (serif), weights 400/500/600. Wide
-  letter-spacing on large headings (`0.15–0.18em`), wordmark in UPPERCASE.
-- **Body:** Raleway (sans-serif), weights 300/400/500, airy line-height.
+- **Headings:** Instrument Serif (serif), weight 400. Wordmark in UPPERCASE.
+- **Body:** Instrument Sans (sans-serif), weights 400/500/600, airy line-height.
 - Sentence case everywhere **except** the wordmark and small labels, which are
   UPPERCASE. Loaded from Google Fonts in each page `<head>`.
 
