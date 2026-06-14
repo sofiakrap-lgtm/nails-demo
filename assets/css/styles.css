@@ -148,11 +148,13 @@ ul { margin: 0; padding: 0; list-style: none; }
   justify-content: center;
   gap: 0.6em;
   padding: 0.95em 2em;
-  font-family: var(--font-sans);
-  font-weight: 500;
-  font-size: 0.82rem;
-  letter-spacing: var(--tracking-wide);
-  text-transform: uppercase;
+  font-family: "Cormorant SC", serif;
+  font-weight: 600;
+  font-size: 1.02rem;
+  letter-spacing: .08em;
+  text-transform: capitalize;
+  font-variant: small-caps;
+  font-feature-settings: "smcp" 1;
   background: var(--btn-bg);
   color: var(--btn-fg);
   border: 1px solid var(--btn-bg);
