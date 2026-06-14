@@ -1383,3 +1383,12 @@ body { zoom: 0.8; }
 .testi-arrow:disabled { opacity: .3; cursor: default; }
 .testi-arrow:disabled:hover { background: transparent; color: var(--color-beige); }
 @media (max-width: 620px) { .testi-wrap { padding-inline: 36px; } .testi-arrow { width: 32px; height: 32px; } .testi-arrow svg { width: 26px; height: 26px; } }
+
+/* Ensure exactly 3 full testimonial cards fit (no cut) */
+.testi-viewport { margin-inline: 0 !important; padding-inline: 0 !important; }
+.testi-card { flex: 0 0 calc(33.333% - 1.2rem) !important; }
+@media (max-width: 900px) { .testi-card { flex-basis: calc(50% - 1rem) !important; } }
+@media (max-width: 620px) { .testi-card { flex-basis: 100% !important; } }
+
+/* Fix: <figure> default UA margin made the 3rd card overflow */
+.testi-card { margin: 0 !important; }
