@@ -1392,3 +1392,7 @@ body { zoom: 0.8; }
 
 /* Fix: <figure> default UA margin made the 3rd card overflow */
 .testi-card { margin: 0 !important; }
+
+/* Footer is now 2 columns (logo+tagline+illustration | explore) */
+.footer-grid { grid-template-columns: 1.4fr 1fr; }
+@media (max-width: 760px) { .footer-grid { grid-template-columns: 1fr; } }
