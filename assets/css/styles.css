@@ -929,6 +929,8 @@ ul { margin: 0; padding: 0; list-style: none; }
   align-items: start;
 }
 .site-footer .brand__name { color: var(--color-beige); }
+/* Brand emblem is dark ink — invert to cream so it reads on the coffee footer */
+.site-footer .brand__mark { filter: brightness(0) invert(1); opacity: .92; }
 .footer-col h4 {
   color: var(--color-beige);
   font-family: var(--font-sans);
