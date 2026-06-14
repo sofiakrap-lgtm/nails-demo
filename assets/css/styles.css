@@ -1091,3 +1091,71 @@ body.home .site-header { top: var(--demo-h, 34px); }
   letter-spacing: .22em;
   color: var(--color-stone);
 }
+
+/* ==========================================================================
+   Services: striped collage + accordion "windows"
+   ========================================================================== */
+.svc-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: center;
+}
+.collage {
+  position: relative;
+  padding: var(--space-5);
+  min-height: 460px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background-image: repeating-linear-gradient(90deg,
+    #F7F3EA 0, #F7F3EA 30px,
+    color-mix(in srgb, var(--color-cadet) 20%, #F7F3EA) 30px,
+    color-mix(in srgb, var(--color-cadet) 20%, #F7F3EA) 60px);
+}
+.collage__main {
+  width: 64%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border: 7px solid #fff;
+  box-shadow: var(--shadow-soft);
+  border-radius: var(--radius);
+}
+.collage__inset {
+  position: absolute;
+  right: var(--space-4);
+  bottom: var(--space-4);
+  width: 44%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border: 7px solid #fff;
+  box-shadow: var(--shadow-soft);
+  border-radius: var(--radius);
+}
+.svc-intro {
+  background: var(--bg-surface);
+  border-left: 2px solid var(--color-tan);
+  padding: var(--space-2) var(--space-3);
+  color: var(--text-soft);
+  font-size: .98rem;
+  margin-bottom: var(--space-3);
+}
+/* Offerings list inside an expanded service window */
+.svc-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-top: var(--space-2);
+}
+.svc-tags li {
+  font-size: .82rem;
+  letter-spacing: .02em;
+  color: var(--color-stone);
+  background: var(--bg-surface);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: .3rem .8rem;
+}
+@media (max-width: 880px) {
+  .svc-hero { grid-template-columns: 1fr; }
+  .collage { min-height: 380px; }
+}

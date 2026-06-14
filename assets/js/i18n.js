@@ -9,6 +9,25 @@ window.NL_I18N = {
     meta: { langName: "English" },
     demo: { tag: "Demo", notice: "Example site — images and text will be replaced with the client's own." },
     band: { title: "Ready for nails you'll love?", sub: "Yes, you are." },
+    svc: {
+      eyebrow: "This is where it gets really good",
+      title: "Many techniques, one obsession — nails that last",
+      intro: "From a five-minute tidy-up to fully sculpted, hand-painted sets, every service is built on spotless hygiene, premium products and a real eye for detail. Open a category to see what's inside.",
+      cta: "See full pricing",
+      cat1: "Manicures", cat1b: "Shaping, cuticle care and a flawless colour or natural finish — classic, gel or builder.",
+      cat2: "Gel & extensions", cat2b: "Added strength and length: builder gel, hard gel, acrylic and polygel, sculpted to suit your hands.",
+      cat3: "Nail art & finishing", cat3b: "From a single accent to a fully designed set — French, chrome, foil, hand-painted art and gems.",
+      cat4: "Pedicures", cat4b: "Renewing care from heel to toe, including gel colour and hard-skin treatment.",
+      cat5: "Treatments & care", cat5b: "Strengthening, repair and pampering extras that keep hands and feet in beautiful shape."
+    },
+    menu: {
+      tabTreat: "Treatments", groupTreat: "Treatments & care",
+      m_express: "Express manicure", m_classic: "Classic manicure", m_gel: "Gel manicure", m_biab: "BIAB / builder overlay", m_french: "French manicure", m_spa: "Spa manicure",
+      e_gelset: "Gel extensions", e_acrylic: "Acrylic extensions", e_polygel: "Polygel set", e_hardgel: "Hard gel overlay", e_infill: "Infill / refill", e_repair: "Single nail repair", e_removal: "Removal / soak-off",
+      a_two: "Accent nails (×2)", a_french: "French / ombré", a_chrome: "Chrome / cat-eye", a_foil: "Foil / marble", a_painted: "Hand-painted design", a_gems: "Rhinestones / gems", a_full: "Full bespoke set",
+      p_express: "Express pedicure", p_classic: "Classic pedicure", p_gel: "Gel pedicure", p_spa: "Spa pedicure", p_callus: "Callus / hard-skin care",
+      t_cuticle: "Cuticle treatment", t_paraffin: "Paraffin wax", t_ibx: "IBX strengthening", t_massage: "Hand & arm massage", t_repair: "Repair & reshape"
+    },
     nav: {
       home: "Home", services: "Services", pricing: "Pricing",
       gallery: "Gallery", booking: "Booking", about: "About", contact: "Contact", faq: "FAQ"
@@ -189,6 +208,25 @@ window.NL_I18N = {
     meta: { langName: "Español" },
     demo: { tag: "Demo", notice: "Sitio de ejemplo — las imágenes y los textos se sustituirán por los del cliente." },
     band: { title: "¿Lista para unas uñas que vas a adorar?", sub: "Sí, lo estás." },
+    svc: {
+      eyebrow: "Aquí es donde se pone realmente bueno",
+      title: "Muchas técnicas, una obsesión: uñas que duran",
+      intro: "Desde un arreglo de cinco minutos hasta sets esculpidos y pintados a mano, cada servicio se basa en una higiene impecable, productos premium y mucha atención al detalle. Abre una categoría para ver qué incluye.",
+      cta: "Ver todos los precios",
+      cat1: "Manicuras", cat1b: "Forma, cuidado de cutículas y un acabado en color o natural impecable: clásica, gel o builder.",
+      cat2: "Gel y extensiones", cat2b: "Más fuerza y longitud: builder gel, gel duro, acrílico y polygel, esculpidos a la medida de tus manos.",
+      cat3: "Nail art y acabados", cat3b: "Desde un detalle único hasta un set totalmente diseñado: francesa, chrome, foil, arte pintado a mano y gemas.",
+      cat4: "Pedicuras", cat4b: "Cuidado que renueva del talón a los dedos, con color en gel y tratamiento de durezas.",
+      cat5: "Tratamientos y cuidado", cat5b: "Fortalecimiento, reparación y extras de mimo que mantienen manos y pies preciosos."
+    },
+    menu: {
+      tabTreat: "Tratamientos", groupTreat: "Tratamientos y cuidado",
+      m_express: "Manicura exprés", m_classic: "Manicura clásica", m_gel: "Manicura en gel", m_biab: "BIAB / nivelación", m_french: "Manicura francesa", m_spa: "Manicura spa",
+      e_gelset: "Extensiones de gel", e_acrylic: "Extensiones de acrílico", e_polygel: "Set de polygel", e_hardgel: "Nivelación gel duro", e_infill: "Relleno", e_repair: "Reparación de una uña", e_removal: "Retirada",
+      a_two: "Uñas decoradas (×2)", a_french: "Francesa / ombré", a_chrome: "Chrome / cat-eye", a_foil: "Foil / mármol", a_painted: "Diseño pintado a mano", a_gems: "Piedras / gemas", a_full: "Set de diseño completo",
+      p_express: "Pedicura exprés", p_classic: "Pedicura clásica", p_gel: "Pedicura en gel", p_spa: "Pedicura spa", p_callus: "Tratamiento de durezas",
+      t_cuticle: "Tratamiento de cutículas", t_paraffin: "Parafina", t_ibx: "Fortalecimiento IBX", t_massage: "Masaje de manos y brazos", t_repair: "Reparar y dar forma"
+    },
     nav: {
       home: "Inicio", services: "Servicios", pricing: "Precios",
       gallery: "Galería", booking: "Reservas", about: "Sobre mí", contact: "Contacto", faq: "FAQ"
@@ -369,6 +407,25 @@ window.NL_I18N = {
     meta: { langName: "Русский" },
     demo: { tag: "Демо", notice: "Демонстрационный сайт — изображения и тексты будут заменены на материалы клиента." },
     band: { title: "Готовы к ногтям, которые полюбите?", sub: "Да, готовы." },
+    svc: {
+      eyebrow: "Вот тут начинается самое интересное",
+      title: "Много техник, одна страсть — ногти, которые держатся",
+      intro: "От пятиминутного освежения до полностью смоделированных, расписанных вручную наборов — каждая услуга строится на безупречной гигиене, премиальных материалах и внимании к деталям. Откройте категорию, чтобы увидеть, что внутри.",
+      cta: "Все цены",
+      cat1: "Маникюр", cat1b: "Форма, уход за кутикулой и безупречное покрытие — классический, гелевый или укрепление.",
+      cat2: "Гель и наращивание", cat2b: "Прочность и длина: билдер-гель, твёрдый гель, акрил и полигель, смоделированные под ваши руки.",
+      cat3: "Нейл-арт и финиш", cat3b: "От одного акцента до полного дизайна — френч, хром, фольга, ручная роспись и стразы.",
+      cat4: "Педикюр", cat4b: "Обновляющий уход от пятки до пальцев, включая гель-покрытие и уход за натоптышами.",
+      cat5: "Уход и процедуры", cat5b: "Укрепление, ремонт и приятные дополнения, чтобы руки и ноги выглядели идеально."
+    },
+    menu: {
+      tabTreat: "Уход", groupTreat: "Уход и процедуры",
+      m_express: "Экспресс-маникюр", m_classic: "Классический маникюр", m_gel: "Гелевый маникюр", m_biab: "BIAB / укрепление", m_french: "Французский маникюр", m_spa: "Спа-маникюр",
+      e_gelset: "Наращивание гелем", e_acrylic: "Наращивание акрилом", e_polygel: "Полигель", e_hardgel: "Твёрдый гель", e_infill: "Коррекция", e_repair: "Ремонт одного ногтя", e_removal: "Снятие",
+      a_two: "Акцент (×2)", a_french: "Френч / омбре", a_chrome: "Хром / кошачий глаз", a_foil: "Фольга / мрамор", a_painted: "Ручная роспись", a_gems: "Стразы / камни", a_full: "Полный дизайн",
+      p_express: "Экспресс-педикюр", p_classic: "Классический педикюр", p_gel: "Гелевый педикюр", p_spa: "Спа-педикюр", p_callus: "Уход за натоптышами",
+      t_cuticle: "Уход за кутикулой", t_paraffin: "Парафинотерапия", t_ibx: "Укрепление IBX", t_massage: "Массаж рук", t_repair: "Ремонт и форма"
+    },
     nav: {
       home: "Главная", services: "Услуги", pricing: "Цены",
       gallery: "Галерея", booking: "Запись", about: "Обо мне", contact: "Контакты", faq: "Вопросы"

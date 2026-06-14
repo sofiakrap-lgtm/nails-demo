@@ -52,86 +52,108 @@
       </div>
     </section>
 
-    <!-- Manicures -->
+    <!-- Services: striped collage + accordion windows -->
     <section class="section">
       <div class="container">
-        <div class="split">
-          <div class="reveal">
-            <span class="eyebrow" data-i18n="home.do1Title">Manicure</span>
-            <h2 data-i18n="services.g1Title">Manicures</h2>
-            <p data-i18n="services.g1Body">Nail shaping, cuticle care and a flawless colour or natural finish.</p>
-            <ul class="linklist">
-              <li class="linklist__item"><span><h4 data-i18n="services.s1">Classic manicure</h4><p data-i18n="services.s1d">Shaping, cuticle care, buff and polish.</p></span></li>
-              <li class="linklist__item"><span><h4 data-i18n="services.s2">Gel manicure</h4><p data-i18n="services.s2d">Long-wear gel colour with a high-shine finish.</p></span></li>
-              <li class="linklist__item"><span><h4 data-i18n="services.s3">Spa manicure</h4><p data-i18n="services.s3d">Exfoliation, mask and massage with full nail care.</p></span></li>
-            </ul>
+        <div class="svc-hero">
+          <div class="collage reveal" aria-hidden="true">
+            <img class="collage__main" src="assets/img/portrait-02.webp" alt="" loading="lazy" width="800" height="1000">
+            <img class="collage__inset" src="assets/img/portrait-05.webp" alt="" loading="lazy" width="800" height="1000">
           </div>
-          <div class="split__media reveal"><img src="assets/img/portrait-02.webp" alt="Manicure" loading="lazy" width="800" height="1000"></div>
+          <div class="reveal">
+            <span class="eyebrow" data-i18n="svc.eyebrow">This is where it gets really good</span>
+            <h2 data-i18n="svc.title">Many techniques, one obsession — nails that last</h2>
+            <p class="svc-intro" data-i18n="svc.intro">Every service is built on spotless hygiene, premium products and an eye for detail. Open a category to see what's inside.</p>
+
+            <div class="faq">
+              <details class="faq__item" open>
+                <summary data-i18n="svc.cat1">Manicures</summary>
+                <div class="faq__answer">
+                  <p data-i18n="svc.cat1b">Shaping, cuticle care and a flawless colour or natural finish.</p>
+                  <ul class="svc-tags">
+                    <li data-i18n="menu.m_express">Express manicure</li>
+                    <li data-i18n="menu.m_classic">Classic manicure</li>
+                    <li data-i18n="menu.m_gel">Gel manicure</li>
+                    <li data-i18n="menu.m_biab">BIAB / builder overlay</li>
+                    <li data-i18n="menu.m_french">French manicure</li>
+                    <li data-i18n="menu.m_spa">Spa manicure</li>
+                  </ul>
+                </div>
+              </details>
+              <details class="faq__item">
+                <summary data-i18n="svc.cat2">Gel & extensions</summary>
+                <div class="faq__answer">
+                  <p data-i18n="svc.cat2b">Added strength and length, sculpted to suit your hands.</p>
+                  <ul class="svc-tags">
+                    <li data-i18n="menu.e_gelset">Gel extensions</li>
+                    <li data-i18n="menu.e_acrylic">Acrylic extensions</li>
+                    <li data-i18n="menu.e_polygel">Polygel set</li>
+                    <li data-i18n="menu.e_hardgel">Hard gel overlay</li>
+                    <li data-i18n="menu.e_infill">Infill / refill</li>
+                    <li data-i18n="menu.e_repair">Single nail repair</li>
+                    <li data-i18n="menu.e_removal">Removal / soak-off</li>
+                  </ul>
+                </div>
+              </details>
+              <details class="faq__item">
+                <summary data-i18n="svc.cat3">Nail art & finishing</summary>
+                <div class="faq__answer">
+                  <p data-i18n="svc.cat3b">From a single accent to a fully designed set.</p>
+                  <ul class="svc-tags">
+                    <li data-i18n="menu.a_two">Accent nails (×2)</li>
+                    <li data-i18n="menu.a_french">French / ombré</li>
+                    <li data-i18n="menu.a_chrome">Chrome / cat-eye</li>
+                    <li data-i18n="menu.a_foil">Foil / marble</li>
+                    <li data-i18n="menu.a_painted">Hand-painted design</li>
+                    <li data-i18n="menu.a_gems">Rhinestones / gems</li>
+                    <li data-i18n="menu.a_full">Full bespoke set</li>
+                  </ul>
+                </div>
+              </details>
+              <details class="faq__item">
+                <summary data-i18n="svc.cat4">Pedicures</summary>
+                <div class="faq__answer">
+                  <p data-i18n="svc.cat4b">Renewing care from heel to toe.</p>
+                  <ul class="svc-tags">
+                    <li data-i18n="menu.p_express">Express pedicure</li>
+                    <li data-i18n="menu.p_classic">Classic pedicure</li>
+                    <li data-i18n="menu.p_gel">Gel pedicure</li>
+                    <li data-i18n="menu.p_spa">Spa pedicure</li>
+                    <li data-i18n="menu.p_callus">Callus / hard-skin care</li>
+                  </ul>
+                </div>
+              </details>
+              <details class="faq__item">
+                <summary data-i18n="svc.cat5">Treatments & care</summary>
+                <div class="faq__answer">
+                  <p data-i18n="svc.cat5b">Strengthening, repair and pampering extras.</p>
+                  <ul class="svc-tags">
+                    <li data-i18n="menu.t_cuticle">Cuticle treatment</li>
+                    <li data-i18n="menu.t_paraffin">Paraffin wax</li>
+                    <li data-i18n="menu.t_ibx">IBX strengthening</li>
+                    <li data-i18n="menu.t_massage">Hand & arm massage</li>
+                    <li data-i18n="menu.t_repair">Repair & reshape</li>
+                  </ul>
+                </div>
+              </details>
+            </div>
+
+            <a class="btn" href="pricing.html" style="margin-top:1.6rem" data-i18n="svc.cta">See full pricing</a>
+          </div>
         </div>
+        <p class="form-note" style="margin-top:3rem" data-i18n="services.note">Every service includes a short consultation so the result fits you.</p>
       </div>
     </section>
 
-    <div class="divider--stripe" aria-hidden="true"></div>
-
-    <!-- Gel & extensions -->
-    <section class="section section--surface">
-      <div class="container">
-        <div class="split split--reverse">
-          <div class="reveal">
-            <span class="eyebrow" data-i18n="home.do2Title">Gel & builder</span>
-            <h2 data-i18n="services.g2Title">Gel & extensions</h2>
-            <p data-i18n="services.g2Body">Added strength and length, sculpted to suit your hands.</p>
-            <ul class="linklist">
-              <li class="linklist__item"><span><h4 data-i18n="services.s4">Builder gel overlay</h4><p data-i18n="services.s4d">Reinforces natural nails without added length.</p></span></li>
-              <li class="linklist__item"><span><h4 data-i18n="services.s5">Gel extensions</h4><p data-i18n="services.s5d">Sculpted length and shape, lightweight and durable.</p></span></li>
-              <li class="linklist__item"><span><h4 data-i18n="services.s6">Infill / maintenance</h4><p data-i18n="services.s6d">Keep your set fresh every 3–4 weeks.</p></span></li>
-            </ul>
-          </div>
-          <div class="split__media reveal"><img src="assets/img/portrait-04.webp" alt="Gel extensions" loading="lazy" width="800" height="1000"></div>
-        </div>
+    <div class="marquee marquee--accent" aria-hidden="true">
+      <div class="marquee__track">
+        <span class="marquee__item"><span data-i18n="home.marquee1">Manicure</span><span class="marquee__sep">✦</span></span>
+        <span class="marquee__item"><span data-i18n="home.marquee2">Gel extensions</span><span class="marquee__sep">✦</span></span>
+        <span class="marquee__item"><span data-i18n="home.marquee3">Nail art</span><span class="marquee__sep">✦</span></span>
+        <span class="marquee__item"><span data-i18n="home.marquee4">Pedicure</span><span class="marquee__sep">✦</span></span>
+        <span class="marquee__item"><span data-i18n="home.marquee5">Bridal</span><span class="marquee__sep">✦</span></span>
       </div>
-    </section>
-
-    <!-- Nail art -->
-    <section class="section">
-      <div class="container">
-        <div class="split">
-          <div class="reveal">
-            <span class="eyebrow" data-i18n="home.do3Title">Nail art</span>
-            <h2 data-i18n="services.g3Title">Nail art & finishing</h2>
-            <p data-i18n="services.g3Body">From a single accent to a fully designed set.</p>
-            <ul class="linklist">
-              <li class="linklist__item"><span><h4 data-i18n="services.s7">Minimal accents</h4><p data-i18n="services.s7d">French, line work, a touch of foil or chrome.</p></span></li>
-              <li class="linklist__item"><span><h4 data-i18n="services.s8">Full design set</h4><p data-i18n="services.s8d">Bespoke art across all ten nails.</p></span></li>
-              <li class="linklist__item"><span><h4 data-i18n="services.s9">Bridal & events</h4><p data-i18n="services.s9d">A considered look for your special day.</p></span></li>
-            </ul>
-          </div>
-          <div class="split__media split__media--overlay reveal" data-script="your design"><img src="assets/img/portrait-03.webp" alt="Nail art" loading="lazy" width="800" height="1000"></div>
-        </div>
-      </div>
-    </section>
-
-    <div class="divider--scallop" aria-hidden="true"></div>
-
-    <!-- Pedicures -->
-    <section class="section section--surface">
-      <div class="container">
-        <div class="split split--reverse">
-          <div class="reveal">
-            <span class="eyebrow" data-i18n="home.do4Title">Pedicure</span>
-            <h2 data-i18n="services.g4Title">Pedicures</h2>
-            <p data-i18n="services.g4Body">Care that renews tired feet and finishes beautifully.</p>
-            <ul class="linklist">
-              <li class="linklist__item"><span><h4 data-i18n="services.s10">Classic pedicure</h4><p data-i18n="services.s10d">Soak, shaping, cuticle care and polish.</p></span></li>
-              <li class="linklist__item"><span><h4 data-i18n="services.s11">Gel pedicure</h4><p data-i18n="services.s11d">Long-lasting gel colour for your toes.</p></span></li>
-              <li class="linklist__item"><span><h4 data-i18n="services.s12">Spa pedicure</h4><p data-i18n="services.s12d">Exfoliation, mask and massage for full renewal.</p></span></li>
-            </ul>
-          </div>
-          <div class="split__media reveal"><img src="assets/img/portrait-05.webp" alt="Pedicure" loading="lazy" width="800" height="1000"></div>
-        </div>
-        <p class="form-note" style="margin-top:2.5rem" data-i18n="services.note">Every service includes a short consultation so the result fits you.</p>
-      </div>
-    </section>
+    </div>
 
     <section class="section--tight section section--dark cta-band">
       <div class="container">
