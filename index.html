@@ -20,8 +20,7 @@
   <header class="site-header">
     <div class="container site-header__bar">
       <a class="brand" href="index.html" aria-label="Nails Lindes — home">
-        <img class="brand__mark" src="assets/logos/mark.svg" alt="" width="34" height="34">
-        <span class="brand__name">Nails Lindes</span>
+        <img class="brand__wordmark" src="assets/logos/wordmark.svg" alt="Nails Lindes" width="150" height="32">
       </a>
       <nav class="nav" id="nav" aria-label="Primary">
         <a class="nav__link" href="index.html" aria-current="page" data-i18n="nav.home">Home</a>
@@ -53,9 +52,7 @@
         <img src="assets/img/hero.webp" alt="" width="1600" height="1000">
       </div>
       <div class="hero__inner">
-        <h1 class="hero__wordmark"><img src="assets/logos/wordmark-light.svg" alt="Nails Lindes"></h1>
-        <p class="hero__tagline" data-i18n="brand.tagline">Since 2026</p>
-        <p class="hero__sub" data-i18n="home.heroSub">A boutique nail studio where calm, hygiene and quiet craftsmanship come first.</p>
+        <h1 class="hero__wordmark"><img src="assets/logos/hero-logo.svg" alt="Nails Lindes"></h1>
         <div class="hero__cta">
           <a class="btn btn--light" data-book href="#" data-i18n="cta.bookAppt">Book an appointment</a>
           <a class="btn btn--ghost" href="services.html" style="--btn-fg:#F1EBDD;border-color:#F1EBDD" data-i18n="cta.seeServices">See services</a>
@@ -66,10 +63,9 @@
     <!-- ================= Intro split ================= -->
     <section class="section">
       <div class="container">
-        <div class="split">
+        <div class="split split--intro">
           <div class="split__media reveal"><img src="assets/img/portrait-01.webp" alt="The Nails Lindes studio" loading="lazy" width="800" height="1000"></div>
           <div class="reveal">
-            <span class="eyebrow" data-i18n="home.introEyebrow">The studio</span>
             <h2 data-i18n="home.introTitle">Considered nail care, never rushed</h2>
             <p data-i18n="home.introBody1">Nails Lindes is a small, by-appointment studio in Spain. Every visit is unhurried — a clean, warm space, premium products and a result made to last.</p>
             <p data-i18n="home.introBody2">From a polished classic manicure to sculpted extensions and fine nail art, the work is precise, the finish is durable, and the experience feels like time well spent.</p>
@@ -83,32 +79,23 @@
     </section>
 
     <!-- ================= Marquee ================= -->
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee__track">
-        <span class="marquee__item"><span data-i18n="home.marquee1">Manicure</span><span class="marquee__sep">✦</span></span>
-        <span class="marquee__item"><span data-i18n="home.marquee2">Gel extensions</span><span class="marquee__sep">✦</span></span>
-        <span class="marquee__item"><span data-i18n="home.marquee3">Nail art</span><span class="marquee__sep">✦</span></span>
-        <span class="marquee__item"><span data-i18n="home.marquee4">Pedicure</span><span class="marquee__sep">✦</span></span>
-        <span class="marquee__item"><span data-i18n="home.marquee5">Bridal</span><span class="marquee__sep">✦</span></span>
-      </div>
-    </div>
 
     <!-- ================= Features ================= -->
     <section class="section section--surface">
       <div class="container">
         <div class="feature-grid">
           <div class="feature reveal">
-            <svg class="feature__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M24 6c5 7 12 9 16 9 0 12-6 21-16 27C14 36 8 27 8 15c4 0 11-2 16-9Z"/><path d="M18 24l4 4 8-9"/></svg>
+            <img class="feature__icon" src="assets/graphics/g2.svg" alt="" width="60" height="60" loading="lazy">
             <h3 data-i18n="home.f1Title">Spotless hygiene</h3>
             <p data-i18n="home.f1Body">Sterilised tools and single-use files for every client, every time.</p>
           </div>
           <div class="feature reveal">
-            <svg class="feature__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M24 4v40M24 14c-6-8-16-4-16-4M24 14c6-8 16-4 16-4M24 26c-7-7-16-2-16-2M24 26c7-7 16-2 16-2"/></svg>
+            <img class="feature__icon" src="assets/graphics/g3.svg" alt="" width="60" height="60" loading="lazy">
             <h3 data-i18n="home.f2Title">Lasting craft</h3>
             <p data-i18n="home.f2Body">Premium gels and builders applied with a steady, detail-led hand.</p>
           </div>
           <div class="feature reveal">
-            <svg class="feature__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="24" cy="24" r="18"/><path d="M24 12v12l8 5"/></svg>
+            <img class="feature__icon" src="assets/graphics/g4.svg" alt="" width="60" height="60" loading="lazy">
             <h3 data-i18n="home.f3Title">Calm by design</h3>
             <p data-i18n="home.f3Body">An unhurried, private setting — your appointment, your pace.</p>
           </div>
@@ -121,7 +108,6 @@
       <div class="container">
         <div class="gallery-head">
           <div>
-            <span class="eyebrow" data-i18n="home.galleryEyebrow">Recent work</span>
             <h2 style="margin:0" data-i18n="home.galleryTitle">A look at the details</h2>
           </div>
           <a class="link-arrow" href="gallery.html">
@@ -139,7 +125,6 @@
     </section>
 
     <!-- ================= Striped divider ================= -->
-    <div class="divider--stripe" aria-hidden="true"></div>
 
     <!-- ================= Linklist + script overlay ================= -->
     <section class="section">
@@ -149,7 +134,6 @@
             <img src="assets/img/portrait-04.webp" alt="Finished nail set" loading="lazy" width="800" height="1000">
           </div>
           <div class="reveal">
-            <span class="eyebrow" data-i18n="home.doEyebrow">What we do</span>
             <h2 data-i18n="home.doTitle">Treatments, simply explained</h2>
             <ul class="linklist">
               <li><a class="linklist__item" href="services.html">
@@ -202,7 +186,6 @@
     <section class="section testi">
       <div class="container">
         <div class="section-head section-head--center">
-          <span class="eyebrow eyebrow--center" data-i18n="home.galleryEyebrow">Recent work</span>
           <h2 style="margin:0" data-i18n="testi.title">Moments worth remembering</h2>
         </div>
         <div class="testi-viewport">
@@ -255,7 +238,6 @@
       <div class="container">
         <div class="insta-head">
           <div>
-            <span class="eyebrow" data-i18n="insta.title">Follow along on Instagram</span>
             <h2 style="margin:0" data-config="instagram">@nailslindes</h2>
             <p class="muted" style="margin:.5rem 0 0" data-i18n="insta.sub">Fresh sets, behind-the-scenes and a little inspiration.</p>
           </div>

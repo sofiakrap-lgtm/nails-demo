@@ -1159,3 +1159,37 @@ body.home .site-header { top: var(--demo-h, 34px); }
   .svc-hero { grid-template-columns: 1fr; }
   .collage { min-height: 380px; }
 }
+
+/* ==========================================================================
+   Logo / header / control refinements + Instrument Serif weight fix
+   ========================================================================== */
+
+/* Header brand is now the wordmark image */
+.brand__wordmark { height: 28px; width: auto; }
+body.home .site-header:not(.is-scrolled) .brand__wordmark { filter: brightness(0) invert(1); }
+
+/* Hero: large logo (iso lockup), no tagline/sub */
+.hero__wordmark { margin: 0 0 var(--space-4); }
+.hero__wordmark img { width: min(560px, 86vw); }
+
+/* Language switcher: sharp corners + equal height with the Book button */
+.lang { border-radius: var(--radius); height: 42px; align-items: stretch; }
+.lang__btn { display: inline-flex; align-items: center; }
+.header-actions > .btn { height: 42px; padding-top: 0; padding-bottom: 0; }
+
+/* Intro split image ~40% smaller */
+.split--intro { grid-template-columns: 0.45fr 1fr; align-items: center; }
+@media (max-width: 820px) { .split--intro { grid-template-columns: 1fr; } }
+
+/* Feature icons use the provided graphics */
+.feature__icon { width: auto; height: 60px; }
+
+/* Instrument Serif has a single weight — keep ALL serif text regular (no faux-bold) */
+h1, h2, h3, h4,
+.brand__name,
+.price-item__name, .price-item__price,
+.faq__item summary,
+.striped-band h2,
+.quote-band__mark, .testi-card blockquote,
+.stat__num, .step__num, .price-figure,
+.svc-intro, .card__title { font-weight: 400; }
