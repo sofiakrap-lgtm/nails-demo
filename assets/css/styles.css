@@ -1345,3 +1345,6 @@ h1, h2, h3, h4,
 
 /* Intro image: 20% darker */
 .fullsplit--compact .fullsplit__media img { filter: brightness(0.8); }
+
+/* Scale the whole layout to ~80% so the default view matches an 80% zoom */
+body { zoom: 0.8; }
