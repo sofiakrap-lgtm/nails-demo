@@ -1312,3 +1312,7 @@ h1, h2, h3, h4,
 /* Gallery preview: remove white frame + hover zoom (keep stripes as-is) */
 .section--stripe .thumb { border: 0; box-shadow: none; background: transparent; }
 .thumb:hover img { transform: none; }
+
+/* Intro full-bleed split: ~30% smaller image */
+.fullsplit--compact { align-items: center; }
+.fullsplit--compact .fullsplit__media { min-height: clamp(320px, 44vh, 500px); }
