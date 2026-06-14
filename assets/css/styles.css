@@ -1339,3 +1339,6 @@ h1, h2, h3, h4,
 .header-actions > * { flex: none; }
 .lang { flex: none; }
 .lang__btn { white-space: nowrap; }
+
+/* Intro image: anchor to the top so the top edge stays visible */
+.fullsplit--compact .fullsplit__media img { object-position: center top; }
