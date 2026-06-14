@@ -148,13 +148,11 @@ ul { margin: 0; padding: 0; list-style: none; }
   justify-content: center;
   gap: 0.6em;
   padding: 0.95em 2em;
-  font-family: "Cormorant SC", serif;
-  font-weight: 600;
-  font-size: 1.02rem;
-  letter-spacing: .08em;
-  text-transform: capitalize;
-  font-variant: small-caps;
-  font-feature-settings: "smcp" 1;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 0.82rem;
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
   background: var(--btn-bg);
   color: var(--btn-fg);
   border: 1px solid var(--btn-bg);
@@ -1410,11 +1408,10 @@ body { zoom: 0.8; }
   display: flex; align-items: center; justify-content: center; text-align: center;
   min-height: 0; padding: .5rem .75rem;
   border: 1px solid color-mix(in srgb, var(--color-coffee) 55%, var(--color-stone));
-  font-family: var(--font-serif);
-  text-transform: capitalize;
-  font-variant: small-caps;
-  font-feature-settings: "smcp" 1;
-  letter-spacing: .14em;
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  font-variant: normal;
+  letter-spacing: var(--tracking-wide);
   font-size: 1.05rem;
   color: var(--color-stone);
   transition: color .3s var(--ease);
@@ -1427,10 +1424,10 @@ body { zoom: 0.8; }
 
 /* Category bar: slim cells, each its own box with thin dark-brown borders */
 .cat-box {
-  font-family: "Cormorant SC", serif;
-  font-weight: 600;
-  font-size: 1.18rem;
-  letter-spacing: .1em;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: .82rem;
+  letter-spacing: var(--tracking-wide);
   color: var(--color-stone);
 }
 
