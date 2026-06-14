@@ -1308,3 +1308,7 @@ h1, h2, h3, h4,
 
 /* Language switcher: rounded corners to match the buttons */
 .lang { border-radius: 6px; }
+
+/* Gallery preview: remove white frame + hover zoom (keep stripes as-is) */
+.section--stripe .thumb { border: 0; box-shadow: none; background: transparent; }
+.thumb:hover img { transform: none; }
