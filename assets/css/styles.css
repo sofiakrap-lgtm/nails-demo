@@ -1324,3 +1324,11 @@ h1, h2, h3, h4,
 .fullsplit { max-width: 1280px; margin-inline: auto; }
 .site-footer .muted { color: color-mix(in srgb, var(--color-beige) 68%, transparent); }
 .footer-col a { color: color-mix(in srgb, var(--color-beige) 88%, transparent); }
+
+/* Intro full-bleed split: full width + image fills the whole area (no gaps) */
+.fullsplit { max-width: none; margin-inline: 0; }
+.fullsplit--compact { align-items: stretch; }
+
+/* Gallery: landscape (1600x1200, 4:3) thumbs + shorter area */
+.section--stripe { padding-block: var(--space-5); }
+.section--stripe .thumb { aspect-ratio: 4 / 3; }
