@@ -1316,3 +1316,11 @@ h1, h2, h3, h4,
 /* Intro full-bleed split: ~30% smaller image */
 .fullsplit--compact { align-items: center; }
 .fullsplit--compact .fullsplit__media { min-height: clamp(320px, 44vh, 500px); }
+
+/* ==========================================================================
+   Narrower overall page; contained full-bleed splits; clearer footer text
+   ========================================================================== */
+:root { --maxw: 1100px; }
+.fullsplit { max-width: 1280px; margin-inline: auto; }
+.site-footer .muted { color: color-mix(in srgb, var(--color-beige) 68%, transparent); }
+.footer-col a { color: color-mix(in srgb, var(--color-beige) 88%, transparent); }
