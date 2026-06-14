@@ -197,6 +197,18 @@
     });
   }
 
+  /* ---- Demo bar: publish its height so layout can offset for it ---------- */
+  function initDemoBar() {
+    var bar = document.querySelector(".demo-bar");
+    if (!bar) return;
+    function setH() {
+      document.documentElement.style.setProperty("--demo-h", bar.offsetHeight + "px");
+    }
+    setH();
+    window.addEventListener("resize", setH);
+    document.addEventListener("nl:langchange", setH);
+  }
+
   /* ---- Header: transparent over hero, solid on scroll ------------------- */
   function initHeaderScroll() {
     var header = document.querySelector(".site-header");
@@ -218,6 +230,7 @@
     initGalleryFilter();
     initContactForm();
     initTestimonials();
+    initDemoBar();
     initHeaderScroll();
   });
 })();

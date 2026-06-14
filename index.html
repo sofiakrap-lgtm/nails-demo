@@ -12,6 +12,10 @@
   <link rel="icon" href="assets/logos/mark.svg" type="image/svg+xml">
 </head>
 <body class="home">
+  <div class="demo-bar" role="note">
+    <strong data-i18n="demo.tag">Demo</strong>
+    <span data-i18n="demo.notice">Example site — images and text will be replaced with the client's own.</span>
+  </div>
   <!-- ================= Header ================= -->
   <header class="site-header">
     <div class="container site-header__bar">
@@ -49,14 +53,13 @@
         <img src="assets/img/hero.webp" alt="" width="1600" height="1000">
       </div>
       <div class="hero__inner">
-        <div class="hero__badge"><img src="assets/logos/badge.svg" alt="Nails Lindes" width="170" height="170"></div>
-        <h1 data-i18n="home.heroTitle">Timeless nails, crafted with care</h1>
+        <h1 class="hero__wordmark"><img src="assets/logos/wordmark-light.svg" alt="Nails Lindes"></h1>
+        <p class="hero__tagline" data-i18n="brand.tagline">Since 2026</p>
         <p class="hero__sub" data-i18n="home.heroSub">A boutique nail studio where calm, hygiene and quiet craftsmanship come first.</p>
         <div class="hero__cta">
           <a class="btn btn--light" data-book href="#" data-i18n="cta.bookAppt">Book an appointment</a>
           <a class="btn btn--ghost" href="services.html" style="--btn-fg:#F1EBDD;border-color:#F1EBDD" data-i18n="cta.seeServices">See services</a>
         </div>
-        <p class="hero__tagline" style="margin-top:1.6rem"><span data-i18n="brand.tagline">Since 2026</span></p>
       </div>
     </section>
 
@@ -168,6 +171,14 @@
             </ul>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- ================= Striped statement band ================= -->
+    <section class="section section--tight striped-band">
+      <div class="container">
+        <h2 data-i18n="band.title">Ready for nails you'll love?</h2>
+        <p class="band-sub" data-i18n="band.sub">Yes, you are.</p>
       </div>
     </section>
 

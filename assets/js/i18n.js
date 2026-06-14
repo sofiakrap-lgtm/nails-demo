@@ -7,6 +7,8 @@ window.NL_I18N = {
   /* ----------------------------------------------------------------- EN -- */
   en: {
     meta: { langName: "English" },
+    demo: { tag: "Demo", notice: "Example site — images and text will be replaced with the client's own." },
+    band: { title: "Ready for nails you'll love?", sub: "Yes, you are." },
     nav: {
       home: "Home", services: "Services", pricing: "Pricing",
       gallery: "Gallery", booking: "Booking", about: "About", contact: "Contact", faq: "FAQ"
@@ -185,6 +187,8 @@ window.NL_I18N = {
   /* ----------------------------------------------------------------- ES -- */
   es: {
     meta: { langName: "Español" },
+    demo: { tag: "Demo", notice: "Sitio de ejemplo — las imágenes y los textos se sustituirán por los del cliente." },
+    band: { title: "¿Lista para unas uñas que vas a adorar?", sub: "Sí, lo estás." },
     nav: {
       home: "Inicio", services: "Servicios", pricing: "Precios",
       gallery: "Galería", booking: "Reservas", about: "Sobre mí", contact: "Contacto", faq: "FAQ"
@@ -363,6 +367,8 @@ window.NL_I18N = {
   /* ----------------------------------------------------------------- RU -- */
   ru: {
     meta: { langName: "Русский" },
+    demo: { tag: "Демо", notice: "Демонстрационный сайт — изображения и тексты будут заменены на материалы клиента." },
+    band: { title: "Готовы к ногтям, которые полюбите?", sub: "Да, готовы." },
     nav: {
       home: "Главная", services: "Услуги", pricing: "Цены",
       gallery: "Галерея", booking: "Запись", about: "Обо мне", contact: "Контакты", faq: "Вопросы"

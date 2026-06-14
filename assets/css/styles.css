@@ -1023,3 +1023,71 @@ body.home .site-header.is-scrolled::before { opacity: 0; }
 @media (max-width: 940px) {
   body.home .site-header:not(.is-scrolled) .nav.is-open .nav__link { color: var(--color-coffee); }
 }
+
+/* ==========================================================================
+   Demo announcement bar (temporary client-preview scaffolding)
+   ========================================================================== */
+.demo-bar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .6em;
+  background: var(--color-coffee);
+  color: color-mix(in srgb, var(--color-beige) 82%, transparent);
+  padding: .42rem var(--space-3);
+  text-align: center;
+  font-size: .68rem;
+  letter-spacing: .06em;
+  line-height: 1.35;
+}
+.demo-bar strong {
+  color: var(--color-tan);
+  font-weight: 600;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+
+/* Offset content below the fixed demo bar (var set by JS; 34px fallback) */
+body { padding-top: var(--demo-h, 34px); }
+.site-header { top: var(--demo-h, 34px); }
+body.home { padding-top: 0; }
+body.home .site-header { top: var(--demo-h, 34px); }
+
+/* ==========================================================================
+   Hero wordmark (replaces the badge on the homepage hero)
+   ========================================================================== */
+.hero__wordmark { margin: 0 0 var(--space-2); line-height: 1; }
+.hero__wordmark img {
+  width: min(540px, 84vw);
+  height: auto;
+  margin-inline: auto;
+  filter: drop-shadow(0 6px 26px rgba(42, 26, 19, .4));
+}
+
+/* ==========================================================================
+   Striped statement band
+   ========================================================================== */
+.striped-band {
+  text-align: center;
+  border-block: 1px solid var(--line);
+  background-image: repeating-linear-gradient(90deg,
+    #FBF8F1 0, #FBF8F1 48px,
+    #ECE3CE 48px, #ECE3CE 96px);
+}
+.striped-band h2 {
+  margin: 0 0 var(--space-2);
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  font-weight: 500;
+}
+.striped-band .band-sub {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: clamp(1.2rem, 2.4vw, 1.6rem);
+  text-transform: uppercase;
+  letter-spacing: .22em;
+  color: var(--color-stone);
+}
