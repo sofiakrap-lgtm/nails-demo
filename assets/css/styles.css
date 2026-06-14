@@ -1184,7 +1184,7 @@ body.home .site-header:not(.is-scrolled) .brand__wordmark--light { display: bloc
 @media (max-width: 820px) { .split--intro { grid-template-columns: 1fr; } }
 
 /* Feature icons use the provided graphics (dark coffee, larger) */
-.feature__icon { width: auto; height: 84px; }
+.feature__icon { width: auto; height: 105px; }
 
 /* Instrument Serif has a single weight — keep ALL serif text regular (no faux-bold) */
 h1, h2, h3, h4,
