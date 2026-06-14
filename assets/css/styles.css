@@ -1348,3 +1348,13 @@ h1, h2, h3, h4,
 
 /* Scale the whole layout to ~80% so the default view matches an 80% zoom */
 body { zoom: 0.8; }
+
+/* Testimonials: photo background (3.jpg) with cream heading */
+.section.testi {
+  position: relative;
+  background-image: linear-gradient(rgba(42,26,19,.50), rgba(42,26,19,.50)), url("../img/testi-bg.webp");
+  background-size: cover;
+  background-position: center;
+}
+.section.testi .section-head h2 { color: var(--color-beige); }
+.section.testi .testi-arrow { box-shadow: 0 6px 20px -10px rgba(0,0,0,.5); }
