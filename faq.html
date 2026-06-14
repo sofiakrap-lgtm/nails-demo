@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Booking — Nails Lindes</title>
-  <meta name="description" content="Book your appointment at Nails Lindes online through Booksy. See live availability, pay online or in studio, and manage your booking easily.">
+  <title>FAQ — Nails Lindes</title>
+  <meta name="description" content="Frequently asked questions about booking, payment, hygiene, nail care and more at Nails Lindes.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -23,7 +23,7 @@
         <a class="nav__link" href="services.html" data-i18n="nav.services">Services</a>
         <a class="nav__link" href="pricing.html" data-i18n="nav.pricing">Pricing</a>
         <a class="nav__link" href="gallery.html" data-i18n="nav.gallery">Gallery</a>
-        <a class="nav__link" href="booking.html" aria-current="page" data-i18n="nav.booking">Booking</a>
+        <a class="nav__link" href="booking.html" data-i18n="nav.booking">Booking</a>
         <a class="nav__link" href="about.html" data-i18n="nav.about">About</a>
         <a class="nav__link" href="contact.html" data-i18n="nav.contact">Contact</a>
       </nav>
@@ -42,74 +42,56 @@
   <main id="main">
     <section class="page-hero">
       <div class="container">
-        <p class="crumbs"><a href="index.html" data-i18n="nav.home">Home</a> · <span data-i18n="nav.booking">Booking</span></p>
-        <h1 data-i18n="booking.heroTitle">Booking</h1>
-        <p data-i18n="booking.heroSub">Reserve your appointment online in a few taps.</p>
+        <p class="crumbs"><a href="index.html" data-i18n="nav.home">Home</a> · <span data-i18n="nav.faq">FAQ</span></p>
+        <h1 data-i18n="faq.heroTitle">FAQ</h1>
+        <p data-i18n="faq.heroSub">Everything you might want to know before your visit.</p>
       </div>
     </section>
 
-    <!-- Steps -->
     <section class="section">
       <div class="container">
-        <div class="section-head section-head--center">
-          <span class="eyebrow eyebrow--center" data-i18n="booking.howTitle">How booking works</span>
-        </div>
-        <div class="steps">
-          <div class="step reveal"><div class="step__num"></div><h4 data-i18n="booking.step1Title">Choose your treatment</h4><p data-i18n="booking.step1Body">Browse services and pick what suits you — or message us if you're unsure.</p></div>
-          <div class="step reveal"><div class="step__num"></div><h4 data-i18n="booking.step2Title">Pick a time</h4><p data-i18n="booking.step2Body">Live availability through our booking partner, Booksy.</p></div>
-          <div class="step reveal"><div class="step__num"></div><h4 data-i18n="booking.step3Title">Pay your way</h4><p data-i18n="booking.step3Body">Pay securely online when you book, or at the studio.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <div class="divider--stripe" aria-hidden="true"></div>
-
-    <!-- Booksy panel + payment -->
-    <section class="section section--surface">
-      <div class="container">
-        <div class="info-grid">
-          <div class="reveal">
-            <span class="eyebrow" data-i18n="nav.booking">Booking</span>
-            <h2 data-i18n="booking.panelTitle">Book through Booksy</h2>
-            <p data-i18n="booking.panelBody">Our calendar lives on Booksy, where you can see real-time availability, manage your appointment, and reschedule if plans change.</p>
-            <a class="btn" data-book href="#" style="margin-top:.5rem" data-i18n="cta.bookAppt">Book an appointment</a>
-          </div>
-          <div class="reveal">
-            <div class="price-highlight" style="text-align:left">
-              <h3 style="margin-bottom:1rem" data-i18n="booking.payTitle">Payment options</h3>
-              <ul style="display:grid;gap:1rem">
-                <li style="display:flex;gap:.8rem;align-items:flex-start">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D8C094" stroke-width="1.6" style="flex:none;margin-top:3px"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
-                  <span data-i18n="booking.pay1">Pay online — secure card payment as you book.</span>
-                </li>
-                <li style="display:flex;gap:.8rem;align-items:flex-start">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D8C094" stroke-width="1.6" style="flex:none;margin-top:3px"><path d="M3 7h18v10H3zM3 11h18"/><circle cx="7" cy="14" r="1"/></svg>
-                  <span data-i18n="booking.pay2">Pay on site — card or cash at your appointment.</span>
-                </li>
-                <li style="display:flex;gap:.8rem;align-items:flex-start">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D8C094" stroke-width="1.6" style="flex:none;margin-top:3px"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 4v4h-4"/></svg>
-                  <span data-i18n="booking.pay3">Reschedule or cancel easily from your Booksy confirmation.</span>
-                </li>
-              </ul>
-            </div>
-          </div>
+        <div class="faq">
+          <details class="faq__item" open>
+            <summary data-i18n="faq.q1">How do I book an appointment?</summary>
+            <div class="faq__answer"><p data-i18n="faq.a1">Online, in a few taps.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary data-i18n="faq.q2">Can I pay at the studio?</summary>
+            <div class="faq__answer"><p data-i18n="faq.a2">Yes, online or on site.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary data-i18n="faq.q3">How long does a gel manicure or set last?</summary>
+            <div class="faq__answer"><p data-i18n="faq.a3">Typically 3–4 weeks.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary data-i18n="faq.q4">Do you remove gel or extensions from another salon?</summary>
+            <div class="faq__answer"><p data-i18n="faq.a4">Of course, from €10.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary data-i18n="faq.q5">What is your cancellation policy?</summary>
+            <div class="faq__answer"><p data-i18n="faq.a5">24 hours' notice, please.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary data-i18n="faq.q6">Do you do nail art and bridal nails?</summary>
+            <div class="faq__answer"><p data-i18n="faq.a6">Yes, from accents to full sets.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary data-i18n="faq.q7">How do you keep everything hygienic?</summary>
+            <div class="faq__answer"><p data-i18n="faq.a7">Sterilised tools, single-use files.</p></div>
+          </details>
         </div>
       </div>
     </section>
 
-    <!-- Cancellation + question -->
-    <section class="section">
+    <div class="divider--scallop" aria-hidden="true"></div>
+
+    <section class="section--tight section section--dark cta-band">
       <div class="container">
-        <div class="split">
-          <div class="reveal">
-            <h2 data-i18n="booking.policyTitle">Cancellation</h2>
-            <p data-i18n="booking.policyBody">Plans change — we just ask for 24 hours' notice so the time can go to someone else.</p>
-          </div>
-          <div class="reveal">
-            <h2 data-i18n="booking.questionTitle">Have a question first?</h2>
-            <p data-i18n="booking.questionBody">Not sure which treatment to book? Send a message and we'll point you in the right direction.</p>
-            <a class="btn btn--ghost" href="contact.html" data-i18n="cta.contact">Contact</a>
-          </div>
+        <h2 data-i18n="faq.ctaTitle">Still have a question?</h2>
+        <p data-i18n="booking.questionBody">Send a message and we'll point you in the right direction.</p>
+        <div class="hero__cta">
+          <a class="btn btn--light" href="contact.html" data-i18n="cta.contact">Contact</a>
+          <a class="btn btn--ghost" data-book href="#" style="--btn-fg:#F1EBDD;border-color:#F1EBDD" data-i18n="cta.book">Book now</a>
         </div>
       </div>
     </section>

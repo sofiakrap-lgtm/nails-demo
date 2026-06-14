@@ -17,7 +17,9 @@ online or choose to pay on site.
   lightweight client-side i18n layer (`assets/js/i18n.js`). One set of HTML;
   text is swapped by `data-i18n` keys. Choice is stored in `localStorage`.
 - **Pages (separate files):** `index.html` (home), `services.html`,
-  `pricing.html`, `gallery.html`, `booking.html`, `contact.html`, `about.html`.
+  `pricing.html`, `gallery.html`, `booking.html`, `faq.html`, `contact.html`,
+  `about.html`. The home page also has a client **testimonials carousel** and an
+  **Instagram feed** strip (both trilingual; the feed links to the IG profile).
 
 ## Run / preview
 
@@ -44,6 +46,7 @@ recommended so relative paths and fonts behave like production.
 ├── pricing.html          # Transparent price lists
 ├── gallery.html          # Work gallery (1:1 grid)
 ├── booking.html          # How booking + payment works → Booksy
+├── faq.html              # Frequently asked questions (accordion)
 ├── contact.html          # Location, hours, map, contact form
 ├── about.html            # Story / brand / the technician
 ├── CLAUDE.md

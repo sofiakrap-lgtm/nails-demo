@@ -9,7 +9,7 @@ window.NL_I18N = {
     meta: { langName: "English" },
     nav: {
       home: "Home", services: "Services", pricing: "Pricing",
-      gallery: "Gallery", booking: "Booking", about: "About", contact: "Contact"
+      gallery: "Gallery", booking: "Booking", about: "About", contact: "Contact", faq: "FAQ"
     },
     cta: {
       book: "Book now", bookAppt: "Book an appointment",
@@ -52,6 +52,30 @@ window.NL_I18N = {
       q5: "I've finally found my nail artist. Such an eye for detail.", a5: "Carmen · Nail art",
       q6: "Relaxing from start to finish — I left feeling completely pampered.", a6: "Natalia · Spa pedicure",
       prev: "Previous", next: "Next"
+    },
+    insta: {
+      title: "Follow along on Instagram",
+      sub: "Fresh sets, behind-the-scenes and a little inspiration.",
+      cta: "Follow"
+    },
+    faq: {
+      heroTitle: "FAQ",
+      heroSub: "Everything you might want to know before your visit.",
+      q1: "How do I book an appointment?",
+      a1: "Online, in a few taps. Pick your treatment and a time on the booking page — availability is shown in real time.",
+      q2: "Can I pay at the studio?",
+      a2: "Yes. Pay securely online when you book, or settle at the studio by card or cash — whichever you prefer.",
+      q3: "How long does a gel manicure or set last?",
+      a3: "Typically 3–4 weeks. Book an infill within that window to keep it looking freshly done.",
+      q4: "Do you remove gel or extensions from another salon?",
+      a4: "Of course. Soak-off and removal start from €10 and can be added to any appointment.",
+      q5: "What is your cancellation policy?",
+      a5: "Plans change — we just ask for 24 hours' notice. You can reschedule or cancel from your booking confirmation.",
+      q6: "Do you do nail art and bridal nails?",
+      a6: "Yes, from a single accent to a fully designed set. For bridal and events, please book a little ahead.",
+      q7: "How do you keep everything hygienic?",
+      a7: "Tools are sterilised between every client and files are single-use. Your health and comfort always come first.",
+      ctaTitle: "Still have a question?"
     },
     services: {
       heroTitle: "Services",
@@ -163,7 +187,7 @@ window.NL_I18N = {
     meta: { langName: "Español" },
     nav: {
       home: "Inicio", services: "Servicios", pricing: "Precios",
-      gallery: "Galería", booking: "Reservas", about: "Sobre mí", contact: "Contacto"
+      gallery: "Galería", booking: "Reservas", about: "Sobre mí", contact: "Contacto", faq: "FAQ"
     },
     cta: {
       book: "Reservar", bookAppt: "Reservar cita",
@@ -206,6 +230,30 @@ window.NL_I18N = {
       q5: "Por fin he encontrado a mi manicurista. Qué ojo para el detalle.", a5: "Carmen · Nail art",
       q6: "Relajante de principio a fin; salí sintiéndome cuidada.", a6: "Natalia · Pedicura spa",
       prev: "Anterior", next: "Siguiente"
+    },
+    insta: {
+      title: "Síguenos en Instagram",
+      sub: "Nuevos diseños, entre bastidores y un poco de inspiración.",
+      cta: "Seguir"
+    },
+    faq: {
+      heroTitle: "Preguntas frecuentes",
+      heroSub: "Todo lo que quizá quieras saber antes de tu visita.",
+      q1: "¿Cómo reservo una cita?",
+      a1: "Online, en unos toques. Elige tu tratamiento y la hora en la página de reservas: la disponibilidad se muestra en tiempo real.",
+      q2: "¿Puedo pagar en el estudio?",
+      a2: "Sí. Paga online de forma segura al reservar, o en el estudio con tarjeta o efectivo, como prefieras.",
+      q3: "¿Cuánto dura una manicura en gel o un set?",
+      a3: "Normalmente 3–4 semanas. Reserva un relleno dentro de ese tiempo para mantenerlo perfecto.",
+      q4: "¿Retiráis gel o extensiones de otro salón?",
+      a4: "Por supuesto. La retirada empieza desde 10 € y se puede añadir a cualquier cita.",
+      q5: "¿Cuál es la política de cancelación?",
+      a5: "Los planes cambian; solo pedimos 24 horas de aviso. Puedes cambiar o cancelar desde tu confirmación.",
+      q6: "¿Hacéis nail art y uñas de novia?",
+      a6: "Sí, desde un detalle único hasta un set totalmente diseñado. Para bodas y eventos, reserva con algo de antelación.",
+      q7: "¿Cómo garantizáis la higiene?",
+      a7: "Las herramientas se esterilizan entre cada cliente y las limas son de un solo uso. Tu salud y comodidad son lo primero.",
+      ctaTitle: "¿Aún tienes una duda?"
     },
     services: {
       heroTitle: "Servicios",
@@ -317,7 +365,7 @@ window.NL_I18N = {
     meta: { langName: "Русский" },
     nav: {
       home: "Главная", services: "Услуги", pricing: "Цены",
-      gallery: "Галерея", booking: "Запись", about: "Обо мне", contact: "Контакты"
+      gallery: "Галерея", booking: "Запись", about: "Обо мне", contact: "Контакты", faq: "Вопросы"
     },
     cta: {
       book: "Записаться", bookAppt: "Записаться на приём",
@@ -360,6 +408,30 @@ window.NL_I18N = {
       q5: "Наконец-то нашла своего мастера. Какое внимание к деталям.", a5: "Кармен · Нейл-арт",
       q6: "Расслабляет с первой минуты — ушла абсолютно довольной.", a6: "Наталья · Спа-педикюр",
       prev: "Назад", next: "Вперёд"
+    },
+    insta: {
+      title: "Подписывайтесь в Instagram",
+      sub: "Новые работы, закулисье и немного вдохновения.",
+      cta: "Подписаться"
+    },
+    faq: {
+      heroTitle: "Частые вопросы",
+      heroSub: "Всё, что полезно знать перед визитом.",
+      q1: "Как записаться на приём?",
+      a1: "Онлайн, за пару касаний. Выберите процедуру и время на странице записи — доступность видна в реальном времени.",
+      q2: "Можно ли оплатить в студии?",
+      a2: "Да. Оплатите онлайн при записи или в студии картой либо наличными — как удобнее.",
+      q3: "Сколько держится гелевый маникюр или наращивание?",
+      a3: "Обычно 3–4 недели. Запишитесь на коррекцию в этот срок, чтобы сохранить идеальный вид.",
+      q4: "Снимаете ли вы гель или наращивание из другого салона?",
+      a4: "Конечно. Снятие — от 10 € и добавляется к любой записи.",
+      q5: "Какие у вас условия отмены?",
+      a5: "Планы меняются — мы просим предупредить за 24 часа. Перенести или отменить можно из подтверждения записи.",
+      q6: "Делаете ли вы нейл-арт и свадебные ногти?",
+      a6: "Да, от одного акцента до полностью продуманного дизайна. На свадьбу и события записывайтесь заранее.",
+      q7: "Как вы поддерживаете гигиену?",
+      a7: "Инструменты стерилизуются после каждого клиента, пилки одноразовые. Ваше здоровье и комфорт всегда на первом месте.",
+      ctaTitle: "Остался вопрос?"
     },
     services: {
       heroTitle: "Услуги",

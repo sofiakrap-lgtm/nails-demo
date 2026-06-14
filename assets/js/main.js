@@ -35,7 +35,8 @@
       var key = el.getAttribute("data-config");
       var entry = map[key];
       if (!entry) return;
-      if (entry.val) el.textContent = entry.val;
+      // Only set text on leaf elements so icons / nested markup are preserved.
+      if (entry.val && el.children.length === 0) el.textContent = entry.val;
       if (entry.href && el.tagName === "A") el.setAttribute("href", entry.href);
     });
 

@@ -723,6 +723,89 @@ ul { margin: 0; padding: 0; list-style: none; }
 @media (max-width: 900px) { .testi-card { flex-basis: calc((100% - var(--space-3)) / 2); } }
 @media (max-width: 620px) { .testi-card { flex-basis: 100%; } }
 
+/* ==========================================================================
+   Instagram feed strip
+   ========================================================================== */
+.insta-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+  flex-wrap: wrap;
+}
+.insta-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: var(--space-1);
+}
+.insta-tile {
+  position: relative;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: var(--radius);
+  background: var(--color-silver);
+}
+.insta-tile img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s var(--ease); }
+.insta-tile:hover img { transform: scale(1.08); }
+.insta-tile::after {
+  content: "";
+  position: absolute; inset: 0;
+  background: rgba(42,26,19,.0);
+  transition: background .35s var(--ease);
+}
+.insta-tile:hover::after { background: rgba(42,26,19,.35); }
+.insta-tile__icon {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 28px; height: 28px;
+  color: var(--color-beige);
+  opacity: 0;
+  transform: scale(.8);
+  transition: opacity .35s var(--ease), transform .35s var(--ease);
+  z-index: 2;
+}
+.insta-tile:hover .insta-tile__icon { opacity: 1; transform: scale(1); }
+@media (max-width: 900px) { .insta-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 520px) { .insta-grid { grid-template-columns: repeat(2, 1fr); } }
+
+/* ==========================================================================
+   FAQ accordion (native <details>)
+   ========================================================================== */
+.faq { max-width: var(--maxw-narrow); margin-inline: auto; }
+.faq__item {
+  border-bottom: 1px solid var(--line);
+}
+.faq__item summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: var(--space-3) 0;
+  cursor: pointer;
+  list-style: none;
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--text);
+}
+.faq__item summary::-webkit-details-marker { display: none; }
+.faq__item summary::after {
+  content: "";
+  flex: none;
+  width: 14px; height: 14px;
+  border-right: 1.5px solid var(--color-stone);
+  border-bottom: 1.5px solid var(--color-stone);
+  transform: rotate(45deg);
+  transition: transform .3s var(--ease);
+  margin-top: -6px;
+}
+.faq__item[open] summary::after { transform: rotate(-135deg); margin-top: 4px; }
+.faq__item summary:hover { color: var(--color-coffee); }
+.faq__answer { padding: 0 0 var(--space-3); color: var(--text-soft); max-width: 60ch; }
+.faq__answer p { margin: 0; }
+
 
 /* ==========================================================================
    Steps / process
