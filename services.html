@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css?v=35">
+  <link rel="stylesheet" href="assets/css/styles.css?v=36">
   <link rel="icon" href="assets/logos/mark.svg" type="image/svg+xml">
 </head>
 <body>
@@ -44,6 +44,20 @@
   </header>
 
   <main id="main">
+    <!-- Services intro: full-bleed split (home model) -->
+    <section class="fullsplit fullsplit--compact fullsplit--media-last">
+      <div class="fullsplit__body fullsplit__body--center reveal">
+        <h2 data-i18n="services.introTitle">A full menu of considered nail care</h2>
+        <p data-i18n="services.introBody1">From everyday manicures to sculpted extensions and detailed nail art, Nails Lindes offers a complete range of treatments — each built on spotless hygiene, premium products and a careful, unhurried hand.</p>
+        <p data-i18n="services.introBody2">Browse the full list below to find the right service for you, with transparent pricing for every treatment.</p>
+        <div class="hero__cta">
+          <a class="btn" data-book href="#" data-i18n="cta.bookAppt">Book an appointment</a>
+          <a class="btn btn--ghost" href="pricing.html" data-i18n="cta.seePricing">See pricing</a>
+        </div>
+      </div>
+      <div class="fullsplit__media reveal"><img src="assets/img/svc-intro.webp?v=36" alt="Manicure at Nails Lindes" loading="lazy" width="900" height="1200"></div>
+    </section>
+
     <!-- Service cards: circular symbol, heading, text -->
     <section class="svc-cards-section">
       <div class="container">
@@ -53,25 +67,76 @@
         </div>
         <div class="svc-cards">
           <a class="svc-card" href="pricing.html">
-            <span class="svc-card__icon"><img src="assets/graphics/g1.svg?v=35" alt="" width="120" height="120" loading="lazy"></span>
+            <span class="svc-card__icon"><img src="assets/graphics/g1-light.svg?v=36" alt="" width="120" height="120" loading="lazy"></span>
             <h3 class="svc-card__title" data-i18n="home.do1Title">Manicure</h3>
             <p class="svc-card__text" data-i18n="services.c1Body">Shaping, cuticle care and a flawless colour or natural finish — classic, gel or a combination, always built to last.</p>
           </a>
           <a class="svc-card" href="pricing.html">
-            <span class="svc-card__icon"><img src="assets/graphics/g2.svg?v=35" alt="" width="120" height="120" loading="lazy"></span>
+            <span class="svc-card__icon"><img src="assets/graphics/g2-light.svg?v=36" alt="" width="120" height="120" loading="lazy"></span>
             <h3 class="svc-card__title" data-i18n="home.do2Title">Gel &amp; builder</h3>
             <p class="svc-card__text" data-i18n="services.c2Body">Added strength and length with BIAB and builder gels, sculpted to suit your hands and sealed for a durable, glossy finish.</p>
           </a>
           <a class="svc-card" href="pricing.html">
-            <span class="svc-card__icon"><img src="assets/graphics/g3.svg?v=35" alt="" width="120" height="120" loading="lazy"></span>
+            <span class="svc-card__icon"><img src="assets/graphics/g3-light.svg?v=36" alt="" width="120" height="120" loading="lazy"></span>
             <h3 class="svc-card__title" data-i18n="home.do3Title">Nail art</h3>
             <p class="svc-card__text" data-i18n="services.c3Body">From a single subtle accent to a fully designed set — French, chrome, foil and hand-painted detail, made just for you.</p>
           </a>
           <a class="svc-card" href="pricing.html">
-            <span class="svc-card__icon"><img src="assets/graphics/g4.svg?v=35" alt="" width="120" height="120" loading="lazy"></span>
+            <span class="svc-card__icon"><img src="assets/graphics/g4-light.svg?v=36" alt="" width="120" height="120" loading="lazy"></span>
             <h3 class="svc-card__title" data-i18n="home.do4Title">Pedicure</h3>
             <p class="svc-card__text" data-i18n="services.c4Body">Renewing care from heel to toe: a warm soak, exfoliation, nail and cuticle work and a long-lasting colour or gel finish.</p>
           </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials (copied from home) -->
+    <section class="section testi">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <h2 style="margin:0" data-i18n="testi.title">Moments worth remembering</h2>
+        </div>
+        <div class="testi-wrap">
+          <button class="testi-arrow testi-arrow--prev" data-testi-prev type="button" aria-label="Previous" data-i18n-attr="aria-label:testi.prev">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+          </button>
+          <div class="testi-viewport">
+            <div class="testi-track">
+            <figure class="testi-card reveal">
+              <div class="testi-stars" role="img" aria-label="5 / 5">★★★★★</div>
+              <blockquote data-i18n="testi.q1">The most beautiful set I've ever had.</blockquote>
+              <cite data-i18n="testi.a1">Laura · Gel extensions</cite>
+            </figure>
+            <figure class="testi-card reveal">
+              <div class="testi-stars" role="img" aria-label="5 / 5">★★★★★</div>
+              <blockquote data-i18n="testi.q2">Calm, personal and spotless.</blockquote>
+              <cite data-i18n="testi.a2">Marta · Bridal nails</cite>
+            </figure>
+            <figure class="testi-card reveal">
+              <div class="testi-stars" role="img" aria-label="5 / 5">★★★★★</div>
+              <blockquote data-i18n="testi.q3">Exactly the elegant, natural look I wanted.</blockquote>
+              <cite data-i18n="testi.a3">Elena · Classic manicure</cite>
+            </figure>
+            <figure class="testi-card reveal">
+              <div class="testi-stars" role="img" aria-label="5 / 5">★★★★★</div>
+              <blockquote data-i18n="testi.q4">Three weeks on and they still look freshly done.</blockquote>
+              <cite data-i18n="testi.a4">Sofía · Gel manicure</cite>
+            </figure>
+            <figure class="testi-card reveal">
+              <div class="testi-stars" role="img" aria-label="5 / 5">★★★★★</div>
+              <blockquote data-i18n="testi.q5">I've finally found my nail artist.</blockquote>
+              <cite data-i18n="testi.a5">Carmen · Nail art</cite>
+            </figure>
+            <figure class="testi-card reveal">
+              <div class="testi-stars" role="img" aria-label="5 / 5">★★★★★</div>
+              <blockquote data-i18n="testi.q6">Relaxing from start to finish.</blockquote>
+              <cite data-i18n="testi.a6">Natalia · Spa pedicure</cite>
+            </figure>
+            </div>
+          </div>
+          <button class="testi-arrow testi-arrow--next" data-testi-next type="button" aria-label="Next" data-i18n-attr="aria-label:testi.next">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
         </div>
       </div>
     </section>
@@ -119,8 +184,8 @@
     </div>
   </footer>
 
-  <script src="assets/js/config.js?v=35"></script>
-  <script src="assets/js/i18n.js?v=35"></script>
-  <script src="assets/js/main.js?v=35"></script>
+  <script src="assets/js/config.js?v=36"></script>
+  <script src="assets/js/i18n.js?v=36"></script>
+  <script src="assets/js/main.js?v=36"></script>
 </body>
 </html>
