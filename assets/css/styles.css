@@ -1566,10 +1566,18 @@ h1, h2, h3, h4, h5, h6,
 .page-hero--tight { padding-top: var(--space-5); }
 
 /* ==========================================================================
-   Contact split — details (left) + map full height (right)
+   Contact split — details (left) + map window (right)
    ========================================================================== */
-.contact-split { display: grid; grid-template-columns: 1fr 1fr; align-items: stretch; }
-.contact-split__body { background: var(--bg-surface); padding: clamp(2rem, 5vw, 4.5rem); }
+.contact-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+  max-width: var(--maxw);
+  margin-inline: auto;
+  padding: var(--space-6) var(--space-4);
+}
+.contact-split__body { padding: 0; }
 .contact-split__body .crumbs {
   font-size: 0.72rem; letter-spacing: var(--tracking-wide);
   text-transform: uppercase; color: var(--text-soft); margin-bottom: var(--space-2);
@@ -1578,9 +1586,17 @@ h1, h2, h3, h4, h5, h6,
 .contact-split__sub { color: var(--text-soft); max-width: 46ch; margin-bottom: var(--space-5); }
 .contact-split .info-list { display: grid; gap: var(--space-3); margin-bottom: var(--space-4); }
 .contact-floral { width: 110px; height: auto; margin-top: var(--space-5); opacity: .8; }
-.contact-split__media { position: relative; min-height: 540px; background: var(--color-silver); }
+.contact-split__media {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--color-silver);
+  box-shadow: var(--shadow-soft);
+}
 .contact-split__media iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; display: block; }
 @media (max-width: 860px) {
   .contact-split { grid-template-columns: 1fr; }
-  .contact-split__media { min-height: 380px; }
+  .contact-split__media { aspect-ratio: 4 / 3; }
 }
