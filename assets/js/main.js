@@ -145,7 +145,13 @@
     filters.forEach(function (f) {
       f.addEventListener("click", function () { select(f.getAttribute("data-filter")); });
     });
-    select("all");
+    // Honour a ?cat= param so the chooser page can deep-link into a specialty
+    var initial = "all";
+    try {
+      var cat = new URLSearchParams(window.location.search).get("cat");
+      if (cat && document.querySelector('.price-tab[data-filter="' + cat + '"]')) initial = cat;
+    } catch (e) {}
+    select(initial);
   }
 
   /* ---- Contact form (demo, no backend) ---------------------------------- */

@@ -158,6 +158,8 @@ window.NL_I18N = {
     gallery: {
       heroTitle: "Gallery",
       heroSub: "A selection of recent sets — manicures, extensions and nail art. New work is added regularly.",
+      chooseTitle: "Which gallery would you like to see?",
+      chooseSub: "Choose a specialty to view that work.",
       filterAll: "All", filterMani: "Manicure", filterExt: "Extensions", filterArt: "Nail art", filterFeet: "Pedicure",
       ctaTitle: "Like what you see?",
       ctaBody: "Bring a reference or let us design something just for you."
@@ -208,6 +210,9 @@ window.NL_I18N = {
       heroSub: "A small studio built on care, hygiene and a love of detail.",
       introBody1: "Nails Lindes is a small, by-appointment studio in Spain, built around one idea — that nail care should feel calm, personal and never rushed. Every appointment is given the time it deserves, in a clean, warm space.",
       introBody2: "Behind the work is a deep love of detail: spotless hygiene, premium gels and builders, and finishes designed to last. Whether it's a quiet natural manicure or a fully sculpted set, the care is the same.",
+      val1Title: "Quality", val1Body: "Every set is built with premium products and a careful, detail-led hand — quality you can see and feel.",
+      val2Title: "Durability", val2Body: "Finishes are designed to last: strong, long-wearing and made to keep looking fresh for weeks.",
+      val3Title: "Wellbeing", val3Body: "Spotless hygiene and a calm, unhurried setting always put your comfort and wellbeing first.",
       storyEyebrow: "The story",
       storyTitle: "Quiet craft, made personal", meetCta: "Meet your nail artist",
       storyBody1: "Nails Lindes began with a simple belief: nail care should feel calm, clean and genuinely personal — never rushed, never one-size-fits-all.",
@@ -383,6 +388,8 @@ window.NL_I18N = {
     gallery: {
       heroTitle: "Galería",
       heroSub: "Una selección de trabajos recientes: manicuras, extensiones y nail art. Se añaden novedades a menudo.",
+      chooseTitle: "¿Qué galería quieres ver?",
+      chooseSub: "Elige una especialidad para ver ese trabajo.",
       filterAll: "Todo", filterMani: "Manicura", filterExt: "Extensiones", filterArt: "Nail art", filterFeet: "Pedicura",
       ctaTitle: "¿Te gusta lo que ves?",
       ctaBody: "Trae una referencia o deja que diseñemos algo solo para ti."
@@ -433,6 +440,9 @@ window.NL_I18N = {
       heroSub: "Un estudio pequeño construido sobre el cuidado, la higiene y el amor por el detalle.",
       introBody1: "Nails Lindes es un pequeño estudio con cita previa en España, construido sobre una idea: que el cuidado de las uñas debe sentirse tranquilo, personal y sin prisa. Cada cita recibe el tiempo que merece, en un espacio limpio y cálido.",
       introBody2: "Detrás del trabajo hay un profundo amor por el detalle: higiene impecable, geles y refuerzos premium y acabados pensados para durar. Ya sea una manicura natural y sencilla o un set totalmente esculpido, el cuidado es el mismo.",
+      val1Title: "Calidad", val1Body: "Cada trabajo se realiza con productos premium y una mano cuidadosa y atenta: calidad que se ve y se siente.",
+      val2Title: "Durabilidad", val2Body: "Los acabados están pensados para durar: resistentes, de larga duración y bonitos durante semanas.",
+      val3Title: "Bienestar", val3Body: "La higiene impecable y un ambiente tranquilo ponen siempre tu comodidad y bienestar primero.",
       storyEyebrow: "La historia",
       storyTitle: "Buen oficio, hecho personal", meetCta: "Conoce a tu manicurista",
       storyBody1: "Nails Lindes nació de una idea simple: el cuidado de uñas debe sentirse tranquilo, limpio y de verdad personal, nunca con prisas ni igual para todas.",
@@ -608,6 +618,8 @@ window.NL_I18N = {
     gallery: {
       heroTitle: "Галерея",
       heroSub: "Подборка недавних работ — маникюр, наращивание и нейл-арт. Новые работы добавляются регулярно.",
+      chooseTitle: "Какую галерею показать?",
+      chooseSub: "Выберите направление, чтобы посмотреть работы.",
       filterAll: "Все", filterMani: "Маникюр", filterExt: "Наращивание", filterArt: "Нейл-арт", filterFeet: "Педикюр",
       ctaTitle: "Нравится то, что видите?",
       ctaBody: "Принесите референс или доверьте дизайн нам."
@@ -658,6 +670,9 @@ window.NL_I18N = {
       heroSub: "Небольшая студия, построенная на заботе, гигиене и любви к деталям.",
       introBody1: "Nails Lindes — небольшая студия в Испании по предварительной записи, построенная вокруг одной идеи: уход за ногтями должен быть спокойным, личным и неспешным. Каждой записи уделяется столько времени, сколько она заслуживает, в чистом и тёплом пространстве.",
       introBody2: "За работой стоит любовь к деталям: безупречная гигиена, премиальные гели и материалы и покрытия, созданные надолго. Будь то спокойный натуральный маникюр или полностью смоделированный набор — забота одинакова.",
+      val1Title: "Качество", val1Body: "Каждая работа выполняется премиальными материалами и аккуратной рукой — качество видно и ощутимо.",
+      val2Title: "Стойкость", val2Body: "Покрытия созданы надолго: прочные, ноские и сохраняющие свежий вид неделями.",
+      val3Title: "Забота", val3Body: "Безупречная гигиена и спокойная, неспешная атмосфера всегда ставят ваш комфорт на первое место.",
       storyEyebrow: "История",
       storyTitle: "Тихое мастерство, сделанное лично", meetCta: "Познакомьтесь с мастером",
       storyBody1: "Nails Lindes начались с простой мысли: уход за ногтями должен быть спокойным, чистым и по-настоящему личным — без спешки и без шаблонов.",

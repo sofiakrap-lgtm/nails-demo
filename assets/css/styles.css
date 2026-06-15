@@ -1600,3 +1600,49 @@ h1, h2, h3, h4, h5, h6,
   .contact-split { grid-template-columns: 1fr; }
   .contact-split__media { aspect-ratio: 4 / 3; }
 }
+
+/* ==========================================================================
+   Gallery chooser (intermediate page) — Manicure / Pedicure tiles
+   ========================================================================== */
+.gallery-choose {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(1rem, 3vw, 2.5rem);
+  max-width: 900px;
+  margin-inline: auto;
+}
+.choose-card { display: block; text-decoration: none; color: inherit; }
+.choose-card__media {
+  display: block; aspect-ratio: 1 / 1; overflow: hidden;
+  border-radius: 12px; background: var(--color-silver);
+}
+.choose-card__media img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .5s var(--ease); }
+.choose-card:hover .choose-card__media img { transform: scale(1.04); }
+.choose-card__label {
+  display: block; text-align: center; margin-top: 1rem;
+  font-family: var(--font-serif); font-size: 1.6rem; color: var(--color-coffee);
+}
+@media (max-width: 560px) { .gallery-choose { grid-template-columns: 1fr; } }
+
+/* ==========================================================================
+   About values — quality / durability / wellbeing (3 columns)
+   ========================================================================== */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+  max-width: 1000px;
+  margin-inline: auto;
+}
+.value { text-align: center; }
+.value__icon { width: 48px; height: 48px; object-fit: contain; margin: 0 auto var(--space-3); }
+.value__title {
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-label);
+  font-size: 0.82rem;
+  color: var(--color-coffee);
+  margin: 0 0 var(--space-2);
+}
+.value__text { color: var(--text-soft); font-size: 0.95rem; margin: 0; max-width: 34ch; margin-inline: auto; }
+@media (max-width: 720px) { .values-grid { grid-template-columns: 1fr; } }
