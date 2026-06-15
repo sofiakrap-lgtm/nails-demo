@@ -576,7 +576,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 .price-group { margin-bottom: var(--space-6); }
 .price-group__title {
-  display: flex; align-items: center; gap: var(--space-2);
+  text-align: center;
   margin-bottom: var(--space-3);
 }
 .price-group__title h3 { margin: 0; }
@@ -1481,3 +1481,17 @@ body { zoom: 0.8; }
 }
 @media (max-width: 860px) { .svc-cards { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 460px) { .svc-cards { grid-template-columns: 1fr; } }
+
+/* ==========================================================================
+   Serif display font: bold everywhere (Instrument Serif synthesises bold)
+   ========================================================================== */
+h1, h2, h3, h4, h5, h6,
+.brand__name, .hero__tagline, .marquee__item,
+.price-item__name, .price-item__price, .card__title,
+.price-highlight .price-figure, .quote-band__mark,
+.testi-card blockquote, .faq__item summary, .step__num,
+.stat__num, .striped-band .band-sub, .fullsplit__script,
+.svc-card__title, [style*="--font-serif"] {
+  font-weight: 700 !important;
+  font-synthesis: weight;
+}
