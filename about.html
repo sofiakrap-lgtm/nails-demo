@@ -63,17 +63,17 @@
       <div class="container">
         <div class="values-grid">
           <div class="value reveal">
-            <img class="value__icon" src="assets/graphics/g2.svg?v=50" alt="" width="48" height="48" loading="lazy">
+            <img class="value__icon" src="assets/graphics/val-quality.svg?v=51" alt="" width="48" height="48" loading="lazy">
             <h3 class="value__title" data-i18n="about.val1Title">Quality</h3>
             <p class="value__text" data-i18n="about.val1Body">Every set is built with premium products and a careful, detail-led hand — quality you can see and feel.</p>
           </div>
           <div class="value reveal">
-            <img class="value__icon" src="assets/graphics/g3.svg?v=50" alt="" width="48" height="48" loading="lazy">
+            <img class="value__icon" src="assets/graphics/val-durability.svg?v=51" alt="" width="48" height="48" loading="lazy">
             <h3 class="value__title" data-i18n="about.val2Title">Durability</h3>
             <p class="value__text" data-i18n="about.val2Body">Finishes are designed to last: strong, long-wearing and made to keep looking fresh for weeks.</p>
           </div>
           <div class="value reveal">
-            <img class="value__icon" src="assets/graphics/g4.svg?v=50" alt="" width="48" height="48" loading="lazy">
+            <img class="value__icon" src="assets/graphics/val-wellbeing.svg?v=51" alt="" width="48" height="48" loading="lazy">
             <h3 class="value__title" data-i18n="about.val3Title">Wellbeing</h3>
             <p class="value__text" data-i18n="about.val3Body">Spotless hygiene and a calm, unhurried setting always put your comfort and wellbeing first.</p>
           </div>
@@ -112,28 +112,53 @@
 
 
 
-    <!-- Values -->
-    <section class="section">
+    <!-- Testimonials (replaces 'What guides the work') -->
+    <section class="section testi">
       <div class="container">
         <div class="section-head section-head--center">
-          <h2 data-i18n="about.valuesTitle">What guides the work</h2>
+          <h2 style="margin:0" data-i18n="testi.title">Moments worth remembering</h2>
         </div>
-        <div class="feature-grid">
-          <div class="feature reveal">
-            <img class="feature__icon" src="assets/graphics/g2.svg?v=47" alt="" width="60" height="60" loading="lazy">
-            <h3 data-i18n="about.v1Title">Hygiene first</h3>
-            <p data-i18n="about.v1Body">Sterilised tools and single-use files, always.</p>
+        <div class="testi-wrap">
+          <button class="testi-arrow testi-arrow--prev" data-testi-prev type="button" aria-label="Previous" data-i18n-attr="aria-label:testi.prev">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+          </button>
+          <div class="testi-viewport">
+            <div class="testi-track">
+            <figure class="testi-card reveal">
+              <div class="testi-stars" role="img" aria-label="5 / 5">★★★★★</div>
+              <blockquote data-i18n="testi.q1">The most beautiful set I've ever had.</blockquote>
+              <cite data-i18n="testi.a1">Laura · Gel extensions</cite>
+            </figure>
+            <figure class="testi-card reveal">
+              <div class="testi-stars" role="img" aria-label="5 / 5">★★★★★</div>
+              <blockquote data-i18n="testi.q2">Calm, personal and spotless.</blockquote>
+              <cite data-i18n="testi.a2">Marta · Bridal nails</cite>
+            </figure>
+            <figure class="testi-card reveal">
+              <div class="testi-stars" role="img" aria-label="5 / 5">★★★★★</div>
+              <blockquote data-i18n="testi.q3">Exactly the elegant, natural look I wanted.</blockquote>
+              <cite data-i18n="testi.a3">Elena · Classic manicure</cite>
+            </figure>
+            <figure class="testi-card reveal">
+              <div class="testi-stars" role="img" aria-label="5 / 5">★★★★★</div>
+              <blockquote data-i18n="testi.q4">Three weeks on and they still look freshly done.</blockquote>
+              <cite data-i18n="testi.a4">Sofía · Gel manicure</cite>
+            </figure>
+            <figure class="testi-card reveal">
+              <div class="testi-stars" role="img" aria-label="5 / 5">★★★★★</div>
+              <blockquote data-i18n="testi.q5">I've finally found my nail artist.</blockquote>
+              <cite data-i18n="testi.a5">Carmen · Nail art</cite>
+            </figure>
+            <figure class="testi-card reveal">
+              <div class="testi-stars" role="img" aria-label="5 / 5">★★★★★</div>
+              <blockquote data-i18n="testi.q6">Relaxing from start to finish.</blockquote>
+              <cite data-i18n="testi.a6">Natalia · Spa pedicure</cite>
+            </figure>
+            </div>
           </div>
-          <div class="feature reveal">
-            <img class="feature__icon" src="assets/graphics/g3.svg?v=47" alt="" width="60" height="60" loading="lazy">
-            <h3 data-i18n="about.v2Title">Honest pricing</h3>
-            <p data-i18n="about.v2Body">Clear, published prices and no surprises.</p>
-          </div>
-          <div class="feature reveal">
-            <img class="feature__icon" src="assets/graphics/g4.svg?v=47" alt="" width="60" height="60" loading="lazy">
-            <h3 data-i18n="about.v3Title">Lasting results</h3>
-            <p data-i18n="about.v3Body">Premium products applied with patience and care.</p>
-          </div>
+          <button class="testi-arrow testi-arrow--next" data-testi-next type="button" aria-label="Next" data-i18n-attr="aria-label:testi.next">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
         </div>
       </div>
     </section>
