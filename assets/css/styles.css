@@ -24,7 +24,7 @@
   --accent-cool:   var(--color-cadet);
 
   /* Typography */
-  --font-serif: "Playfair Display", "Times New Roman", serif;
+  --font-serif: "Instrument Serif", "Times New Roman", serif;
   --font-sans:  "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
 
   --tracking-wide:  0.16em;
@@ -1679,3 +1679,15 @@ h1, h2, h3, h4, h5, h6,
 
 /* Quote band: bold */
 .quote-band__mark { font-weight: 700 !important; }
+
+/* Russian: remove the (faux) bold from serif headings — Cyrillic reads better unbolded */
+html[lang="ru"] h1, html[lang="ru"] h2, html[lang="ru"] h3,
+html[lang="ru"] h4, html[lang="ru"] h5, html[lang="ru"] h6,
+html[lang="ru"] .brand__name, html[lang="ru"] .svc-card__title,
+html[lang="ru"] .price-item__name, html[lang="ru"] .price-item__price,
+html[lang="ru"] .card__title, html[lang="ru"] .stat__num,
+html[lang="ru"] .quote-band__mark, html[lang="ru"] .testi-card blockquote,
+html[lang="ru"] .faq__item summary, html[lang="ru"] .striped-band .band-sub,
+html[lang="ru"] .fullsplit__script {
+  font-weight: 400 !important;
+}
