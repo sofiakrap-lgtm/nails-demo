@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css?v=45">
+  <link rel="stylesheet" href="assets/css/styles.css?v=46">
   <link rel="icon" href="assets/logos/mark.svg" type="image/svg+xml">
 </head>
 <body>
@@ -44,59 +44,50 @@
   </header>
 
   <main id="main">
-    <section class="page-hero">
-      <div class="container">
+    <!-- Contact: full-bleed split — details left, map full height right -->
+    <section class="contact-split">
+      <div class="contact-split__body reveal">
         <p class="crumbs"><a href="index.html" data-i18n="nav.home">Home</a> · <span data-i18n="nav.contact">Contact</span></p>
         <h1 data-i18n="contact.heroTitle">Contact</h1>
-        <p data-i18n="contact.heroSub">Questions, custom designs or collaborations — we'd love to hear from you.</p>
-      </div>
-    </section>
+        <p class="contact-split__sub" data-i18n="contact.heroSub">Questions, custom designs or collaborations — we'd love to hear from you.</p>
 
-    <section class="section">
-      <div class="container">
-        <div class="info-grid">
-          <!-- Left: details + hours -->
-          <div class="reveal">
-            <div class="info-list" style="margin-bottom:2.5rem">
-              <div class="info-item">
-                <svg class="info-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
-                <div><h4 data-i18n="contact.addressTitle">Studio</h4><p data-config="address">Calle Ejemplo 12, Marbella, España</p></div>
-              </div>
-              <div class="info-item">
-                <svg class="info-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 4h4l2 5-3 2a12 12 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg>
-                <div><h4 data-i18n="contact.phoneTitle">Phone</h4><p><a data-config="phone" href="#">+34 600 000 000</a></p></div>
-              </div>
-              <div class="info-item">
-                <svg class="info-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
-                <div><h4 data-i18n="contact.emailTitle">Email</h4><p><a data-config="email" href="#">hola@nailslindes.com</a></p></div>
-              </div>
-              <div class="info-item">
-                <svg class="info-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
-                <div><h4 data-i18n="contact.socialTitle">Instagram</h4><p><a data-config="instagram" href="#" target="_blank" rel="noopener">@nailslindes</a></p></div>
-              </div>
-            </div>
-
-            <table class="hours">
-              <tr><td data-i18n="contact.day1">Monday</td><td>10:00 – 19:00</td></tr>
-              <tr><td data-i18n="contact.day2">Tuesday</td><td>10:00 – 19:00</td></tr>
-              <tr><td data-i18n="contact.day3">Wednesday</td><td>10:00 – 19:00</td></tr>
-              <tr><td data-i18n="contact.day4">Thursday</td><td>10:00 – 19:00</td></tr>
-              <tr><td data-i18n="contact.day5">Friday</td><td>10:00 – 19:00</td></tr>
-              <tr><td data-i18n="contact.day6">Saturday</td><td>10:00 – 15:00</td></tr>
-              <tr><td data-i18n="contact.day7">Sunday</td><td data-i18n="contact.closed">Closed</td></tr>
-            </table>
+        <div class="info-list">
+          <div class="info-item">
+            <svg class="info-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            <div><h4 data-i18n="contact.addressTitle">Studio</h4><p data-config="address">Calle Ejemplo 12, Marbella, España</p></div>
           </div>
-
-          <!-- Right: map -->
-          <div class="reveal">
-            <div class="map-embed map-embed--tall">
-              <iframe data-map title="Map to Nails Lindes" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Marbella,Spain&output=embed"></iframe>
-            </div>
-            <p class="text-center" style="margin-top:1.25rem">
-              <a class="btn btn--ghost" href="https://maps.google.com" target="_blank" rel="noopener" data-i18n="cta.getDirections">Get directions</a>
-            </p>
+          <div class="info-item">
+            <svg class="info-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 4h4l2 5-3 2a12 12 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg>
+            <div><h4 data-i18n="contact.phoneTitle">Phone</h4><p><a data-config="phone" href="#">+34 600 000 000</a></p></div>
+          </div>
+          <div class="info-item">
+            <svg class="info-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            <div><h4 data-i18n="contact.emailTitle">Email</h4><p><a data-config="email" href="#">hola@nailslindes.com</a></p></div>
+          </div>
+          <div class="info-item">
+            <svg class="info-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            <div><h4 data-i18n="contact.socialTitle">Instagram</h4><p><a data-config="instagram" href="#" target="_blank" rel="noopener">@nailslindes</a></p></div>
           </div>
         </div>
+
+        <table class="hours">
+          <tr><td data-i18n="contact.day1">Monday</td><td>10:00 – 19:00</td></tr>
+          <tr><td data-i18n="contact.day2">Tuesday</td><td>10:00 – 19:00</td></tr>
+          <tr><td data-i18n="contact.day3">Wednesday</td><td>10:00 – 19:00</td></tr>
+          <tr><td data-i18n="contact.day4">Thursday</td><td>10:00 – 19:00</td></tr>
+          <tr><td data-i18n="contact.day5">Friday</td><td>10:00 – 19:00</td></tr>
+          <tr><td data-i18n="contact.day6">Saturday</td><td>10:00 – 15:00</td></tr>
+          <tr><td data-i18n="contact.day7">Sunday</td><td data-i18n="contact.closed">Closed</td></tr>
+        </table>
+
+        <p style="margin-top:2rem">
+          <a class="btn btn--ghost" href="https://maps.google.com" target="_blank" rel="noopener" data-i18n="cta.getDirections">Get directions</a>
+        </p>
+
+        <img class="contact-floral" src="assets/graphics/floral.svg" alt="" width="120" height="90">
+      </div>
+      <div class="contact-split__media reveal">
+        <iframe data-map title="Map to Nails Lindes" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Marbella,Spain&output=embed"></iframe>
       </div>
     </section>
 
@@ -175,8 +166,8 @@
     </div>
   </footer>
 
-  <script src="assets/js/config.js?v=45"></script>
-  <script src="assets/js/i18n.js?v=45"></script>
-  <script src="assets/js/main.js?v=45"></script>
+  <script src="assets/js/config.js?v=46"></script>
+  <script src="assets/js/i18n.js?v=46"></script>
+  <script src="assets/js/main.js?v=46"></script>
 </body>
 </html>
