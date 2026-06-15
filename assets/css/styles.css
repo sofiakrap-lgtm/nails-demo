@@ -1518,11 +1518,9 @@ h1, h2, h3, h4, h5, h6,
   display: flex; align-items: center; justify-content: center;
   width: clamp(140px, 16vw, 190px);
   aspect-ratio: 1 / 1;
-  border-radius: 50%;
-  background: color-mix(in srgb, var(--color-silver) 40%, var(--color-beige));
   margin-bottom: var(--space-3);
 }
-.way__icon img { width: 52%; height: 52%; object-fit: contain; display: block; }
+.way__icon img { width: 78%; height: 78%; object-fit: contain; display: block; }
 .way__title { margin: 0 0 .6rem; }
 .way__text { max-width: 34ch; color: var(--text-soft); margin-bottom: var(--space-3); }
 .way .btn { margin-top: auto; }
