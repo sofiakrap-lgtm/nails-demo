@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css?v=39">
+  <link rel="stylesheet" href="assets/css/styles.css?v=40">
   <link rel="icon" href="assets/logos/mark.svg" type="image/svg+xml">
 </head>
 <body>
@@ -87,56 +87,59 @@
             </table>
           </div>
 
-          <!-- Right: form -->
+          <!-- Right: map -->
           <div class="reveal">
-            <form class="form" data-demo-form novalidate>
-              <div class="form__row">
-                <div class="field">
-                  <label for="c-name" data-i18n="contact.fName">Name</label>
-                  <input id="c-name" name="name" type="text" autocomplete="name" required>
-                </div>
-                <div class="field">
-                  <label for="c-email" data-i18n="contact.fEmail">Email</label>
-                  <input id="c-email" name="email" type="email" autocomplete="email" required>
-                </div>
-              </div>
-              <div class="form__row">
-                <div class="field">
-                  <label for="c-phone" data-i18n="contact.fPhone">Phone (optional)</label>
-                  <input id="c-phone" name="phone" type="tel" autocomplete="tel">
-                </div>
-                <div class="field">
-                  <label for="c-service" data-i18n="contact.fService">Interested in</label>
-                  <select id="c-service" name="service">
-                    <option value="" data-i18n="contact.fServicePlaceholder">Select a treatment</option>
-                    <option data-i18n="services.g1Title">Manicures</option>
-                    <option data-i18n="services.g2Title">Gel & extensions</option>
-                    <option data-i18n="services.g3Title">Nail art & finishing</option>
-                    <option data-i18n="services.g4Title">Pedicures</option>
-                  </select>
-                </div>
-              </div>
-              <div class="field">
-                <label for="c-message" data-i18n="contact.fMessage">Message</label>
-                <textarea id="c-message" name="message" required></textarea>
-              </div>
-              <button class="btn" type="submit" data-i18n="cta.send">Send message</button>
-              <p class="form-note hidden" data-form-result role="status"></p>
-            </form>
+            <div class="map-embed map-embed--tall">
+              <iframe data-map title="Map to Nails Lindes" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Marbella,Spain&output=embed"></iframe>
+            </div>
+            <p class="text-center" style="margin-top:1.25rem">
+              <a class="btn btn--ghost" href="https://maps.google.com" target="_blank" rel="noopener" data-i18n="cta.getDirections">Get directions</a>
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Map -->
+    <!-- Send a message -->
     <section class="section section--tight section--surface">
-      <div class="container">
-        <div class="map-embed">
-          <iframe data-map title="Map to Nails Lindes" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Marbella,Spain&output=embed"></iframe>
+      <div class="container container--narrow">
+        <div class="section-head section-head--center">
+          <h2 data-i18n="contact.formTitle">Send a message</h2>
         </div>
-        <p class="text-center" style="margin-top:1.5rem">
-          <a class="btn btn--ghost" href="https://maps.google.com" target="_blank" rel="noopener" data-i18n="cta.getDirections">Get directions</a>
-        </p>
+        <form class="form" data-demo-form novalidate>
+          <div class="form__row">
+            <div class="field">
+              <label for="c-name" data-i18n="contact.fName">Name</label>
+              <input id="c-name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="c-email" data-i18n="contact.fEmail">Email</label>
+              <input id="c-email" name="email" type="email" autocomplete="email" required>
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="field">
+              <label for="c-phone" data-i18n="contact.fPhone">Phone (optional)</label>
+              <input id="c-phone" name="phone" type="tel" autocomplete="tel">
+            </div>
+            <div class="field">
+              <label for="c-service" data-i18n="contact.fService">Interested in</label>
+              <select id="c-service" name="service">
+                <option value="" data-i18n="contact.fServicePlaceholder">Select a treatment</option>
+                <option data-i18n="services.g1Title">Manicures</option>
+                <option data-i18n="services.g2Title">Gel & extensions</option>
+                <option data-i18n="services.g3Title">Nail art & finishing</option>
+                <option data-i18n="services.g4Title">Pedicures</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="c-message" data-i18n="contact.fMessage">Message</label>
+            <textarea id="c-message" name="message" required></textarea>
+          </div>
+          <button class="btn" type="submit" data-i18n="cta.send">Send message</button>
+          <p class="form-note hidden" data-form-result role="status"></p>
+        </form>
       </div>
     </section>
   </main>
@@ -172,8 +175,8 @@
     </div>
   </footer>
 
-  <script src="assets/js/config.js?v=39"></script>
-  <script src="assets/js/i18n.js?v=39"></script>
-  <script src="assets/js/main.js?v=39"></script>
+  <script src="assets/js/config.js?v=40"></script>
+  <script src="assets/js/i18n.js?v=40"></script>
+  <script src="assets/js/main.js?v=40"></script>
 </body>
 </html>
