@@ -1677,5 +1677,5 @@ h1, h2, h3, h4, h5, h6,
 .contact-split__aside { display: flex; flex-direction: column; gap: var(--space-5); }
 .contact-deco { width: clamp(130px, 18vw, 240px); height: auto; opacity: .9; }
 
-/* Quote band: not bold (override global serif bold) */
-.quote-band__mark { font-weight: 400 !important; }
+/* Quote band: bold */
+.quote-band__mark { font-weight: 700 !important; }
