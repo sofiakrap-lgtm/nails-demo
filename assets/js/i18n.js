@@ -193,6 +193,8 @@ window.NL_I18N = {
     about: {
       heroTitle: "About",
       heroSub: "A small studio built on care, hygiene and a love of detail.",
+      introBody1: "Nails Lindes is a small, by-appointment studio in Spain, built around one idea — that nail care should feel calm, personal and never rushed. Every appointment is given the time it deserves, in a clean, warm space.",
+      introBody2: "Behind the work is a deep love of detail: spotless hygiene, premium gels and builders, and finishes designed to last. Whether it's a quiet natural manicure or a fully sculpted set, the care is the same.",
       storyEyebrow: "The story",
       storyTitle: "Quiet craft, made personal", meetCta: "Meet your nail artist",
       storyBody1: "Nails Lindes began with a simple belief: nail care should feel calm, clean and genuinely personal — never rushed, never one-size-fits-all.",
@@ -403,6 +405,8 @@ window.NL_I18N = {
     about: {
       heroTitle: "Sobre mí",
       heroSub: "Un estudio pequeño construido sobre el cuidado, la higiene y el amor por el detalle.",
+      introBody1: "Nails Lindes es un pequeño estudio con cita previa en España, construido sobre una idea: que el cuidado de las uñas debe sentirse tranquilo, personal y sin prisa. Cada cita recibe el tiempo que merece, en un espacio limpio y cálido.",
+      introBody2: "Detrás del trabajo hay un profundo amor por el detalle: higiene impecable, geles y refuerzos premium y acabados pensados para durar. Ya sea una manicura natural y sencilla o un set totalmente esculpido, el cuidado es el mismo.",
       storyEyebrow: "La historia",
       storyTitle: "Buen oficio, hecho personal", meetCta: "Conoce a tu manicurista",
       storyBody1: "Nails Lindes nació de una idea simple: el cuidado de uñas debe sentirse tranquilo, limpio y de verdad personal, nunca con prisas ni igual para todas.",
@@ -613,6 +617,8 @@ window.NL_I18N = {
     about: {
       heroTitle: "Обо мне",
       heroSub: "Небольшая студия, построенная на заботе, гигиене и любви к деталям.",
+      introBody1: "Nails Lindes — небольшая студия в Испании по предварительной записи, построенная вокруг одной идеи: уход за ногтями должен быть спокойным, личным и неспешным. Каждой записи уделяется столько времени, сколько она заслуживает, в чистом и тёплом пространстве.",
+      introBody2: "За работой стоит любовь к деталям: безупречная гигиена, премиальные гели и материалы и покрытия, созданные надолго. Будь то спокойный натуральный маникюр или полностью смоделированный набор — забота одинакова.",
       storyEyebrow: "История",
       storyTitle: "Тихое мастерство, сделанное лично", meetCta: "Познакомьтесь с мастером",
       storyBody1: "Nails Lindes начались с простой мысли: уход за ногтями должен быть спокойным, чистым и по-настоящему личным — без спешки и без шаблонов.",
