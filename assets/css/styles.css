@@ -24,7 +24,7 @@
   --accent-cool:   var(--color-cadet);
 
   /* Typography */
-  --font-serif: "Instrument Serif", "Times New Roman", serif;
+  --font-serif: "Playfair Display", "Times New Roman", serif;
   --font-sans:  "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
 
   --tracking-wide:  0.16em;
