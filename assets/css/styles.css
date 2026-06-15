@@ -1527,3 +1527,41 @@ h1, h2, h3, h4, h5, h6,
 .way__text { max-width: 34ch; color: var(--text-soft); margin-bottom: var(--space-3); }
 .way .btn { margin-top: auto; }
 @media (max-width: 680px) { .ways { grid-template-columns: 1fr; } }
+
+/* ==========================================================================
+   Notes grid (pricing "Good to know") — bordered columns, "Values" model
+   ========================================================================== */
+.notes-grid { border: 1px solid var(--line); background: var(--bg-surface); }
+.notes-grid__title {
+  margin: 0;
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--line);
+  font-size: 1.5rem;
+}
+.notes-grid__row { display: grid; grid-template-columns: repeat(4, 1fr); }
+.note-col { padding: var(--space-4); border-left: 1px solid var(--line); }
+.note-col:first-child { border-left: 0; }
+.note-col h4 {
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-label);
+  font-size: 0.72rem;
+  color: var(--color-stone);
+  margin: 0 0 1rem;
+}
+.note-col p { margin: 0; font-size: 0.92rem; color: var(--text-soft); }
+@media (max-width: 760px) {
+  .notes-grid__row { grid-template-columns: 1fr 1fr; }
+  .note-col:nth-child(odd) { border-left: 0; }
+  .note-col:nth-child(n+3) { border-top: 1px solid var(--line); }
+}
+@media (max-width: 460px) {
+  .notes-grid__row { grid-template-columns: 1fr; }
+  .note-col { border-left: 0; border-top: 1px solid var(--line); }
+  .note-col:first-child { border-top: 0; }
+}
+
+/* Thin full-width image banner (page top) */
+.page-banner { width: 100%; height: clamp(110px, 16vh, 200px); overflow: hidden; }
+.page-banner img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.page-hero--tight { padding-top: var(--space-5); }

@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css?v=40">
+  <link rel="stylesheet" href="assets/css/styles.css?v=42">
   <link rel="icon" href="assets/logos/mark.svg" type="image/svg+xml">
 </head>
 <body>
@@ -44,7 +44,12 @@
   </header>
 
   <main id="main">
-    <section class="page-hero">
+    <!-- Thin image banner -->
+    <section class="page-banner">
+      <img src="assets/img/pricing-banner.webp?v=42" alt="" width="1600" height="300">
+    </section>
+
+    <section class="page-hero page-hero--tight">
       <div class="container">
         <p class="crumbs"><a href="index.html" data-i18n="nav.home">Home</a> · <span data-i18n="nav.pricing">Pricing</span></p>
         <h1 data-i18n="pricing.heroTitle">Pricing</h1>
@@ -138,15 +143,32 @@
           </div>
         </div>
 
-        <!-- Notes -->
-        <div class="form-note" style="margin-top:1rem">
-          <strong data-i18n="pricing.noteTitle">Good to know</strong>
-          <ul style="margin-top:.6rem;display:grid;gap:.4rem;list-style:disc;padding-left:1.1rem">
-            <li data-i18n="pricing.note1">Prices are in euros and include a consultation.</li>
-            <li data-i18n="pricing.note2">Soak-off / removal of a previous set: from €10.</li>
-            <li data-i18n="pricing.note3">Designs and length above the standard are quoted before we start.</li>
-            <li data-i18n="pricing.note4">Pay online at the time of booking, or in the studio — card or cash.</li>
-          </ul>
+      </div>
+    </section>
+
+    <!-- Good to know — bordered column grid -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="notes-grid">
+          <h3 class="notes-grid__title" data-i18n="pricing.noteTitle">Good to know</h3>
+          <div class="notes-grid__row">
+            <div class="note-col">
+              <h4 data-i18n="pricing.note1Label">Included</h4>
+              <p data-i18n="pricing.note1">Prices are in euros and include a consultation.</p>
+            </div>
+            <div class="note-col">
+              <h4 data-i18n="pricing.note2Label">Removal</h4>
+              <p data-i18n="pricing.note2">Soak-off / removal of a previous set: from €10.</p>
+            </div>
+            <div class="note-col">
+              <h4 data-i18n="pricing.note3Label">Custom work</h4>
+              <p data-i18n="pricing.note3">Designs and length above the standard are quoted before we start.</p>
+            </div>
+            <div class="note-col">
+              <h4 data-i18n="pricing.note4Label">Payment</h4>
+              <p data-i18n="pricing.note4">Pay online at the time of booking, or in the studio — card or cash.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -192,8 +214,8 @@
     </div>
   </footer>
 
-  <script src="assets/js/config.js?v=40"></script>
-  <script src="assets/js/i18n.js?v=40"></script>
-  <script src="assets/js/main.js?v=40"></script>
+  <script src="assets/js/config.js?v=42"></script>
+  <script src="assets/js/i18n.js?v=42"></script>
+  <script src="assets/js/main.js?v=42"></script>
 </body>
 </html>
