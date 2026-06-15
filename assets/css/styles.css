@@ -443,9 +443,10 @@ ul { margin: 0; padding: 0; list-style: none; }
    ========================================================================== */
 .gallery-head {
   display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: var(--space-3);
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-2);
   margin-bottom: var(--space-4);
 }
 .gallery-row {
@@ -629,7 +630,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .price-highlight {
   background: var(--color-coffee);
   color: var(--color-beige);
-  border-radius: var(--radius);
+  border-radius: 12px;
   padding: var(--space-5);
   text-align: center;
 }
