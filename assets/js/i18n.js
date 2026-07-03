@@ -231,6 +231,19 @@ window.NL_I18N = {
       rights: "All rights reserved.",
       built: "Vintage-elegant nail care.",
       privacy: "Privacy", booking: "Book now"
+    },
+    loyalty: {
+      open: "Loyalty club",
+      eyebrow: "Loyalty club",
+      title: "Join the Nails Lindes club",
+      body: "Become a member and enjoy the perks of being a regular — it's free to join.",
+      b1: "Daily offers, just for members",
+      b2: "News and announcements, first",
+      b3: "Nail-care tips and inspiration",
+      b4: "Exclusive discounts on treatments",
+      cta: "Go to the loyalty program",
+      note: "This is a demo — the loyalty program isn't connected yet, so this button won't take you anywhere.",
+      close: "Close"
     }
   },
 
@@ -461,6 +474,19 @@ window.NL_I18N = {
       rights: "Todos los derechos reservados.",
       built: "Cuidado de uñas vintage-elegante.",
       privacy: "Privacidad", booking: "Reservar"
+    },
+    loyalty: {
+      open: "Club de fidelidad",
+      eyebrow: "Club de fidelidad",
+      title: "Únete al club de Nails Lindes",
+      body: "Hazte socia y disfruta de las ventajas de ser clienta habitual — unirte es gratis.",
+      b1: "Ofertas diarias, solo para socias",
+      b2: "Novedades y avisos, antes que nadie",
+      b3: "Consejos e inspiración de cuidado de uñas",
+      b4: "Descuentos exclusivos en tratamientos",
+      cta: "Ir al programa de fidelidad",
+      note: "Esto es una demo: el programa de fidelidad aún no está conectado, así que este botón no te llevará a ningún sitio.",
+      close: "Cerrar"
     }
   },
 
@@ -691,6 +717,19 @@ window.NL_I18N = {
       rights: "Все права защищены.",
       built: "Винтажно-элегантный уход за ногтями.",
       privacy: "Конфиденциальность", booking: "Записаться"
+    },
+    loyalty: {
+      open: "Клуб клиентов",
+      eyebrow: "Клуб клиентов",
+      title: "Вступайте в клуб Nails Lindes",
+      body: "Станьте участником и получайте привилегии постоянных клиентов — вступление бесплатное.",
+      b1: "Ежедневные предложения для участников",
+      b2: "Новости и анонсы — первыми",
+      b3: "Советы и вдохновение по уходу за ногтями",
+      b4: "Эксклюзивные скидки на услуги",
+      cta: "Перейти в программу лояльности",
+      note: "Это демо — программа лояльности пока не подключена, поэтому кнопка никуда не ведёт.",
+      close: "Закрыть"
     }
   }
 };

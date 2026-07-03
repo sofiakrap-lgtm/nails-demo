@@ -225,6 +225,120 @@
     window.addEventListener("scroll", update, { passive: true });
   }
 
+  /* ---- Loyalty club modal ----------------------------------------------- */
+  function initLoyalty() {
+    var openers = document.querySelectorAll("[data-loyalty-open]");
+    if (!openers.length) return;
+
+    var tpl =
+      '<div class="loyalty-overlay" data-loyalty-overlay>' +
+        '<div class="loyalty-modal" role="dialog" aria-modal="true" aria-labelledby="loyalty-title">' +
+          '<button class="loyalty-close" type="button" data-loyalty-close aria-label="Close" data-i18n-attr="aria-label:loyalty.close">' +
+            '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>' +
+          '</button>' +
+          '<div class="loyalty-modal__media">' +
+            '<img src="assets/img/treat-ref.webp" alt="" width="900" height="1200" loading="lazy">' +
+          '</div>' +
+          '<div class="loyalty-modal__body">' +
+            '<span class="loyalty-eyebrow" data-i18n="loyalty.eyebrow">Loyalty club</span>' +
+            '<h2 id="loyalty-title" data-i18n="loyalty.title">Join the Nails Lindes club</h2>' +
+            '<p data-i18n="loyalty.body">Become a member and enjoy the perks of being a regular.</p>' +
+            '<ul class="loyalty-benefits">' +
+              '<li data-i18n="loyalty.b1">Daily offers, just for members</li>' +
+              '<li data-i18n="loyalty.b2">News and announcements, first</li>' +
+              '<li data-i18n="loyalty.b3">Nail-care tips and inspiration</li>' +
+              '<li data-i18n="loyalty.b4">Exclusive discounts on treatments</li>' +
+            '</ul>' +
+            '<button class="btn btn--block" type="button" data-loyalty-cta data-i18n="loyalty.cta">Go to the loyalty program</button>' +
+            '<p class="loyalty-note" data-loyalty-note data-i18n="loyalty.note">This is a demo, so this button will not take you anywhere.</p>' +
+          '</div>' +
+        '</div>' +
+      '</div>';
+
+    var wrap = document.createElement("div");
+    wrap.innerHTML = tpl;
+    var overlay = wrap.firstElementChild;
+    document.body.appendChild(overlay);
+
+    // The header button is hidden on mobile (no room next to Book now), so add a
+    // loyalty entry to the slide-in menu. It only shows at mobile widths via CSS.
+    var nav = document.querySelector(".nav");
+    if (nav) {
+      var navLink = document.createElement("a");
+      navLink.href = "#";
+      navLink.className = "nav__link nav__link--loyalty";
+      navLink.setAttribute("data-loyalty-open", "");
+      navLink.setAttribute("data-i18n", "loyalty.open");
+      navLink.textContent = "Loyalty club";
+      nav.appendChild(navLink);
+    }
+
+    // Translate the freshly injected markup (i18n has already applied once).
+    if (window.NL && window.NL.setLang) {
+      window.NL.setLang(document.documentElement.getAttribute("lang") || "en");
+    }
+
+    var modal = overlay.querySelector(".loyalty-modal");
+    var lastFocused = null;
+
+    function focusables() {
+      return modal.querySelectorAll('a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])');
+    }
+    function onKey(e) {
+      if (e.key === "Escape") { close(); return; }
+      if (e.key !== "Tab") return;
+      var f = focusables();
+      if (!f.length) return;
+      var first = f[0], last = f[f.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+    function closeMobileMenu() {
+      var nav = document.querySelector(".nav");
+      var burger = document.querySelector(".burger");
+      var backdrop = document.querySelector(".nav-backdrop");
+      if (nav) nav.classList.remove("is-open");
+      if (backdrop) backdrop.classList.remove("is-open");
+      if (burger) burger.setAttribute("aria-expanded", "false");
+    }
+    function open(e) {
+      if (e) e.preventDefault();
+      closeMobileMenu();
+      lastFocused = document.activeElement;
+      overlay.classList.add("is-open");
+      document.body.style.overflow = "hidden";
+      var closeBtn = overlay.querySelector("[data-loyalty-close]");
+      if (closeBtn) closeBtn.focus();
+      document.addEventListener("keydown", onKey);
+    }
+    function close() {
+      overlay.classList.remove("is-open");
+      document.body.style.overflow = "";
+      document.removeEventListener("keydown", onKey);
+      if (lastFocused && lastFocused.focus) lastFocused.focus();
+    }
+
+    // Re-query so the injected mobile-menu opener is included too.
+    document.querySelectorAll("[data-loyalty-open]").forEach(function (btn) {
+      btn.addEventListener("click", open);
+    });
+    overlay.querySelectorAll("[data-loyalty-close]").forEach(function (b) {
+      b.addEventListener("click", close);
+    });
+    overlay.addEventListener("click", function (e) { if (e.target === overlay) close(); });
+
+    // Demo CTA: nowhere to go — flash the demo note instead.
+    var cta = overlay.querySelector("[data-loyalty-cta]");
+    var note = overlay.querySelector("[data-loyalty-note]");
+    if (cta && note) {
+      cta.addEventListener("click", function () {
+        note.classList.remove("is-flash");
+        void note.offsetWidth; // restart the animation
+        note.classList.add("is-flash");
+      });
+    }
+  }
+
   /* ---- Year is set in applyConfig --------------------------------------- */
   ready(function () {
     applyConfig();
@@ -237,5 +351,6 @@
     initTestimonials();
     initDemoBar();
     initHeaderScroll();
+    initLoyalty();
   });
 })();
