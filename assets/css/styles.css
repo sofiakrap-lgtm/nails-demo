@@ -940,7 +940,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.2fr 1fr 1fr;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
   gap: var(--space-5);
   align-items: start;
 }
@@ -1323,7 +1323,6 @@ h1, h2, h3, h4,
 
 .footer-logo { height: 34px; width: auto; }
 .footer-illus { width: 180px; }
-.footer-grid .footer-col:last-child { text-align: right; }
 
 /* Language switcher: rounded corners to match the buttons */
 .lang { border-radius: 6px; }
@@ -1412,8 +1411,8 @@ body { zoom: 0.8; }
 /* Fix: <figure> default UA margin made the 3rd card overflow */
 .testi-card { margin: 0 !important; }
 
-/* Footer is now 2 columns (logo+tagline+illustration | explore) */
-.footer-grid { grid-template-columns: 1.4fr 1fr; }
+/* Footer is now 4 columns (logo+tagline+illustration | explore | visit | follow) */
+.footer-grid { grid-template-columns: 1.4fr 1fr 1fr 1fr; }
 @media (max-width: 760px) { .footer-grid { grid-template-columns: 1fr; } }
 
 /* ==========================================================================

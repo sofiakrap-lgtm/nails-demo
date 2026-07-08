@@ -40,7 +40,7 @@ window.NL_I18N = {
       contact: "Contact", explore: "Explore", send: "Send message",
       viewPricing: "View full pricing", getDirections: "Get directions", more: "Learn more"
     },
-    brand: { tagline: "Since 2026", words: "Nail studio · Spain" },
+    brand: { tagline: "Since 2013", words: "Nail studio · Spain" },
     home: {
       heroTitle: "Timeless nails, crafted with care",
       heroSub: "A boutique nail studio where calm, hygiene and quiet craftsmanship come first.",
@@ -59,6 +59,7 @@ window.NL_I18N = {
       do2Title: "Gel & builder", do2Body: "Strength, length and a flawless finish.",
       do3Title: "Nail art", do3Body: "From subtle accents to full sets.",
       do4Title: "Pedicure", do4Body: "Renewing care from heel to toe.", do5Title: "Medical care",
+      do5Body: "Medical pedicures and corrective care for problem nails.",
       scriptOverlay: "made to last",
       quote: "Beautiful nails are not loud. They are well kept, well finished, and quietly confident.",
       quoteCite: "The Nails Lindes approach",
@@ -283,7 +284,7 @@ window.NL_I18N = {
       contact: "Contacto", explore: "Explorar", send: "Enviar mensaje",
       viewPricing: "Ver todos los precios", getDirections: "Cómo llegar", more: "Saber más"
     },
-    brand: { tagline: "Desde 2026", words: "Estudio de uñas · España" },
+    brand: { tagline: "Desde 2013", words: "Estudio de uñas · España" },
     home: {
       heroTitle: "Uñas atemporales, hechas con cuidado",
       heroSub: "Un estudio de uñas boutique donde la calma, la higiene y el buen oficio van primero.",
@@ -302,6 +303,7 @@ window.NL_I18N = {
       do2Title: "Gel y refuerzo", do2Body: "Fuerza, longitud y un acabado impecable.",
       do3Title: "Nail art", do3Body: "Desde detalles sutiles hasta sets completos.",
       do4Title: "Pedicura", do4Body: "Cuidado que renueva del talón a los dedos.", do5Title: "Cuidado médico",
+      do5Body: "Pedicura médica y cuidado correctivo para uñas con problemas.",
       scriptOverlay: "hecho para durar",
       quote: "Las uñas bonitas no gritan. Están bien cuidadas, bien acabadas y seguras en silencio.",
       quoteCite: "La filosofía de Nails Lindes",
@@ -526,7 +528,7 @@ window.NL_I18N = {
       contact: "Контакты", explore: "Подробнее", send: "Отправить",
       viewPricing: "Все цены", getDirections: "Как добраться", more: "Подробнее"
     },
-    brand: { tagline: "С 2026 года", words: "Студия ногтей · Испания" },
+    brand: { tagline: "С 2013 года", words: "Студия ногтей · Испания" },
     home: {
       heroTitle: "Вне времени — ногти, созданные с заботой",
       heroSub: "Бутик-студия ногтевого сервиса, где спокойствие, гигиена и тихое мастерство на первом месте.",
@@ -545,6 +547,7 @@ window.NL_I18N = {
       do2Title: "Гель и укрепление", do2Body: "Прочность, длина и безупречное покрытие.",
       do3Title: "Нейл-арт", do3Body: "От тонких акцентов до полного дизайна.",
       do4Title: "Педикюр", do4Body: "Обновляющий уход от пятки до пальцев.", do5Title: "Медицинский уход",
+      do5Body: "Медицинский педикюр и коррекция проблемных ногтей.",
       scriptOverlay: "создано, чтобы держаться",
       quote: "Красивые ногти не кричат. Они ухожены, аккуратно завершены и спокойно уверены в себе.",
       quoteCite: "Подход Nails Lindes",
