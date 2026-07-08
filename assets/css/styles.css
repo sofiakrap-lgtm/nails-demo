@@ -1,11 +1,11 @@
 /* ==========================================================================
-   Nails Lindes — design system
+   Nails Lindes, design system
    Plain CSS. Tokens first, then base, layout, components, utilities.
    ========================================================================== */
 
 /* ---------- Tokens ------------------------------------------------------- */
 :root {
-  /* Brand palette — exact hexes, do not alter */
+  /* Brand palette, exact hexes, do not alter */
   --color-beige:  #F1EBDD;
   --color-tan:    #D8C094;
   --color-silver: #CFC9B3;
@@ -171,7 +171,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .btn--loyalty:hover { background: var(--color-tan); color: var(--color-coffee); border-color: var(--color-tan); transform: translateY(-2px); }
 
 /* The loyalty opener lives in the header on desktop and in the slide-in menu on
-   mobile — never both at once. */
+   mobile, never both at once. */
 .nav__link--loyalty { display: none; }
 @media (max-width: 940px) {
   .header-actions .btn--loyalty { display: none; }
@@ -515,7 +515,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 @media (max-width: 760px) { .image-band { grid-template-columns: repeat(2, 1fr); } }
 
 /* ==========================================================================
-   Dividers — marquee, stripe, scallop
+   Dividers, marquee, stripe, scallop
    ========================================================================== */
 .marquee {
   background: var(--color-coffee);
@@ -950,7 +950,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   align-items: start;
 }
 .site-footer .brand__name { color: var(--color-beige); }
-/* Brand emblem is dark ink — invert to cream so it reads on the coffee footer */
+/* Brand emblem is dark ink, invert to cream so it reads on the coffee footer */
 .site-footer .brand__mark { filter: brightness(0) invert(1); opacity: .92; }
 .footer-col h4 {
   color: var(--color-beige);
@@ -1016,7 +1016,7 @@ body.home .site-header::before {
   transition: opacity .4s var(--ease);
 }
 
-/* Transparent (top) state — light content on the photo */
+/* Transparent (top) state, light content on the photo */
 body.home .site-header:not(.is-scrolled) .brand__name,
 body.home .site-header:not(.is-scrolled) .nav__link { color: var(--color-beige); }
 body.home .site-header:not(.is-scrolled) .brand__mark { filter: brightness(0) invert(1); }
@@ -1034,7 +1034,7 @@ body.home .site-header:not(.is-scrolled) .header-actions > .btn--loyalty:hover {
 body.home .site-header:not(.is-scrolled) .burger { border-color: rgba(241, 235, 221, .5); }
 body.home .site-header:not(.is-scrolled) .burger span { background: var(--color-beige); }
 
-/* Scrolled state — revert to the solid beige bar */
+/* Scrolled state, revert to the solid beige bar */
 body.home .site-header.is-scrolled {
   background: color-mix(in srgb, var(--color-beige) 92%, transparent);
   -webkit-backdrop-filter: blur(10px);
@@ -1043,7 +1043,7 @@ body.home .site-header.is-scrolled {
 }
 body.home .site-header.is-scrolled::before { opacity: 0; }
 
-/* On mobile the slide-in menu is a solid panel — keep its links dark */
+/* On mobile the slide-in menu is a solid panel, keep its links dark */
 @media (max-width: 940px) {
   body.home .site-header:not(.is-scrolled) .nav.is-open .nav__link { color: var(--color-coffee); }
 }
@@ -1210,7 +1210,7 @@ body.home .site-header:not(.is-scrolled) .brand__wordmark--light { display: bloc
 /* Feature icons use the provided graphics (dark coffee, larger) */
 .feature__icon { width: auto; height: 105px; }
 
-/* Instrument Serif has a single weight — keep ALL serif text regular (no faux-bold) */
+/* Instrument Serif has a single weight, keep ALL serif text regular (no faux-bold) */
 h1, h2, h3, h4,
 .brand__name,
 .price-item__name, .price-item__price,
@@ -1221,7 +1221,7 @@ h1, h2, h3, h4,
 .svc-intro, .card__title { font-weight: 400; }
 
 /* ==========================================================================
-   Boxed menu list (linklist) — per reference model + smaller paired image
+   Boxed menu list (linklist), per reference model + smaller paired image
    ========================================================================== */
 .linklist { display: grid; gap: var(--space-2); border-top: 0; }
 .linklist__item {
@@ -1268,7 +1268,7 @@ h1, h2, h3, h4,
 .btn { border-radius: 6px; }
 
 /* ==========================================================================
-   Full-bleed split (image flush to edge + content) — per reference model
+   Full-bleed split (image flush to edge + content), per reference model
    ========================================================================== */
 .fullsplit {
   display: grid;
@@ -1316,7 +1316,7 @@ h1, h2, h3, h4,
 }
 
 /* ==========================================================================
-   Gallery preview — striped CLUB GALLERY model + footer refinements
+   Gallery preview, striped CLUB GALLERY model + footer refinements
    ========================================================================== */
 .section--stripe {
   background-image: repeating-linear-gradient(90deg,
@@ -1385,7 +1385,7 @@ body { zoom: 0.8; }
 /* Footer: spread the columns across a wider area */
 .site-footer .container { max-width: 1600px; }
 
-/* Header: full-width bar — logo at the far left, lang + book at the far right */
+/* Header: full-width bar, logo at the far left, lang + book at the far right */
 .site-header .container { max-width: none; padding-inline: clamp(1.5rem, 4vw, 3rem); }
 
 /* Testimonials carousel: simple side arrows (cream) + full cards (no partial) */
@@ -1442,7 +1442,7 @@ body { zoom: 0.8; }
 .cat-box:hover { color: var(--color-coffee); }
 @media (max-width: 760px) { .cat-bar { grid-template-columns: repeat(2, 1fr); } }
 
-/* Keep everything firmly in place — disable scroll-reveal entrance animation */
+/* Keep everything firmly in place, disable scroll-reveal entrance animation */
 .reveal, .reveal.is-visible { opacity: 1 !important; transform: none !important; }
 
 /* Category bar: slim cells, each its own box with thin dark-brown borders */
@@ -1455,7 +1455,7 @@ body { zoom: 0.8; }
 }
 
 /* ==========================================================================
-   Service cards (services page): product-grid row — image, small heading, text
+   Service cards (services page): product-grid row, image, small heading, text
    ========================================================================== */
 .svc-cards-section {
   padding-block: var(--space-6);
@@ -1543,7 +1543,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 /* ==========================================================================
-   Booking: "Two ways to book" — two centred columns with circle icons
+   Booking: "Two ways to book", two centred columns with circle icons
    ========================================================================== */
 .ways {
   display: grid;
@@ -1571,7 +1571,7 @@ h1, h2, h3, h4, h5, h6,
 @media (max-width: 680px) { .ways { grid-template-columns: 1fr; } }
 
 /* ==========================================================================
-   Notes grid (pricing "Good to know") — bordered columns, "Values" model
+   Notes grid (pricing "Good to know"), bordered columns, "Values" model
    ========================================================================== */
 .notes-grid { border: 1px solid var(--line); background: var(--bg-surface); }
 .notes-grid__title {
@@ -1609,7 +1609,7 @@ h1, h2, h3, h4, h5, h6,
 .page-hero--tight { padding-top: var(--space-5); }
 
 /* ==========================================================================
-   Contact split — details (left) + map window (right)
+   Contact split, details (left) + map window (right)
    ========================================================================== */
 .contact-split {
   display: grid;
@@ -1645,7 +1645,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 /* ==========================================================================
-   Gallery chooser (intermediate page) — Manicure / Pedicure tiles
+   Gallery chooser (intermediate page), Manicure / Pedicure tiles
    ========================================================================== */
 .gallery-choose {
   display: grid;
@@ -1676,7 +1676,7 @@ h1, h2, h3, h4, h5, h6,
 @media (max-width: 560px) { .gallery-choose { grid-template-columns: 1fr; } }
 
 /* ==========================================================================
-   About values — quality / durability / wellbeing (3 columns)
+   About values, quality / durability / wellbeing (3 columns)
    ========================================================================== */
 .values-grid {
   display: grid;
@@ -1720,7 +1720,7 @@ h1, h2, h3, h4, h5, h6,
 /* Quote band: bold */
 .quote-band__mark { font-weight: 700 !important; }
 
-/* Russian: remove the (faux) bold from serif headings — Cyrillic reads better unbolded */
+/* Russian: remove the (faux) bold from serif headings, Cyrillic reads better unbolded */
 html[lang="ru"] h1, html[lang="ru"] h2, html[lang="ru"] h3,
 html[lang="ru"] h4, html[lang="ru"] h5, html[lang="ru"] h6,
 html[lang="ru"] .brand__name, html[lang="ru"] .svc-card__title,
