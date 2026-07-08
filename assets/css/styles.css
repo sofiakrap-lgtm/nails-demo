@@ -1515,8 +1515,7 @@ body { zoom: 0.8; }
 }
 .svc-card:target {
   background: color-mix(in srgb, var(--color-beige) 10%, transparent);
-  box-shadow: 0 0 0 1px color-mix(in srgb, var(--color-tan) 55%, transparent),
-              0 22px 48px -30px rgba(0, 0, 0, .7);
+  box-shadow: 0 22px 48px -30px rgba(0, 0, 0, .7);
 }
 #medical-care:target .fullsplit__body { animation: svc-target-glow 1.8s var(--ease) 1; }
 @keyframes svc-target-glow {
