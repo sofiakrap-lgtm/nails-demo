@@ -291,6 +291,11 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 @media (max-width: 940px) {
   .burger { display: flex; }
+  /* Drop the blur on mobile: backdrop-filter makes the header a containing block
+     for the fixed nav drawer, which lets the off-canvas (closed) drawer escape
+     the body's overflow clip and cause horizontal scroll. Without it the drawer
+     is viewport-relative and clipped, exactly like the home page. */
+  .site-header { -webkit-backdrop-filter: none; backdrop-filter: none; }
   .nav {
     position: fixed;
     inset: 0 0 0 auto;
@@ -1500,6 +1505,28 @@ body { zoom: 0.8; }
 }
 @media (max-width: 860px) { .svc-cards { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 460px) { .svc-cards { grid-template-columns: 1fr; } }
+
+/* --- Service anchors: land clear of the sticky header + highlight the target --- */
+#manicure, #gel-builder, #nail-art, #pedicure, #medical-care { scroll-margin-top: 96px; }
+.svc-card {
+  border-radius: 16px;
+  padding: clamp(.8rem, 2vw, 1.4rem);
+  transition: box-shadow .45s var(--ease), background .45s var(--ease);
+}
+.svc-card:target {
+  background: color-mix(in srgb, var(--color-beige) 10%, transparent);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--color-tan) 55%, transparent),
+              0 22px 48px -30px rgba(0, 0, 0, .7);
+}
+#medical-care:target .fullsplit__body { animation: svc-target-glow 1.8s var(--ease) 1; }
+@keyframes svc-target-glow {
+  0%   { background: color-mix(in srgb, var(--color-tan) 26%, transparent); }
+  100% { background: transparent; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #medical-care:target .fullsplit__body { animation: none; }
+  .svc-card { transition: none; }
+}
 
 /* ==========================================================================
    Serif display font: bold everywhere (Instrument Serif synthesises bold)
