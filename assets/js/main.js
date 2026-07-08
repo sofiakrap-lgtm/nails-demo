@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Nails Lindes — interactions
+   Nails Lindes, interactions
    Depends on config.js (window.NL_CONFIG) and i18n.js (window.NL).
    ========================================================================== */
 (function () {
@@ -327,7 +327,7 @@
     });
     overlay.addEventListener("click", function (e) { if (e.target === overlay) close(); });
 
-    // Demo CTA: nowhere to go — flash the demo note instead.
+    // Demo CTA: nowhere to go, flash the demo note instead.
     var cta = overlay.querySelector("[data-loyalty-cta]");
     var note = overlay.querySelector("[data-loyalty-note]");
     if (cta && note) {
